@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://teknomid.com/sitemap.xml
