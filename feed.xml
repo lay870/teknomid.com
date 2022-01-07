@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-01-08T03:52:22+07:00</updated>
+    <updated>2022-01-08T04:09:37+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="TUTORIAL"/>
             <category term="LINUX"/>
 
-        <updated>2022-01-07T23:09:46+07:00</updated>
+        <updated>2022-01-08T04:06:39+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/196/Figure-6_large.webp" alt="Logrotate " />
@@ -29,18 +29,18 @@
         <content type="html">
             <![CDATA[
                     <img src="https://teknomid.com/media/posts/196/Figure-6_large.webp" alt="Logrotate " />
-                <div>Logrotate adalah utilitas sistem yang mengelola rotasi otomatis dan kompresi file log. Jika file log tidak rotate, dikompresi, dan dipangkas secara berkala, mereka akhirnya dapat menghabiskan semua ruang disk yang tersedia pada sistem.<br><br></div>
-<div>Logrotate sudah terinstall secara default di Ubuntu 20.04, dan diatur untuk menangani kebutuhan rotasi log dari semua paket yang diinstal, termasuk rsyslog, prosesor log sistem default.<br><br></div>
-<div>Pada artikel ini, kita akan menjelajahi konfigurasi Logrotate default, lalu mengonfigurasi rotasi log untuk aplikasi yang ada di system kita.</div>
-<h3>Persyaratan</h3>
-<div>Tutorial ini mengasumsikan Anda memiliki server Ubuntu 20.04, dengan pengguna non-root sudo-enabled, seperti yang dijelaskan dalam Pengaturan Server Awal dengan Ubuntu 20.04 .</div>
-<div> </div>
-<div>Logrotate juga tersedia di banyak distribusi Linux lainnya, tetapi konfigurasi defaultnya mungkin sangat berbeda. Bagian lain dari tutorial ini akan tetap berlaku selama versi Logrotate Anda mirip dengan Ubuntu 20.04. Ikuti Langkah 1 untuk menentukan versi Logrotate Anda.</div>
-<div> </div>
-<div>Masuk ke server Anda sebagai user sudoer untuk memulai.</div>
-<h4>Langkah 1 - Mengonfirmasi Versi Logrotate Anda<br><br></h4>
-<div>Logrotate diinstal secara default di Ubuntu. Namun, jika Anda perlu menginstalnya, jalankan perintah berikut untuk memperbarui daftar paket dan mengambil paket:</div>
-<div>
+                <div class="align-left">Logrotate adalah utilitas sistem yang mengelola rotasi otomatis dan kompresi file log. Jika file log tidak rotate, dikompresi, dan dipangkas secara berkala, mereka akhirnya dapat menghabiskan semua ruang disk yang tersedia pada sistem.<br><br></div>
+<div class="align-left">Logrotate sudah terinstall secara default di Ubuntu 20.04, dan diatur untuk menangani kebutuhan rotasi log dari semua paket yang diinstal, termasuk rsyslog, prosesor log sistem default.<br><br></div>
+<div class="align-left">Pada artikel ini, kita akan menjelajahi konfigurasi Logrotate default, lalu mengonfigurasi rotasi log untuk aplikasi yang ada di system kita.</div>
+<h3 class="align-left">Persyaratan</h3>
+<div class="align-left">Tutorial ini mengasumsikan Anda memiliki server Ubuntu 20.04, dengan pengguna non-root sudo-enabled, seperti yang dijelaskan dalam Pengaturan Server Awal dengan Ubuntu 20.04 .</div>
+<div class="align-left"> </div>
+<div class="align-left">Logrotate juga tersedia di banyak distribusi Linux lainnya, tetapi konfigurasi defaultnya mungkin sangat berbeda. Bagian lain dari tutorial ini akan tetap berlaku selama versi Logrotate Anda mirip dengan Ubuntu 20.04. Ikuti Langkah 1 untuk menentukan versi Logrotate Anda.</div>
+<div class="align-left"> </div>
+<div class="align-left">Masuk ke server Anda sebagai user sudoer untuk memulai.</div>
+<h4 class="align-left">Langkah 1 - Mengonfirmasi Versi Logrotate Anda<br><br></h4>
+<div class="align-left">Logrotate diinstal secara default di Ubuntu. Namun, jika Anda perlu menginstalnya, jalankan perintah berikut untuk memperbarui daftar paket dan mengambil paket:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -52,8 +52,8 @@
 </tbody>
 </table>
 </div>
-<div>Jika Anda menggunakan server non-Ubuntu, pastikan terlebih dahulu Logrotate diinstal dan cek versinya:</div>
-<div>
+<div class="align-left">Jika Anda menggunakan server non-Ubuntu, pastikan terlebih dahulu Logrotate diinstal dan cek versinya:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -80,8 +80,8 @@
 </tbody>
 </table>
 </div>
-<div>Jika Logrotate diinstal tetapi versinya sangat berbeda, Anda mungkin mengalami masalah dengan beberapa opsi konfigurasi yang dieksplorasi dalam tutorial ini. Lihat dokumentasi untuk versi spesifik Logrotate Anda dengan membaca manualnya (man):</div>
-<div>
+<div class="align-left">Jika Logrotate diinstal tetapi versinya sangat berbeda, Anda mungkin mengalami masalah dengan beberapa opsi konfigurasi yang dieksplorasi dalam tutorial ini. Lihat dokumentasi untuk versi spesifik Logrotate Anda dengan membaca manualnya (man):</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -90,17 +90,17 @@
 </tbody>
 </table>
 </div>
-<div>Anda juga dapat melihat versi online dari dokumentasi Logrotate. Selanjutnya kita akan melihat struktur konfigurasi default Logrotate di Ubuntu.</div>
-<h4>Langkah 2 - Explore Konfigurasi Logrotate<br><br></h4>
-<div>Informasi konfigurasi Logrotate umumnya dapat ditemukan di dua tempat di Ubuntu:</div>
-<div><span style="color: #e67e23;">/etc/logrotate.conf</span> :  file ini berisi beberapa pengaturan default dan mengatur rotasi untuk beberapa log yang tidak dimiliki oleh paket sistem mana pun. Itu juga menggunakan includepernyataan untuk menarik konfigurasi dari file apa pun di direktori <span style="color: #e67e23;">/etc/logrotate.d</span> .</div>
-<div> </div>
-<div><span style="color: #e67e23;">/etc/logrotate.d/ </span>: di sinilah paket apa pun yang Anda instal yang memerlukan bantuan dengan rotasi log akan menempatkan konfigurasi Logrotate-nya. Pada instalasi standar, Anda seharusnya sudah memiliki file di sini untuk alat sistem inti seperti apt, dpkg, rsyslogdan seterusnya.</div>
-<div> </div>
-<div>Secara default, <span style="color: #e67e23;">logrotate.conf</span> akan mengonfigurasi rotasi log mingguan, dengan file log yang dimiliki oleh pengguna root dan grup syslog , dengan empat file log disimpan pada satu waktu ( rotate 4), dan file log kosong baru dibuat setelah yang sekarang diputar ( create).</div>
-<div> </div>
-<div>Mari kita lihat file konfigurasi Logrotate paket di<span style="color: #e67e23;"> /etc/logrotate.d</span>. cat file untuk apt utilitas package:</div>
-<div>
+<div class="align-left">Anda juga dapat melihat versi online dari dokumentasi Logrotate. Selanjutnya kita akan melihat struktur konfigurasi default Logrotate di Ubuntu.</div>
+<h4 class="align-left">Langkah 2 - Explore Konfigurasi Logrotate<br><br></h4>
+<div class="align-left">Informasi konfigurasi Logrotate umumnya dapat ditemukan di dua tempat di Ubuntu:</div>
+<div class="align-left"><span style="color: #e67e23;">/etc/logrotate.conf</span> :  file ini berisi beberapa pengaturan default dan mengatur rotasi untuk beberapa log yang tidak dimiliki oleh paket sistem mana pun. Itu juga menggunakan includepernyataan untuk menarik konfigurasi dari file apa pun di direktori <span style="color: #e67e23;">/etc/logrotate.d</span> .</div>
+<div class="align-left"> </div>
+<div class="align-left"><span style="color: #e67e23;">/etc/logrotate.d/ </span>: di sinilah paket apa pun yang Anda instal yang memerlukan bantuan dengan rotasi log akan menempatkan konfigurasi Logrotate-nya. Pada instalasi standar, Anda seharusnya sudah memiliki file di sini untuk alat sistem inti seperti apt, dpkg, rsyslogdan seterusnya.</div>
+<div class="align-left"> </div>
+<div class="align-left">Secara default, <span style="color: #e67e23;">logrotate.conf</span> akan mengonfigurasi rotasi log mingguan, dengan file log yang dimiliki oleh pengguna root dan grup syslog , dengan empat file log disimpan pada satu waktu ( rotate 4), dan file log kosong baru dibuat setelah yang sekarang diputar ( create).</div>
+<div class="align-left"> </div>
+<div class="align-left">Mari kita lihat file konfigurasi Logrotate paket di<span style="color: #e67e23;"> /etc/logrotate.d</span>. cat file untuk apt utilitas package:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -133,33 +133,33 @@
 </tbody>
 </table>
 </div>
-<div>File ini berisi blok konfigurasi untuk dua file log yang berbeda dalam <span style="color: #e67e23;">/var/log/apt/direktori</span> : <span style="color: #e67e23;">term.log</span> dan <span style="color: #e67e23;">history.log</span>. Mereka berdua memiliki pilihan yang sama. Opsi apa pun yang tidak disetel dalam blok konfigurasi ini akan mewarisi nilai default atau yang disetel dalam <span style="color: #e67e23;">/etc/logrotate.conf</span>. <br><br>Pengaturan apa pun dalam file logrotate akan menggantikan nilai default logrotate, yang dikonfigurasi dalam <span style="color: #e67e23;">/etc/logrotate.conf</span>. Opsi yang disetel untuk aptlog adalah:</div>
-<div><span style="color: #e67e23;">rotate 12:</span> menyimpan dua belas file log lama. Ini menimpa rotate 4default.</div>
-<div>monthly: putar sebulan sekali. Ini menimpa weekly default.<br><br></div>
-<div><span style="color: #e67e23;">compress:</span> kompres file yang diputar. ini menggunakan gzipsecara default dan menghasilkan file yang diakhiri dengan .gz. Perintah kompresi dapat diubah menggunakan compress cmd opsi.</div>
-<div> </div>
-<div><span style="color: #e67e23;">missingok:</span> jangan menulis pesan kesalahan jika file log hilang.</div>
-<div>notifempty: jangan putar file log jika kosong.</div>
-<div> </div>
-<div>File konfigurasi ini juga mewarisi createperilaku default , yang menginstruksikan Logrotate untuk membuat log baru setelah rotasi. Ini dapat diganti dengan nocreate, meskipun itu akan secara efektif menonaktifkan sebagian besar fungsi lainnya.</div>
-<div> </div>
-<div>Ada lebih banyak opsi konfigurasi yang tersedia. Anda dapat membaca tentang semuanya dengan mengetik man logrotatedi baris perintah untuk membuka halaman manual Logrotate.</div>
-<div> </div>
-<div>Selanjutnya, kita akan menyiapkan file konfigurasi untuk menangani log untuk layanan fiksi yang disebut your-app.</div>
-<h4>Langkah 3 - Setting Contoh Konfigurasi<br><br></h4>
-<div>Untuk mengelola file log menggunakan logrotate untuk aplikasi  pre-packaged dan pre-configured di system service, kami memiliki dua opsi:</div>
-<h5>1.  Buat file konfigurasi Logrotate baru dan letakkan di <span style="color: #e67e23;">/etc/logrotate.d/</span>.</h5>
-<div>Ini akan dijalankan setiap hari sebagai pengguna root bersama dengan semua pekerjaan Logrotate standar lainnya.</div>
-<h5>2.  Buat file konfigurasi baru dan jalankan di luar pengaturan Logrotate default Ubuntu.</h5>
-<p> </p>
-<div>Ini hanya benar-benar diperlukan jika Anda perlu menjalankan Logrotate sebagai pengguna non- root , atau jika Anda ingin merotasi log lebih sering daripada setiap hari ( hourly konfigurasi di<span style="color: #e67e23;"> /etc/logrotate.d/ </span>tidak akan efektif, karena pengaturan Logrotate sistem hanya berjalan sekali sehari).</div>
-<div> </div>
-<div>Mari kita telusuri dua opsi ini dengan beberapa contoh penyiapan.</div>
-<div>Menambahkan Konfigurasi ke <span style="color: #e67e23;">/etc/logrotate.d/</span></div>
-<div>Kami ingin mengonfigurasi rotasi log untuk server web app yang menempatkan <span style="color: #e67e23;">access.log</span> dan <span style="color: #e67e23;">error.log</span> ke <span style="color: #e67e23;">/var/log/your-app/</span>. Ini berjalan sebagai <span style="color: #e67e23;">www-data</span> pengguna dan grup.</div>
-<div> </div>
-<div>Untuk menambahkan konfigurasi your-appfile log ke <span style="color: #e67e23;">/etc/logrotate.d/</span>, pertama buka file baru di<span style="color: #e67e23;"> /etc/logrotate.d</span> direktori menggunakan nanoatau editor pilihan Anda:</div>
-<div>
+<div class="align-left">File ini berisi blok konfigurasi untuk dua file log yang berbeda dalam <span style="color: #e67e23;">/var/log/apt/direktori</span> : <span style="color: #e67e23;">term.log</span> dan <span style="color: #e67e23;">history.log</span>. Mereka berdua memiliki pilihan yang sama. Opsi apa pun yang tidak disetel dalam blok konfigurasi ini akan mewarisi nilai default atau yang disetel dalam <span style="color: #e67e23;">/etc/logrotate.conf</span>. <br><br>Pengaturan apa pun dalam file logrotate akan menggantikan nilai default logrotate, yang dikonfigurasi dalam <span style="color: #e67e23;">/etc/logrotate.conf</span>. Opsi yang disetel untuk aptlog adalah:</div>
+<div class="align-left"><span style="color: #e67e23;">rotate 12:</span> menyimpan dua belas file log lama. Ini menimpa rotate 4default.</div>
+<div class="align-left">monthly: putar sebulan sekali. Ini menimpa weekly default.<br><br></div>
+<div class="align-left"><span style="color: #e67e23;">compress:</span> kompres file yang diputar. ini menggunakan gzipsecara default dan menghasilkan file yang diakhiri dengan .gz. Perintah kompresi dapat diubah menggunakan compress cmd opsi.</div>
+<div class="align-left"> </div>
+<div class="align-left"><span style="color: #e67e23;">missingok:</span> jangan menulis pesan kesalahan jika file log hilang.</div>
+<div class="align-left">notifempty: jangan putar file log jika kosong.</div>
+<div class="align-left"> </div>
+<div class="align-left">File konfigurasi ini juga mewarisi createperilaku default , yang menginstruksikan Logrotate untuk membuat log baru setelah rotasi. Ini dapat diganti dengan nocreate, meskipun itu akan secara efektif menonaktifkan sebagian besar fungsi lainnya.</div>
+<div class="align-left"> </div>
+<div class="align-left">Ada lebih banyak opsi konfigurasi yang tersedia. Anda dapat membaca tentang semuanya dengan mengetik man logrotatedi baris perintah untuk membuka halaman manual Logrotate.</div>
+<div class="align-left"> </div>
+<div class="align-left">Selanjutnya, kita akan menyiapkan file konfigurasi untuk menangani log untuk layanan fiksi yang disebut your-app.</div>
+<h4 class="align-left">Langkah 3 - Setting Contoh Konfigurasi<br><br></h4>
+<div class="align-left">Untuk mengelola file log menggunakan logrotate untuk aplikasi  pre-packaged dan pre-configured di system service, kami memiliki dua opsi:</div>
+<h5 class="align-left">1.  Buat file konfigurasi Logrotate baru dan letakkan di <span style="color: #e67e23;">/etc/logrotate.d/</span>.</h5>
+<div class="align-left">Ini akan dijalankan setiap hari sebagai pengguna root bersama dengan semua pekerjaan Logrotate standar lainnya.</div>
+<h5 class="align-left">2.  Buat file konfigurasi baru dan jalankan di luar pengaturan Logrotate default Ubuntu.</h5>
+<p class="align-left"> </p>
+<div class="align-left">Ini hanya benar-benar diperlukan jika Anda perlu menjalankan Logrotate sebagai pengguna non- root , atau jika Anda ingin merotasi log lebih sering daripada setiap hari ( hourly konfigurasi di<span style="color: #e67e23;"> /etc/logrotate.d/ </span>tidak akan efektif, karena pengaturan Logrotate sistem hanya berjalan sekali sehari).</div>
+<div class="align-left"> </div>
+<div class="align-left">Mari kita telusuri dua opsi ini dengan beberapa contoh penyiapan.</div>
+<div class="align-left">Menambahkan Konfigurasi ke <span style="color: #e67e23;">/etc/logrotate.d/</span></div>
+<div class="align-left">Kami ingin mengonfigurasi rotasi log untuk server web app yang menempatkan <span style="color: #e67e23;">access.log</span> dan <span style="color: #e67e23;">error.log</span> ke <span style="color: #e67e23;">/var/log/your-app/</span>. Ini berjalan sebagai <span style="color: #e67e23;">www-data</span> pengguna dan grup.</div>
+<div class="align-left"> </div>
+<div class="align-left">Untuk menambahkan konfigurasi your-appfile log ke <span style="color: #e67e23;">/etc/logrotate.d/</span>, pertama buka file baru di<span style="color: #e67e23;"> /etc/logrotate.d</span> direktori menggunakan nanoatau editor pilihan Anda:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -191,19 +191,19 @@
 </tbody>
 </table>
 </div>
-<div>Beberapa arahan konfigurasi baru dalam file ini adalah:</div>
-<div><span style="color: #e67e23;">create 0640 www-data www-data</span> :  ini membuat file log kosong baru setelah rotasi, dengan izin tertentu ( <span style="color: #e67e23;">0640</span>), user (<span style="color: #e67e23;">www-data</span>), dan grup (<span style="color: #e67e23;">www-data</span>).</div>
-<div> </div>
-<div><span style="color: #e67e23;">shared scripts</span> : tanda ini berarti bahwa script apa pun yang ditambahkan ke konfigurasi hanya dijalankan sekali per proses, bukan untuk setiap file yang diputar. Karena jalur menyertakan wildcard , konfigurasi ini akan cocok dengan sejumlah file log di direktori.</div>
-<div> </div>
-<div>Tanpa opsi, skrip yang ditentukan dalam akan berjalan setiap kali logrotate memproses file log tanpa opsi ini .<br><span style="color: #e67e23;">/var/log/your-app/*.log*your-app</span> shared scripts post rotate</div>
-<div>postrotateto endscript : blok ini berisi skrip untuk dijalankan setelah file log diputar.</div>
-<div> </div>
-<div>Dalam hal ini kami memuat ulang aplikasi contoh kami. Ini terkadang diperlukan agar aplikasi Anda beralih ke file log yang baru dibuat. Perhatikan bahwa postrotateberjalan sebelum log dikompresi. Kompresi bisa memakan waktu lama, dan perangkat lunak</div>
-<div> </div>
-<div>Anda harus segera beralih ke file log baru. Untuk tugas yang perlu dijalankan setelah log dikompresi, gunakan lastaction blok sebagai gantinya.</div>
-<div>Untuk menyimpan dan keluar nano, tekan Ctrl+X, dan saat diminta, Ylalu Enter. Anda dapat menguji file konfigurasi dengan melakukan dry run:</div>
-<div>
+<div class="align-left">Beberapa arahan konfigurasi baru dalam file ini adalah:</div>
+<div class="align-left"><span style="color: #e67e23;">create 0640 www-data www-data</span> :  ini membuat file log kosong baru setelah rotasi, dengan izin tertentu ( <span style="color: #e67e23;">0640</span>), user (<span style="color: #e67e23;">www-data</span>), dan grup (<span style="color: #e67e23;">www-data</span>).</div>
+<div class="align-left"> </div>
+<div class="align-left"><span style="color: #e67e23;">shared scripts</span> : tanda ini berarti bahwa script apa pun yang ditambahkan ke konfigurasi hanya dijalankan sekali per proses, bukan untuk setiap file yang diputar. Karena jalur menyertakan wildcard , konfigurasi ini akan cocok dengan sejumlah file log di direktori.</div>
+<div class="align-left"> </div>
+<div class="align-left">Tanpa opsi, skrip yang ditentukan dalam akan berjalan setiap kali logrotate memproses file log tanpa opsi ini .<br><span style="color: #e67e23;">/var/log/your-app/*.log*your-app</span> shared scripts post rotate</div>
+<div class="align-left">postrotateto endscript : blok ini berisi skrip untuk dijalankan setelah file log diputar.</div>
+<div class="align-left"> </div>
+<div class="align-left">Dalam hal ini kami memuat ulang aplikasi contoh kami. Ini terkadang diperlukan agar aplikasi Anda beralih ke file log yang baru dibuat. Perhatikan bahwa postrotateberjalan sebelum log dikompresi. Kompresi bisa memakan waktu lama, dan perangkat lunak</div>
+<div class="align-left"> </div>
+<div class="align-left">Anda harus segera beralih ke file log baru. Untuk tugas yang perlu dijalankan setelah log dikompresi, gunakan lastaction blok sebagai gantinya.</div>
+<div class="align-left">Untuk menyimpan dan keluar nano, tekan Ctrl+X, dan saat diminta, Ylalu Enter. Anda dapat menguji file konfigurasi dengan melakukan dry run:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -212,15 +212,15 @@
 </tbody>
 </table>
 </div>
-<div>Perintah ini memanggil logrotate, mengarahkannya ke file konfigurasi standar, dan mengaktifkan mode debug.</div>
-<div>Informasi akan dicetak tentang file log mana yang ditangani Logrotate dan apa yang akan dilakukan terhadapnya. Jika semuanya terlihat baik, Anda selesai.</div>
-<div> </div>
-<div>Pekerjaan Logrotate standar akan berjalan sekali sehari dan menyertakan konfigurasi baru Anda.</div>
-<div>Selanjutnya, kita akan mencoba setup yang tidak menggunakan konfigurasi default Ubuntu sama sekali.</div>
-<h4>Langkah 4 - Membuat Konfigurasi Logrotate Independen<br><br></h4>
-<div>Dalam contoh ini kami memiliki aplikasi yang berjalan sebagai pengguna kami sammy, menghasilkan log yang disimpan di /home/sammy/logs/. Kami ingin memutar log ini setiap jam, jadi kami perlu mengaturnya di luar /etc/logrotate.dstruktur yang disediakan oleh Ubuntu.</div>
-<div>Pertama, kita akan membuat file konfigurasi di direktori home kita. Buka di editor teks:</div>
-<div>
+<div class="align-left">Perintah ini memanggil logrotate, mengarahkannya ke file konfigurasi standar, dan mengaktifkan mode debug.</div>
+<div class="align-left">Informasi akan dicetak tentang file log mana yang ditangani Logrotate dan apa yang akan dilakukan terhadapnya. Jika semuanya terlihat baik, Anda selesai.</div>
+<div class="align-left"> </div>
+<div class="align-left">Pekerjaan Logrotate standar akan berjalan sekali sehari dan menyertakan konfigurasi baru Anda.</div>
+<div class="align-left">Selanjutnya, kita akan mencoba setup yang tidak menggunakan konfigurasi default Ubuntu sama sekali.</div>
+<h4 class="align-left">Langkah 4 - Membuat Konfigurasi Logrotate Independen<br><br></h4>
+<div class="align-left">Dalam contoh ini kami memiliki aplikasi yang berjalan sebagai pengguna kami sammy, menghasilkan log yang disimpan di /home/sammy/logs/. Kami ingin memutar log ini setiap jam, jadi kami perlu mengaturnya di luar /etc/logrotate.dstruktur yang disediakan oleh Ubuntu.</div>
+<div class="align-left">Pertama, kita akan membuat file konfigurasi di direktori home kita. Buka di editor teks:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -246,11 +246,11 @@
 </tbody>
 </table>
 </div>
-<div>Simpan dan tutup file. Kami telah menemukan semua opsi ini di langkah sebelumnya, tetapi mari kita rangkum: konfigurasi ini akan memutar file setiap jam, mengompresi dan menyimpan dua puluh empat log lama dan membuat file log baru untuk menggantikan yang diputar.</div>
-<div> </div>
-<div>Anda harus menyesuaikan konfigurasi agar sesuai dengan aplikasi Anda, tetapi ini adalah awal yang baik.</div>
-<div>Untuk menguji apakah konfigurasi berfungsi, mari buat file log. Pertama cdke direktori home pengguna Anda menggunakan perintah <span style="color: #e67e23;">cd ~</span>. <br><br>Kemudian buat direktori untuk log menggunakan mkdirperintah. Terakhir buat file kosong di logsdirektori menggunakan touchperintah. Jalankan perintah berikut untuk menyelesaikan langkah-langkah ini:</div>
-<div>
+<div class="align-left">Simpan dan tutup file. Kami telah menemukan semua opsi ini di langkah sebelumnya, tetapi mari kita rangkum: konfigurasi ini akan memutar file setiap jam, mengompresi dan menyimpan dua puluh empat log lama dan membuat file log baru untuk menggantikan yang diputar.</div>
+<div class="align-left"> </div>
+<div class="align-left">Anda harus menyesuaikan konfigurasi agar sesuai dengan aplikasi Anda, tetapi ini adalah awal yang baik.</div>
+<div class="align-left">Untuk menguji apakah konfigurasi berfungsi, mari buat file log. Pertama cdke direktori home pengguna Anda menggunakan perintah <span style="color: #e67e23;">cd ~</span>. <br><br>Kemudian buat direktori untuk log menggunakan mkdirperintah. Terakhir buat file kosong di logsdirektori menggunakan touchperintah. Jalankan perintah berikut untuk menyelesaikan langkah-langkah ini:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -263,16 +263,16 @@
 </tbody>
 </table>
 </div>
-<div>Sekarang kita memiliki file log kosong di tempat yang tepat, mari jalankan perintah  logrotate.</div>
-<div>Karena log kepemilikan user sammy kita tidak perlu menggunakan sudo. Namun, kita tidak perlu menentukan flag berkas.</div>
-<div> </div>
-<div>File ini mencatat apa yang logrotate ditemukan dan tindakan apa pun yang dilakukan saat terakhir dijalankan, sehingga tahu apa yang harus dilakukan saat berikutnya dijalankan. Pelacakan status ini ditangani untuk kami saat menggunakan<span style="color: #e67e23;"> /etc/logrotate.conf</span> konfigurasi default .</div>
-<div> </div>
-<div>File status disimpan di <span style="color: #e67e23;">/var/lib/logrotate/status.</span> Karena kita tidak menggunakan konfigurasi default, kita perlu mengkonfigurasi lokasi file status secara manual.</div>
-<div>Kami akan meminta Logrotate meletakkan file status tepat di direktori home kami untuk contoh ini. Itu bisa pergi ke mana saja yang dapat diakses dan nyaman.</div>
-<div> </div>
-<div>Jalankan perintah berikut ini untuk menggunakan<span style="color: #e67e23;"> /home/sammy/logrotate.conf</span> yang Anda buat dan untuk merekam status logrotate:</div>
-<div>
+<div class="align-left">Sekarang kita memiliki file log kosong di tempat yang tepat, mari jalankan perintah  logrotate.</div>
+<div class="align-left">Karena log kepemilikan user sammy kita tidak perlu menggunakan sudo. Namun, kita tidak perlu menentukan flag berkas.</div>
+<div class="align-left"> </div>
+<div class="align-left">File ini mencatat apa yang logrotate ditemukan dan tindakan apa pun yang dilakukan saat terakhir dijalankan, sehingga tahu apa yang harus dilakukan saat berikutnya dijalankan. Pelacakan status ini ditangani untuk kami saat menggunakan<span style="color: #e67e23;"> /etc/logrotate.conf</span> konfigurasi default .</div>
+<div class="align-left"> </div>
+<div class="align-left">File status disimpan di <span style="color: #e67e23;">/var/lib/logrotate/status.</span> Karena kita tidak menggunakan konfigurasi default, kita perlu mengkonfigurasi lokasi file status secara manual.</div>
+<div class="align-left">Kami akan meminta Logrotate meletakkan file status tepat di direktori home kami untuk contoh ini. Itu bisa pergi ke mana saja yang dapat diakses dan nyaman.</div>
+<div class="align-left"> </div>
+<div class="align-left">Jalankan perintah berikut ini untuk menggunakan<span style="color: #e67e23;"> /home/sammy/logrotate.conf</span> yang Anda buat dan untuk merekam status logrotate:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -297,10 +297,10 @@
 </tbody>
 </table>
 </div>
-<div>flag <span style="color: #e67e23;">--verbose</span> akan menampilkan informasi detail tentang apa logrotate lakukan. Dalam hal ini tidak merotate apa pun. Ini adalah pertama kalinya Logrotate menemukan file log ini dan berumur nol jam jadi tidak boleh dirotasi.</div>
-<div> </div>
-<div>Jika kami memeriksa file status menggunakan cat utilitas, kami akan mencatat bahwa Logrotate mencatat beberapa informasi tentang proses:</div>
-<div>
+<div class="align-left">flag <span style="color: #e67e23;">--verbose</span> akan menampilkan informasi detail tentang apa logrotate lakukan. Dalam hal ini tidak merotate apa pun. Ini adalah pertama kalinya Logrotate menemukan file log ini dan berumur nol jam jadi tidak boleh dirotasi.</div>
+<div class="align-left"> </div>
+<div class="align-left">Jika kami memeriksa file status menggunakan cat utilitas, kami akan mencatat bahwa Logrotate mencatat beberapa informasi tentang proses:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -321,10 +321,10 @@
 </tbody>
 </table>
 </div>
-<div>Logrotate mencatat log yang dilihatnya dan kapan terakhir mempertimbangkannya untuk rotasi. Jika kita menjalankan perintah yang sama ini satu jam kemudian, log akan diputar seperti yang diharapkan.</div>
-<div> </div>
-<div>Jika Anda ingin memaksa Logrotate untuk rotate file log padahal seharusnya tidak, gunakan <span style="color: #e67e23;">--force</span> tanda:</div>
-<div>
+<div class="align-left">Logrotate mencatat log yang dilihatnya dan kapan terakhir mempertimbangkannya untuk rotasi. Jika kita menjalankan perintah yang sama ini satu jam kemudian, log akan diputar seperti yang diharapkan.</div>
+<div class="align-left"> </div>
+<div class="align-left">Jika Anda ingin memaksa Logrotate untuk rotate file log padahal seharusnya tidak, gunakan <span style="color: #e67e23;">--force</span> tanda:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -333,9 +333,9 @@
 </tbody>
 </table>
 </div>
-<div>Ini berguna saat menguji post rotate dan script lainnya.</div>
-<div>Terakhir, kita perlu menyiapkan tugas cron untuk menjalankan Logrotate setiap jam. Buka crontab pengguna Anda:</div>
-<div>
+<div class="align-left">Ini berguna saat menguji post rotate dan script lainnya.</div>
+<div class="align-left">Terakhir, kita perlu menyiapkan tugas cron untuk menjalankan Logrotate setiap jam. Buka crontab pengguna Anda:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -344,10 +344,10 @@
 </tbody>
 </table>
 </div>
-<div>Ini akan membuka file teks. Jika ini adalah pertama kalinya Anda menggunakan cron, Anda mungkin diminta untuk memilih editor teks default. Jika Anda tidak memiliki preferensi, kami sarankan nanountuk pengguna baru.</div>
-<div> </div>
-<div>Mungkin sudah ada beberapa komentar di file yang menjelaskan sintaks cron. Pindahkan kursor ke bawah ke baris kosong baru di akhir file dan tambahkan yang berikut ini:</div>
-<div>
+<div class="align-left">Ini akan membuka file teks. Jika ini adalah pertama kalinya Anda menggunakan cron, Anda mungkin diminta untuk memilih editor teks default. Jika Anda tidak memiliki preferensi, kami sarankan nanountuk pengguna baru.</div>
+<div class="align-left"> </div>
+<div class="align-left">Mungkin sudah ada beberapa komentar di file yang menjelaskan sintaks cron. Pindahkan kursor ke bawah ke baris kosong baru di akhir file dan tambahkan yang berikut ini:</div>
+<div class="align-left">
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
@@ -356,15 +356,14 @@
 </tbody>
 </table>
 </div>
-<div>Tugas ini akan berjalan pada menit ke-14 setiap jam, setiap hari. Ini menjalankan logrotate perintah yang hampir sama dengan yang kami jalankan sebelumnya, meskipun kami memperluas logrotateke jalur penuhnya<span style="color: #e67e23;"> /usr/sbin/logrotate</span> agar aman. Ini adalah praktik yang baik untuk menggunakan jalur lengkap saat menulis tugas cron.</div>
-<div> </div>
-<div>Untuk mempelajari lebih lanjut tentang cron, Anda dapat meninjau tutorial kami yang lain . Simpan file dan keluar. Ini akan menginstal crontab dan tugas kita akan berjalan pada jadwal yang ditentukan.</div>
-<div> </div>
-<div>Jika kami mengunjungi kembali direktori log kami dalam waktu sekitar satu jam, kami akan menemukan file log yang diputar dan di compress access.log.1.gz(atau .2.gzjika Anda menjalankan Logrotate dengan --force flag).</div>
-<p> </p>
-<h5><span style="text-decoration: underline;">Kesimpulan</span></h5>
-<div>Dalam tutorial ini kami memverifikasi versi Logrotate kami, menjelajahi konfigurasi default Ubuntu Logrotate, dan menyiapkan dua jenis konfigurasi custom yang berbeda. Untuk mempelajari lebih lanjut tentang baris perintah dan opsi konfigurasi yang tersedia untuk Logrotate, Anda dapat membaca manualnya dengan menjalankan man logrotate di terminal Anda atau dengan mengunjungi dokumentasi <a href="#INTERNAL_LINK#/post/null" title="https://linux.die.net/man/8/logrotate">online </a>.</div>
-<p> </p>
+<div class="align-left">Tugas ini akan berjalan pada menit ke-14 setiap jam, setiap hari. Ini menjalankan logrotate perintah yang hampir sama dengan yang kami jalankan sebelumnya, meskipun kami memperluas logrotateke jalur penuhnya<span style="color: #e67e23;"> /usr/sbin/logrotate</span> agar aman. Ini adalah praktik yang baik untuk menggunakan jalur lengkap saat menulis tugas cron.</div>
+<div class="align-left"> </div>
+<div class="align-left">Untuk mempelajari lebih lanjut tentang cron, Anda dapat meninjau tutorial kami yang lain . Simpan file dan keluar. Ini akan menginstal crontab dan tugas kita akan berjalan pada jadwal yang ditentukan.</div>
+<div class="align-left"> </div>
+<div class="align-left">Jika kami mengunjungi kembali direktori log kami dalam waktu sekitar satu jam, kami akan menemukan file log yang diputar dan di compress access.log.1.gz(atau .2.gzjika Anda menjalankan Logrotate dengan --force flag).</div>
+<h5 class="align-left"><span style="text-decoration: underline;">Kesimpulan</span></h5>
+<div class="align-left">Dalam tutorial ini kami memverifikasi versi Logrotate kami, menjelajahi konfigurasi default Ubuntu Logrotate, dan menyiapkan dua jenis konfigurasi custom yang berbeda. Untuk mempelajari lebih lanjut tentang baris perintah dan opsi konfigurasi yang tersedia untuk Logrotate, Anda dapat membaca manualnya dengan menjalankan man logrotate di terminal Anda atau dengan mengunjungi dokumentasi <a href="#INTERNAL_LINK#/post/null" title="https://linux.die.net/man/8/logrotate">online </a>.</div>
+<p class="align-left"> </p>
             ]]>
         </content>
     </entry>
@@ -378,7 +377,7 @@
             <category term="TUTORIAL"/>
             <category term="LINUX"/>
 
-        <updated>2022-01-08T01:14:52+07:00</updated>
+        <updated>2022-01-08T04:09:37+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/195/free05.png" alt="Menghapus Cache" />
@@ -388,22 +387,22 @@
         <content type="html">
             <![CDATA[
                     <img src="https://teknomid.com/media/posts/195/free05.png" alt="Menghapus Cache" />
-                <p>Pada artikel ini, kita akan melihat Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux. Di setiap sistem sering kita menemukan cache yang memiliki file yang tidak diinginkan dan dapat membahayakan sistem kami, hal yang sama terjadi di cache Linux dan jika Anda ingin menghapus cache dan mengosongkan beberapa memori maka Linux memiliki banyak perintah untuk melakukan itu.</p>
-<h3>Menghapus Cache di Linux:</h3>
-<p>Di semua sistem Linux, kita memiliki tiga opsi untuk menghapus cache tanpa mengganggu service atau proses apa pun.</p>
-<h5>Contoh 1: Untuk Menghapus PageCache saja</h5>
-<table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
+                <p class="align-left">Pada artikel ini, kita akan melihat Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux. Di setiap sistem sering kita menemukan cache yang memiliki file yang tidak diinginkan dan dapat membahayakan sistem kami, hal yang sama terjadi di cache Linux dan jika Anda ingin menghapus cache dan mengosongkan beberapa memori maka Linux memiliki banyak perintah untuk melakukan itu.</p>
+<h3 class="align-left">Menghapus Cache di Linux:</h3>
+<p class="align-left">Di semua sistem Linux, kita memiliki tiga opsi untuk menghapus cache tanpa mengganggu service atau proses apa pun.</p>
+<h5 class="align-left">Contoh 1: Untuk Menghapus PageCache saja</h5>
+<table class="align-left" style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
 <td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">sudo sh -c 'echo 1 &gt; /proc/sys/vm/drop_caches'</td>
 </tr>
 </tbody>
 </table>
-<p>Perintah # "free -h" akan menampilkan status memori</p>
+<p class="align-left">Perintah # "free -h" akan menampilkan status memori</p>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/195/free.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/195/responsive/free-xs.png 300w ,https://teknomid.com/media/posts/195/responsive/free-sm.png 480w ,https://teknomid.com/media/posts/195/responsive/free-md.png 768w ,https://teknomid.com/media/posts/195/responsive/free-lg.png 1024w ,https://teknomid.com/media/posts/195/responsive/free-xl.png 1360w ,https://teknomid.com/media/posts/195/responsive/free-2xl.png 1600w"  alt="" width="639" height="162"></figure>
-<p><span class="goog-text-highlight">drop_caches digunakan sebagai clean cache tanpa mematikan aplikasi apa pun, Anda dapat menjalankan perintah # free -h untuk melihat perbedaan antara used memori dan free memori  sebelum dan sesudah membersihkan cache</span></p>
-<h5>Contoh 2: Untuk Membersihkan dentries dan inode</h5>
-<table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
+<p class="align-left"><span class="goog-text-highlight">drop_caches digunakan sebagai clean cache tanpa mematikan aplikasi apa pun, Anda dapat menjalankan perintah # free -h untuk melihat perbedaan antara used memori dan free memori  sebelum dan sesudah membersihkan cache</span></p>
+<h5 class="align-left">Contoh 2: Untuk Membersihkan dentries dan inode</h5>
+<table class="align-left" style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
 <td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">sudo sh -c 'echo 2 &gt; /proc/sys/vm/drop_caches'</td>
@@ -411,18 +410,18 @@
 </tbody>
 </table>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/195/free01.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/195/responsive/free01-xs.png 300w ,https://teknomid.com/media/posts/195/responsive/free01-sm.png 480w ,https://teknomid.com/media/posts/195/responsive/free01-md.png 768w ,https://teknomid.com/media/posts/195/responsive/free01-lg.png 1024w ,https://teknomid.com/media/posts/195/responsive/free01-xl.png 1360w ,https://teknomid.com/media/posts/195/responsive/free01-2xl.png 1600w"  alt="" width="639" height="162"></figure>
-<h5>Contoh 3: Untuk Menghapus PageCache, dentries, dan inode</h5>
-<table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
+<h5 class="align-left">Contoh 3: Untuk Menghapus PageCache, dentries, dan inode</h5>
+<table class="align-left" style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
 <td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">sudo sh -c 'echo 3 &gt; /proc/sys/vm/drop_caches'</td>
 </tr>
 </tbody>
 </table>
-<p>Sekarang menggunakan Kernel Linux, untuk free Buffer dan Cache di Linux kita akan membuat skrip shell untuk menghapus cache RAM secara otomatis setiap hari, melalui scheduller crontab., perintah <span style="color: #e67e23;">nano script.sh</span> digunakan untuk membuat skrip shell "script.sh"</p>
+<p class="align-left">Sekarang menggunakan Kernel Linux, untuk free Buffer dan Cache di Linux kita akan membuat skrip shell untuk menghapus cache RAM secara otomatis setiap hari, melalui scheduller crontab., perintah <span style="color: #e67e23;">nano script.sh</span> digunakan untuk membuat skrip shell "script.sh"</p>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/195/free02.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/195/responsive/free02-xs.png 300w ,https://teknomid.com/media/posts/195/responsive/free02-sm.png 480w ,https://teknomid.com/media/posts/195/responsive/free02-md.png 768w ,https://teknomid.com/media/posts/195/responsive/free02-lg.png 1024w ,https://teknomid.com/media/posts/195/responsive/free02-xl.png 1360w ,https://teknomid.com/media/posts/195/responsive/free02-2xl.png 1600w"  alt="" width="336" height="68"></figure>
-<p>Sekarang berikan permission execute untuk file <span style="color: #e67e23;">script.sh</span>, untuk menghapus cache ram, Anda harus memanggil skrip kapan pun diperlukan, mengatur cron untuk menghapus cache RAM setiap hari selama 3 jam.</p>
-<table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
+<p class="align-left">Sekarang berikan permission execute untuk file <span style="color: #e67e23;">script.sh</span>, untuk menghapus cache ram, Anda harus memanggil skrip kapan pun diperlukan, mengatur cron untuk menghapus cache RAM setiap hari selama 3 jam.</p>
+<table class="align-left" style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
 <td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">chmod 755 script.sh <br>crontab -e</td>
@@ -430,19 +429,19 @@
 </tbody>
 </table>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/195/free03.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/195/responsive/free03-xs.png 300w ,https://teknomid.com/media/posts/195/responsive/free03-sm.png 480w ,https://teknomid.com/media/posts/195/responsive/free03-md.png 768w ,https://teknomid.com/media/posts/195/responsive/free03-lg.png 1024w ,https://teknomid.com/media/posts/195/responsive/free03-xl.png 1360w ,https://teknomid.com/media/posts/195/responsive/free03-2xl.png 1600w"  alt="" width="488" height="68"></figure>
-<h5>Contoh 4: Untuk Menghapus Ruang Swap di Linux</h5>
-<p>Anda dapat mengosongkan ruang swap dengan menjalankan perintah di bawah ini </p>
-<table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
+<h5 class="align-left">Contoh 4: Untuk Menghapus Ruang Swap di Linux</h5>
+<p class="align-left">Anda dapat mengosongkan ruang swap dengan menjalankan perintah di bawah ini </p>
+<table class="align-left" style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
 <td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">sudo swapoff -a <br>sudo swapon -a</td>
 </tr>
 </tbody>
 </table>
-<p>Anda dapat menjalankan perintah # free -h untuk melihat perbedaan antara memori used dan memori free sebelum dan sesudah mengosongkan ruang swap<br><br>Tambahkan perintah di atas ke skrip cron, Di sini kita akan menggabungkan dua perintah yang berbeda ini menjadi satu perintah tunggal, untuk membentuk skrip yang tepat yang akan membantu kita membersihkan Swap Space dan RAM Cache.</p>
+<p class="align-left">Anda dapat menjalankan perintah # free -h untuk melihat perbedaan antara memori used dan memori free sebelum dan sesudah mengosongkan ruang swap<br><br>Tambahkan perintah di atas ke skrip cron, Di sini kita akan menggabungkan dua perintah yang berbeda ini menjadi satu perintah tunggal, untuk membentuk skrip yang tepat yang akan membantu kita membersihkan Swap Space dan RAM Cache.</p>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/195/free04.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/195/responsive/free04-xs.png 300w ,https://teknomid.com/media/posts/195/responsive/free04-sm.png 480w ,https://teknomid.com/media/posts/195/responsive/free04-md.png 768w ,https://teknomid.com/media/posts/195/responsive/free04-lg.png 1024w ,https://teknomid.com/media/posts/195/responsive/free04-xl.png 1360w ,https://teknomid.com/media/posts/195/responsive/free04-2xl.png 1600w"  alt="" width="894" height="52"></figure>
-<p>Pastikan cron di running dengan root atau menggunakan sudo, <br>Coba runing script.sh #<span style="color: #e67e23;"> bash script.sh</span><br><span><span class="">Sekarang cache Ram dan swap akan dihapus, Anda dapat menjalankan perintah <br># free -h untuk melihat memori used dan memori free.</span></span></p>
-<p> </p>
+<p class="align-left">Pastikan cron di running dengan root atau menggunakan sudo, <br>Coba runing script.sh #<span style="color: #e67e23;"> bash script.sh</span><br><span class="">Sekarang cache Ram dan swap akan dihapus, Anda dapat menjalankan perintah <br># free -h untuk melihat memori used dan memori free.</span></p>
+<p class="align-left"> </p>
             ]]>
         </content>
     </entry>
@@ -457,7 +456,7 @@
             <category term="LINUX"/>
             <category term="CLOUD"/>
 
-        <updated>2022-01-08T02:48:54+07:00</updated>
+        <updated>2022-01-08T03:58:37+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/194/prometheus-696x279.webp" alt="Cara Install Prometheus di Linux Ubuntu" />
@@ -587,7 +586,7 @@
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
-<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;"><strong>Prometheus config file - /etc/prometheus/prometheus.yml</strong><br>global: <br>   scrape_interval: 15s<br><br>scrape_configs:<br>  - job_name: 'prometheus'<br>  scrape_interval: 5s<br>  static_configs:<br>   - targets: ['localhost:9090']</td>
+<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;"><strong>Prometheus config file - /etc/prometheus/prometheus.yml</strong><br>global: <br>scrape_interval: 15s<br><br>scrape_configs:<br>- job_name: 'prometheus'<br>scrape_interval: 5s<br>static_configs:<br>- targets: ['localhost:9090']</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +612,7 @@
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
-<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">Output level=info ts=2017-11-17T18:37:27.474530094Z <br>caller=main.go:215 msg="Starting Prometheus" <br>version="(version=2.0.0, branch=HEAD, <br>re vision=0a74f98628a0463dddc90528220c94de5032d1a0)"<br>level=info ts=2017-11-17T18:37:27.474758404Z <br>caller=main.go:216 build_context="(go=go1.9.2, <br>user=root@615b82cb36b6, date=20171108- 07:11:59)"<br>level=info ts=2017-11-17T18:37:27.474883982Z <br>caller=main.go:217 host_details=<br>"(Linux 4.4.0-98-generic #121-Ubuntu SMP Tue Oct <br>10 1 4:24:03 UTC 2017 x86_64 prometheus-update (none))"<br>level=info ts=2017-11-17T18:37:27.483661837Z <br>caller=web.go:380 component=web msg="Start <br>listening for connections" address=0.0.0.0 :9090<br>level=info ts=2017-11-17T18:37:27.489730138Z <br>caller=main.go:314 msg="Starting TSDB"<br>level=info ts=2017-11-17T18:37:27.516050288Z <br>caller=targetmanager.go:71 component="target <br>manager" msg="Starting target manager... "<br>level=info ts=2017-11-17T18:37:27.537629169Z <br>caller=main.go:326 msg="TSDB started"<br>level=info ts=2017-11-17T18:37:27.537896721Z <br>caller=main.go:394 msg="Loading configuration <br>file" filename=/etc/prometheus/promethe us.yml<br>level=info ts=2017-11-17T18:37:27.53890004Z <br>caller=main.go:371 msg="Server is <br>ready to receive requests." </td>
+<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">Output level=info ts=2017-11-17T18:37:27.474530094Z <br>caller=main.go:215 msg="Starting Prometheus" <br>version="(version=2.0.0, branch=HEAD, <br>re vision=0a74f98628a0463dddc90528220c94de5032d1a0)"<br>level=info ts=2017-11-17T18:37:27.474758404Z <br>caller=main.go:216 build_context="(go=go1.9.2, <br>user=root@615b82cb36b6, date=20171108- 07:11:59)"<br>level=info ts=2017-11-17T18:37:27.474883982Z <br>caller=main.go:217 host_details=<br>"(Linux 4.4.0-98-generic #121-Ubuntu SMP Tue Oct <br>10 1 4:24:03 UTC 2017 x86_64 prometheus-update (none))"<br>level=info ts=2017-11-17T18:37:27.483661837Z <br>caller=web.go:380 component=web msg="Start <br>listening for connections" address=0.0.0.0 :9090<br>level=info ts=2017-11-17T18:37:27.489730138Z <br>caller=main.go:314 msg="Starting TSDB"<br>level=info ts=2017-11-17T18:37:27.516050288Z <br>caller=targetmanager.go:71 component="target <br>manager" msg="Starting target manager... "<br>level=info ts=2017-11-17T18:37:27.537629169Z <br>caller=main.go:326 msg="TSDB started"<br>level=info ts=2017-11-17T18:37:27.537896721Z <br>caller=main.go:394 msg="Loading configuration <br>file" filename=/etc/prometheus/promethe us.yml<br>level=info ts=2017-11-17T18:37:27.53890004Z <br>caller=main.go:371 msg="Server is <br>ready to receive requests."</td>
 </tr>
 </tbody>
 </table>
