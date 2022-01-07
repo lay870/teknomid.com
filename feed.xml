@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-01-08T01:14:52+07:00</updated>
+    <updated>2022-01-08T02:34:32+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -457,7 +457,7 @@
             <category term="LINUX"/>
             <category term="CLOUD"/>
 
-        <updated>2021-12-26T19:12:35+07:00</updated>
+        <updated>2022-01-08T02:34:32+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/194/prometheus-696x279.webp" alt="Cara Install Prometheus di Linux Ubuntu" />
@@ -579,7 +579,7 @@
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
-<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">sudo nano /etc/prometheus/prometheus.yml<br><br><strong>Peringatan: </strong>File konfigurasi Prometheus menggunakan format YAML, yang secara ketat melarang tab dan membutuhkan dua spasi untuk indentasi. Prometheus akan gagal untuk menjalankan service jika file konfigurasi tidak sesuai dengan format YAML</td>
+<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">sudo nano /etc/prometheus/prometheus.yml<br><br><strong>Peringatan: </strong>File konfigurasi Prometheus menggunakan format YAML, <br>yang secara ketat melarang tab dan membutuhkan "dua spasi" <br>untuk indentasi. Prometheus akan gagal untuk menjalankan service <br>jika file konfigurasi tidak sesuai dengan format YAML</td>
 </tr>
 </tbody>
 </table>
@@ -658,7 +658,9 @@
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
-<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">Output<br>● prometheus.service - Prometheus<br>Loaded: loaded (/etc/systemd/system/prometheus.service; disabled; vendor preset: enabled)<br>Active: active (running) since Fri 2017-07-21 11:40:40 UTC; 3s ago Main PID: 2104 (prometheus)<br>Tasks: 7<br>Memory: 13.8M<br>CPU: 470ms<br>CGroup: /system.slice/prometheus.service<br>...</td>
+<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">
+<p>Output<br>● prometheus.service - Prometheus<br>Loaded: loaded (/etc/systemd/system/prometheus.service; <br>disabled; vendor preset: enabled)<br>Active: active (running) since Fri 2017-07-21 11:40:40 UTC; <br>3s ago Main PID: 2104 (prometheus)<br>Tasks: 7<br>Memory: 13.8M<br>CPU: 470ms<br>CGroup: /system.slice/prometheus.service<br>...</p>
+</td>
 </tr>
 </tbody>
 </table>
