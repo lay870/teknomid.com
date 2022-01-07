@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-01-08T02:34:32+07:00</updated>
+    <updated>2022-01-08T02:48:54+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -457,7 +457,7 @@
             <category term="LINUX"/>
             <category term="CLOUD"/>
 
-        <updated>2022-01-08T02:34:32+07:00</updated>
+        <updated>2022-01-08T02:48:54+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/194/prometheus-696x279.webp" alt="Cara Install Prometheus di Linux Ubuntu" />
@@ -511,7 +511,7 @@
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
-<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">cd ~<br>curl -LO https://github.com/prometheus/prometheus/releases/download/v2.32.0/prometheus-2.32.0.linux-amd64.tar.gz</td>
+<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">cd ~<br>curl -LO https://github.com/prometheus/prometheus/releases/download/<br>v2.32.0/prometheus-2.32.0.linux-amd64.tar.gz</td>
 </tr>
 </tbody>
 </table>
@@ -527,7 +527,7 @@
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
-<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">Output:<br><br>e12917b25b32980daee0e9cf879d9ec197e2893924bd1574604eb0f550034d46 rometheus-2.32.0.linux-amd64.tar.gz</td>
+<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">Output:<br><br>e12917b25b32980daee0e9cf879d9ec197e2893924bd1574604eb0f550034d46 <br>prometheus-2.32.0.linux-amd64.tar.gz</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +613,7 @@
 <table style="width: 100%; background-color: #232323; border-left: 5px solid #dd8500; border-radius: 10px;" border="0.1">
 <tbody>
 <tr>
-<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">Output<br>level=info ts=2017-11-17T18:37:27.474530094Z caller=main.go:215 msg="Starting Prometheus" version="(version=2.0.0, branch=HEAD, re vision=0a74f98628a0463dddc90528220c94de5032d1a0)" <br>level=info ts=2017-11-17T18:37:27.474758404Z caller=main.go:216 build_context="(go=go1.9.2, user=root@615b82cb36b6, date=20171108- 07:11:59)" <br>level=info ts=2017-11-17T18:37:27.474883982Z caller=main.go:217 host_details="(Linux 4.4.0-98-generic #121-Ubuntu SMP Tue Oct 10 1 4:24:03 UTC 2017 x86_64 prometheus-update (none))" <br>level=info ts=2017-11-17T18:37:27.483661837Z caller=web.go:380 component=web msg="Start listening for connections" address=0.0.0.0 :9090 <br>level=info ts=2017-11-17T18:37:27.489730138Z caller=main.go:314 msg="Starting TSDB" <br>level=info ts=2017-11-17T18:37:27.516050288Z caller=targetmanager.go:71 component="target manager" msg="Starting target manager... " <br>level=info ts=2017-11-17T18:37:27.537629169Z caller=main.go:326 msg="TSDB started"<br>level=info ts=2017-11-17T18:37:27.537896721Z caller=main.go:394 msg="Loading configuration file" filename=/etc/prometheus/promethe us.yml<br>level=info ts=2017-11-17T18:37:27.53890004Z caller=main.go:371 msg="Server is ready to receive requests."</td>
+<td style="width: 100%; background-color: #232323; padding: 17px; text-align: left; color: #f7f7f7;">Output level=info ts=2017-11-17T18:37:27.474530094Z <br>caller=main.go:215 msg="Starting Prometheus" <br>version="(version=2.0.0, branch=HEAD, <br>re vision=0a74f98628a0463dddc90528220c94de5032d1a0)"<br>level=info ts=2017-11-17T18:37:27.474758404Z <br>caller=main.go:216 build_context="(go=go1.9.2, <br>user=root@615b82cb36b6, date=20171108- 07:11:59)"<br>level=info ts=2017-11-17T18:37:27.474883982Z <br>caller=main.go:217 host_details=<br>"(Linux 4.4.0-98-generic #121-Ubuntu SMP Tue Oct <br>10 1 4:24:03 UTC 2017 x86_64 prometheus-update (none))"<br>level=info ts=2017-11-17T18:37:27.483661837Z <br>caller=web.go:380 component=web msg="Start <br>listening for connections" address=0.0.0.0 :9090<br>level=info ts=2017-11-17T18:37:27.489730138Z <br>caller=main.go:314 msg="Starting TSDB"<br>level=info ts=2017-11-17T18:37:27.516050288Z <br>caller=targetmanager.go:71 component="target <br>manager" msg="Starting target manager... "<br>level=info ts=2017-11-17T18:37:27.537629169Z <br>caller=main.go:326 msg="TSDB started"<br>level=info ts=2017-11-17T18:37:27.537896721Z <br>caller=main.go:394 msg="Loading configuration <br>file" filename=/etc/prometheus/promethe us.yml<br>level=info ts=2017-11-17T18:37:27.53890004Z <br>caller=main.go:371 msg="Server is <br>ready to receive requests." </td>
 </tr>
 </tbody>
 </table>
