@@ -2885,7 +2885,3 @@ textarea {
 .pswp--light .pswp__caption__center {
   color: var(--text-color);
 }
-.align-center-button{display:flex;align-items: center;justify-content:center;flex-direction: row;width:100%}amp-web-push-widget 
-.subscribe{display: flex;flex-direction: row;align-items: center;border-radius:2px;border:1px solid #007ae2;margin:0;padding:8px 15px;cursor:pointer;outline:0;font-size:16px;font-weight:400;background:#0e82e5;color:#fff;-webkit-tap-highlight-color:transparent}amp-web-push-widget 
-.unsubscribe{border-radius:2px;border:1px solid #b3b3b3;margin:0;padding:8px 15px;cursor:pointer;outline:0;font-size:15px;font-weight:400;background:#bdbdbd;color:#555;-webkit-tap-highlight-color:transparent}amp-web-push-widget 
-.subscribe .subscribe-icon{margin-right:10px}amp-web-push-widget .subscribe:active{transform:scale(.99)}
