@@ -360,7 +360,6 @@ table {
   display: block;
   max-width: 100%;
   overflow-x: auto;
-  vertical-align: top;
   text-align: left;
   white-space: nowrap;
 }
@@ -369,7 +368,7 @@ table th {
   padding: 0.7285714286rem 1.2142857143rem;
 }
 table tr:nth-child(2n) {
-  background: var(--lighter);
+  background: var(--link-color);
 }
 table td {
   padding: 0.7285714286rem 1.2142857143rem;
@@ -969,7 +968,6 @@ textarea {
 .logo > img {
   display: block;
   max-height: calc(var(--navbar-height) - 10px);
-  vertical-align: middle;
   width: auto;
 }
 
@@ -2641,7 +2639,6 @@ textarea {
 .footer__logo > img {
   display: block;
   max-height: calc(var(--navbar-height) - 10px);
-  vertical-align: middle;
   width: auto;
 }
 .footer__nav {
