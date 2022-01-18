@@ -219,7 +219,6 @@ h3,
   h3,
 .h3 {
     font-size: 1.4728968807rem;
-    color: var(--color);
   }
 }
 
@@ -237,7 +236,6 @@ h4,
   h4,
 .h4 {
     font-size: 1.2945382732rem;
-    color: var(--color);
   }
 }
 
@@ -255,7 +253,6 @@ h5,
   h5,
 .h5 {
     font-size: 1.1377777785rem;
-    color: var(--color);
   }
 }
 
@@ -445,7 +442,7 @@ hr::before,
 .btn, [type=button],
 [type=submit],
 button {
-  background: var(--color);
+  background: var(--dark);
   border: 1px solid var(--color);
   border-radius: 30px;
   color: var(--white);
@@ -989,6 +986,8 @@ textarea {
   list-style: none;
   margin: 0;
   padding: 0;
+  background: var(--dark);
+  border-radius: 25px;
 }
 @media all and (max-width: 56.1875em) {
   .navbar .navbar__menu {
@@ -1010,18 +1009,18 @@ textarea {
 .navbar .navbar__menu li a,
 .navbar .navbar__menu li span[aria-haspopup=true] {
   color: var(--color);
-  background: var(--dark);
-  border-radius: 25px;
   display: block;
   padding: 0.2428571429rem 0.7285714286rem;
   -webkit-transition: all 0.24s ease-out;
   transition: all 0.24s ease-out;
+  background: var(--dark);
+  border-radius: 25px;
 }
 .navbar .navbar__menu li a:active, .navbar .navbar__menu li a:focus, .navbar .navbar__menu li a:hover,
 .navbar .navbar__menu li span[aria-haspopup=true]:active,
 .navbar .navbar__menu li span[aria-haspopup=true]:focus,
 .navbar .navbar__menu li span[aria-haspopup=true]:hover {
-  color: var(--white);
+  color: var(--color);
 }
 .navbar .navbar__menu li span {
   color: var(--white);
@@ -1033,16 +1032,17 @@ textarea {
   margin-left: 0.2428571429rem;
 }
 .navbar .navbar__menu > li.active > a, .navbar .navbar__menu > li.active > span, .navbar .navbar__menu > li.active-parent > a, .navbar .navbar__menu > li.active-parent > span {
+  border-radius: 4px;
+  background: var(--dark);
   border-radius: 25px;
-  background: var(--color));
 }
 .navbar .navbar__menu > li.has-submenu > a, .navbar .navbar__menu > li.has-submenu > span {
   padding-right: 1.4571428571rem;
 }
 .navbar .navbar__menu > li:hover > a, .navbar .navbar__menu > li:hover > span[aria-haspopup=true] {
-  border-radius: 25px;
   color: var(--color);
   background: var(--dark);
+  border-radius: 25px;
 }
 .navbar .has-submenu:active > .navbar__submenu,
 .navbar .has-submenu:focus > .navbar__submenu,
@@ -1126,10 +1126,10 @@ textarea {
   font-weight: var(--font-weight-normal);
   letter-spacing: normal;
   text-transform: none;
-} 
+}
 .navbar .navbar__submenu li a,
 .navbar .navbar__submenu li span[aria-haspopup=true] {
-  color: var(--color) !important;
+  color: var(--white) !important;
   padding: 0.4857142857rem 1.2142857143rem;
   -webkit-transition: all 0.24s ease;
   transition: all 0.24s ease;
@@ -1146,7 +1146,7 @@ textarea {
   padding: 0.4857142857rem 1.2142857143rem;
 }
 .navbar .navbar__submenu li:hover > a, .navbar .navbar__submenu li:hover > span[aria-haspopup=true] {
-  color: var(--white) !important;
+  color: var(--color) !important;
 }
 .navbar .navbar__toggle {
   background: none;
@@ -1359,7 +1359,7 @@ textarea {
 .navbar_mobile_sidebar .navbar__menu li .is-separator:active,
 .navbar_mobile_sidebar .navbar__menu li .is-separator:focus,
 .navbar_mobile_sidebar .navbar__menu li .is-separator:hover {
-  color: #448aff;
+  color: var(--color);
 }
 .navbar_mobile_sidebar .navbar__menu li a[aria-haspopup=true]::after,
 .navbar_mobile_sidebar .navbar__menu li .is-separator[aria-haspopup=true]::after {
@@ -1490,15 +1490,15 @@ textarea {
 }
 .featured__image-link,
 .authors__image-link {
-  background: var(--lighter);
+  background: var(--border-color-light);
   border-radius: var(--border-radius);
   display: block;
-  margin-right: 1.5rem;
+  margin-right: 0.5rem;
   max-width: 6.5rem;
   overflow: hidden;
   position: relative;
   width: 350px;
-  height: 75px;
+  height: 73px;
 }
 .featured__image-link::after,
 .authors__image-link::after {
@@ -1692,7 +1692,7 @@ textarea {
 }
 
 .u-comment-count {
-  background: var(--color);
+  background: var(--dark);
   border-radius: 3px;
   color: var(--white) !important;
   font-size: 0.8239746086rem;
@@ -2008,12 +2008,12 @@ textarea {
   position: relative;
 }
 .post__featured-image {
-  background: var(--lighter);
+  background: var(--border-color-light);
   border-radius: var(--border-radius);
   margin: 0;
   position: relative;
   overflow: hidden;
-  width: 760px;
+  width: 100%;
 }
 .post__featured-image > img {
   display: block;
@@ -2025,9 +2025,9 @@ textarea {
   border-radius: 25px;
   color: var(--color);
   font-size: 0.5967194723rem;
-  padding: 0 0.3642857143rem;
+  padding: 0 0.3642857143rem; 
   position: absolute;
-  right: 0.9714285714rem;
+  right: 24.9714285714rem;
   font-weight: var(--headings-weight);
 }
 @media all and (max-width: 37.4375em) {
