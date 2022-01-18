@@ -236,6 +236,7 @@ h4,
   h4,
 .h4 {
     font-size: 1.2945382732rem;
+    color: var(--color);
   }
 }
 
@@ -253,6 +254,7 @@ h5,
   h5,
 .h5 {
     font-size: 1.1377777785rem;
+    color: var(--color);
   }
 }
 
