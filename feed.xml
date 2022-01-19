@@ -3,12 +3,140 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-01-18T07:01:18+07:00</updated>
+    <updated>2022-01-19T18:54:57+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
     <id>https://teknomid.com</id>
 
+    <entry>
+        <title>AWS &quot;IAM&quot;</title>
+        <author>
+            <name>Teknomid</name>
+        </author>
+        <link href="https://teknomid.com/aws-iam/"/>
+        <id>https://teknomid.com/aws-iam/</id>
+            <category term="CLOUD"/>
+            <category term="AWS"/>
+
+        <updated>2022-01-19T18:54:57+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://teknomid.com/media/posts/198/IAMPolicy-2.png" alt="iam" />
+                     AWS Identity dan Access Management (IAM) memungkinkan Kita mengelola akses ke Services dan Resources AWS dengan aman. Dengan menggunakan IAM, Kita dapat membuat dan mengelola Users dan Grups di Account AWS Kita, serta menggunakan permissions untuk mengizinkan dan menolak akses mereka ke Resources AWS.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://teknomid.com/media/posts/198/IAMPolicy-2.png" alt="iam" />
+                <div class="post__toc">
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#mcetoc_1fpopbc25i7">1. AUTHORIZATION</a></li>
+<li><a href="#mcetoc_1fpoqve781fn">2. AUTHENTICATION</a></li>
+</ul>
+</div>
+<p>AWS Identity dan Access Management (IAM) memungkinkan Kita mengelola akses ke Services dan Resources AWS dengan aman. Dengan menggunakan IAM, Kita dapat membuat dan mengelola Users dan Grups di Account AWS Kita, serta menggunakan permissions untuk mengizinkan dan menolak akses mereka ke Resources AWS.<br><br>IAM adalah fitur di account AWS Kita yang ditawarkan tanpa biaya tambahan. Kita hanya akan dikenakan biaya untuk penggunaan Service AWS lainnya oleh Users Kita.</p>
+<h2 id="mcetoc_1fpopbc25i7">1. AUTHORIZATION</h2>
+<ol>
+<li id="mcetoc_1fpopfifgiv">Akses ke AWS <a href="https://console.aws.amazon.com/iam/home" class="highlight">IAM console</a></li>
+<li>Pilih <span style="color: #2dc26b;"><strong>Policies</strong></span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"> di menu sidebar sebelah kiri</span></li>
+<li>Click <span style="color: #2dc26b;"><strong>Create policy</strong></span></li>
+<li>Click JSON tab dan paste JSON di bawah ini di bagian editor <span style="color: #ffffff;">policy</span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"> panel</span></li>
+</ol>
+<table class="align-left" style="width: 100%; border-left: 1px solid var(--color); border-right: 1px solid var(--color); border-radius: 10px;" border="0.1">
+<tbody>
+<tr>
+<td style="padding: 7px; text-align: left; color: var(--color);">{<br>    "Version": "2012-10-17",<br>    "Statement": [<br>        {<br>            "Sid": "AllowEC2Management",<br>            "Effect": "Allow",<br>            "Action": "ec2:*",<br>            "Resource": "*"<br>        },<br>        {<br>            "Sid": "DenyTerminationProduction",<br>            "Effect": "Deny",<br>            "Action": [<br>                "ec2:StopInstances",<br>                "ec2:TerminateInstances"<br>            ],<br>            "Resource": "*",<br>            "Condition": {<br>                "StringEquals": {<br>                  "ec2:ResourceTag/Environment": "Production"<br>                }<br>            }<br>        }<br>    ]<br>}</td>
+</tr>
+</tbody>
+</table>
+<table class="align-left" style="width: 100%; border-left: 1px solid var(--color); border-right: 1px solid var(--color); border-radius: 10px;" border="0.1">
+<tbody>
+<tr style="height: 137px;">
+<td style="width: 100%; height: 137px;"><strong><span style="color: #2dc26b;">Note:<br>ec2:ResourceTag/${TagKey}</span> </strong>adalah taging EC2 yang memungkinkan Kita untuk merujuk ke value tag resource yang diberikan key tertentu. Dalam contoh ini, digunakan untuk memeriksa apakah tag resource dengan key <span style="color: #2dc26b;">Environment</span> yang dilampirkan ke EC2 memiliki value <span style="color: #2dc26b;">Production</span>.</td>
+</tr>
+</tbody>
+</table>
+<ol start="5">
+<li>Click <span style="color: #2dc26b;"><strong>Review policy</strong></span></li>
+<li>Nama policy contohnya:  <span style="color: #2dc26b;"><code>allow-all-ec2-except-production</code></span></li>
+<li>(Optional) Add description</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/198/IAMPolicy.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/198/responsive/IAMPolicy-xs.png 300w ,https://teknomid.com/media/posts/198/responsive/IAMPolicy-sm.png 480w ,https://teknomid.com/media/posts/198/responsive/IAMPolicy-md.png 768w ,https://teknomid.com/media/posts/198/responsive/IAMPolicy-lg.png 1024w ,https://teknomid.com/media/posts/198/responsive/IAMPolicy-xl.png 1360w ,https://teknomid.com/media/posts/198/responsive/IAMPolicy-2xl.png 1600w"  alt="IAMPolicy" width="2198" height="1382"></figure>
+<ol start="8">
+<li>Click <span style="color: #2dc26b;"><strong>Create policy</strong></span></li>
+<li>Pembuatan Policy baru bisa di lihat saat Kita kembali ke dasbor policy Console IAM.</li>
+</ol>
+<p><code><span class="Y2IQFc" lang="id" style="color: #2dc26b;">Selamat! Kita telah berhasil membuat IAM policy yang akan di pakai user. Policies yang dikelola user adalah policies berbasis identitas mandiri yang Kita buat dan yang dapat Kita lampirkan ke beberapa users, grups, atau roles IAM di account AWS Kita.</span></code></p>
+<h2 id="mcetoc_1fpoqve781fn"><span style="color: var(--headings-color); font-family: var(--font-base); font-size: 1.60181em; font-weight: var(--font-weight-bold); letter-spacing: -0.03rem;">2. AUTHENTICATION</span></h2>
+<ol start="1">
+<li>Akses ke AWS <a href="https://console.aws.amazon.com/iam/home" class="highlight">IAM console</a></li>
+<li>Pilih <span style="color: #2dc26b;"><strong>Users</strong></span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"> di menu sidebar sebelah kiri</span></li>
+<li>Click <span style="color: #2dc26b;"><strong>Add user</strong></span></li>
+<li>Set User Details dan input nickname dipisah dengan dash(-) di bagian <span style="color: #2dc26b;"><strong>User name</strong></span></li>
+<li>Dibagian AWS access type, ceklis checkbox untuk enable <span style="color: #2dc26b;"><strong>AWS Management Console access</strong></span></li>
+<li>Pilih Custom password radio button dan masukkan password di dalam text box</li>
+<li>Uncheck di bagian <span style="color: #2dc26b;"><strong>User must create a new password at next sign-in</strong> </span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">checkbox</span></li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/198/IAMUser.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/198/responsive/IAMUser-xs.png 300w ,https://teknomid.com/media/posts/198/responsive/IAMUser-sm.png 480w ,https://teknomid.com/media/posts/198/responsive/IAMUser-md.png 768w ,https://teknomid.com/media/posts/198/responsive/IAMUser-lg.png 1024w ,https://teknomid.com/media/posts/198/responsive/IAMUser-xl.png 1360w ,https://teknomid.com/media/posts/198/responsive/IAMUser-2xl.png 1600w"  alt="IAMUser" width="726" height="569"></figure>
+<ol start="8">
+<li>Click <span style="color: #2dc26b;"><strong>Next: Permissions</strong></span></li>
+<li>Selanjutnya pilih  <span style="color: #2dc26b;"><strong>Attach existing policies directly </strong></span>"option" dan cari IAM policy yang sudah kita buat sebelumnya.</li>
+<li>Selanjutnya Pilih atau ceklis checkbox <span style="color: #2dc26b;"><code>allow-all-ec2-except-production</code></span></li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/198/AttachPolicyUser.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/198/responsive/AttachPolicyUser-xs.png 300w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyUser-sm.png 480w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyUser-md.png 768w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyUser-lg.png 1024w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyUser-xl.png 1360w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyUser-2xl.png 1600w"  alt="AttachPolicyUser" width="1762" height="694"></figure>
+<ol start="11">
+<li>Click <span style="color: #2dc26b;"><strong>Next: Tags</strong></span></li>
+<li>Click <span style="color: #2dc26b;"><strong>Next: Review</strong></span></li>
+<li>Click <span style="color: #2dc26b;"><strong>Create user</strong></span></li>
+<li>Copy url link console , <strong><span style="color: #2dc26b;">Download .csv</span> </strong>dan buka incognito/private browser kita dan pastekan urlnya.</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/198/LoginLink.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/198/responsive/LoginLink-xs.png 300w ,https://teknomid.com/media/posts/198/responsive/LoginLink-sm.png 480w ,https://teknomid.com/media/posts/198/responsive/LoginLink-md.png 768w ,https://teknomid.com/media/posts/198/responsive/LoginLink-lg.png 1024w ,https://teknomid.com/media/posts/198/responsive/LoginLink-xl.png 1360w ,https://teknomid.com/media/posts/198/responsive/LoginLink-2xl.png 1600w"  alt="LoginLink" width="1760" height="1120"></figure>
+<ol start="15">
+<li>Login menggunakan IAM User yang baru di buat</li>
+<li>Kita melihat user yang sudah login di bagian pojok kanan atas  <span style="color: #2dc26b;"><strong>{IAM Username} @ {AWS Account ID/alias} </strong></span>format</li>
+<li>Setiap kali login pastikan pilih <strong><span style="color: #2dc26b;">Region</span></strong> dimana tempat kita membuat environment.</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/198/LoggedIn.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/198/responsive/LoggedIn-xs.png 300w ,https://teknomid.com/media/posts/198/responsive/LoggedIn-sm.png 480w ,https://teknomid.com/media/posts/198/responsive/LoggedIn-md.png 768w ,https://teknomid.com/media/posts/198/responsive/LoggedIn-lg.png 1024w ,https://teknomid.com/media/posts/198/responsive/LoggedIn-xl.png 1360w ,https://teknomid.com/media/posts/198/responsive/LoggedIn-2xl.png 1600w"  alt="LoggedIn" width="2870" height="1524"></figure>
+<ol start="18">
+<li>
+<p id="mcetoc_1fpoqotvt1fe">Dan cek Permissions dengan mengakses dasbor EC2 dan non-EC2 untuk menyesuaikan dengan IAM policy sebelumnya</p>
+</li>
+</ol>
+<p><code><span class="Y2IQFc" lang="id" style="color: #2dc26b;">Selamat! kita telah membuat IAM user dengan manage user policy terlampir dan menguji credential.</span></code></p>
+<h2>3. MANAGING GROUP OF PEOPLE</h2>
+<ol class="ol1">
+<li class="li1"><span class="s2">Access ke AWS <a href="https://console.aws.amazon.com/iam/home"><span class="s3">IAM console</span></a></span></li>
+<li class="li2"><span class="s5">Select </span><span class="s6" style="color: #2dc26b;"><strong>Groups</strong></span><span class="s5"> </span><span class="s3">di menu sidebar sebelah kiri</span></li>
+<li class="li3"><span class="s8">Click </span><span class="s2" style="color: #2dc26b;"><strong>Create New Group</strong></span></li>
+<li class="li1"><span class="s2">Type </span><span class="s10" style="color: #2dc26b;">AWSAdministrator</span><span class="s2">  Nama Group</span></li>
+<li class="li1"><span class="s2">Click </span><span class="s11" style="color: #2dc26b;"><strong>Next Step</strong></span></li>
+<li class="li4"><span class="s3">Search administrator dan select </span><span class="s12" style="color: #2dc26b;"><strong>AdministratorAccess</strong></span><span class="s3"> policy</span></li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/198/AttachPolicyGroup.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/198/responsive/AttachPolicyGroup-xs.png 300w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyGroup-sm.png 480w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyGroup-md.png 768w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyGroup-lg.png 1024w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyGroup-xl.png 1360w ,https://teknomid.com/media/posts/198/responsive/AttachPolicyGroup-2xl.png 1600w"  alt="AttachPolicyGroup" width="1724" height="650"></figure>
+<table class="align-left" style="width: 100%; border-left: 1px solid var(--color); border-right: 1px solid var(--color); border-radius: 10px;" border="0.1">
+<tbody>
+<tr>
+<td style="width: 100%; height: 137px;"><strong><span style="color: #2dc26b;"><strong>Note:<br>AdministratorAccess</strong></span> adalah salah satu policy yang dikelola AWS. Tidak seperti policy yang manage pelanggan, policy ini akan manage oleh AWS dan mencakup berbagai kasus penggunaan umum. Untuk mengidentifikasi policies AWS Managed, Kita dapat menemukan IAM Policy dengan warna orange.</strong></td>
+</tr>
+</tbody>
+</table>
+<ol class="ol1" start="7">
+<li class="li1"><span class="s2">Click </span><span class="s3" style="color: #2dc26b;"><strong>Next Step</strong></span></li>
+<li class="li1"><span class="s2">Click </span><span class="s3" style="color: #2dc26b;"><strong>Create Group</strong></span></li>
+<li class="li2"><span class="s3">Group Sudah berhasil dibuat, dan kembali ke Group creation IAM console</span></li>
+<li class="li2"><span class="s3">Select AWSAdministrator group dan (tambahkan user ke group yang baru) </span><span class="s6" style="color: #2dc26b;"><strong>Add Users to Group</strong></span></li>
+<li class="li2"><span class="s3">Select/ceklis checkbox IAM user yang Sudah di buat sebelumnya ke <strong><span style="color: #2dc26b;">AWSAdministrator</span></strong> group</span></li>
+<li class="li3"><span class="s7">Click </span><span class="s8" style="color: #2dc26b;"><strong>Add Users</strong></span></li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/198/AddUserToGoup.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/198/responsive/AddUserToGoup-xs.png 300w ,https://teknomid.com/media/posts/198/responsive/AddUserToGoup-sm.png 480w ,https://teknomid.com/media/posts/198/responsive/AddUserToGoup-md.png 768w ,https://teknomid.com/media/posts/198/responsive/AddUserToGoup-lg.png 1024w ,https://teknomid.com/media/posts/198/responsive/AddUserToGoup-xl.png 1360w ,https://teknomid.com/media/posts/198/responsive/AddUserToGoup-2xl.png 1600w"  alt="AddUserToGoup" width="2322" height="806"></figure>
+<ol start="13">
+<li>Kita coba masuk kembali di browser incognito/private dan menguji permission pada service non-EC2 lainnya.</li>
+</ol>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Cara Mengelola File Log dengan Logrotate di Ubuntu 20.04</title>
         <author>
@@ -19,7 +147,7 @@
             <category term="TUTORIAL"/>
             <category term="LINUX"/>
 
-        <updated>2022-01-18T05:29:33+07:00</updated>
+        <updated>2022-01-19T16:46:54+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/196/Figure-6_large.webp" alt="Logrotate " />
@@ -34,7 +162,7 @@
 <tr>
 <td style="padding: 7px; text-align: left; color: var(--color);">
 <div class="post__toc">
-<h3>Table of Contents</h3>
+<h3><span style="color: #2dc26b;">Table of Contents</span></h3>
 <ul>
 <li><a href="#mcetoc_1for6u3oo3mf">Persyaratan</a>
 <ul>
@@ -46,13 +174,10 @@
 <li><a href="#mcetoc_1for6u3oo3mk">2.  Buat file konfigurasi baru dan jalankan di luar pengaturan Logrotate default Ubuntu.</a></li>
 </ul>
 </li>
-<li><a href="#mcetoc_1for6u3oo3ml">Langkah 4 - Membuat Konfigurasi Logrotate Independen</a>
-<ul>
+<li><a href="#mcetoc_1for6u3oo3ml">Langkah 4 - Membuat Konfigurasi Logrotate Independen</a></li>
+</ul>
+</li>
 <li><a href="#mcetoc_1for6u3oo3mm">Kesimpulan</a></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </div>
 </td>
@@ -62,13 +187,13 @@
 <div class="align-left"><br>Logrotate adalah utilitas sistem yang mengelola rotasi otomatis dan kompresi file log. Jika file log tidak rotate, dikompresi, dan dipangkas secara berkala, mereka akhirnya dapat menghabiskan semua ruang disk yang tersedia pada sistem.<br><br></div>
 <div class="align-left">Logrotate sudah terinstall secara default di Ubuntu 20.04, dan diatur untuk menangani kebutuhan rotasi log dari semua paket yang diinstal, termasuk rsyslog, prosesor log sistem default.<br><br></div>
 <div class="align-left">Pada artikel ini, kita akan menjelajahi konfigurasi Logrotate default, lalu mengonfigurasi rotasi log untuk aplikasi yang ada di system kita.</div>
-<h3 id="mcetoc_1for6u3oo3mf" class="align-left">Persyaratan</h3>
+<h3 id="mcetoc_1for6u3oo3mf" class="align-left"><span style="color: #2dc26b;">Persyaratan</span></h3>
 <div class="align-left">Tutorial ini mengasumsikan Anda memiliki server Ubuntu 20.04, dengan pengguna non-root sudo-enabled, seperti yang dijelaskan dalam Pengaturan Server Awal dengan Ubuntu 20.04 .</div>
 <div class="align-left"> </div>
 <div class="align-left">Logrotate juga tersedia di banyak distribusi Linux lainnya, tetapi konfigurasi defaultnya mungkin sangat berbeda. Bagian lain dari tutorial ini akan tetap berlaku selama versi Logrotate Anda mirip dengan Ubuntu 20.04. Ikuti Langkah 1 untuk menentukan versi Logrotate Anda.</div>
 <div class="align-left"> </div>
 <div class="align-left">Masuk ke server Anda sebagai user sudoer untuk memulai.</div>
-<h4 id="mcetoc_1for6u3oo3mg" class="align-left">Langkah 1 - Mengonfirmasi Versi Logrotate Anda<br><br></h4>
+<h4 id="mcetoc_1for6u3oo3mg" class="align-left"><span style="color: #2dc26b;">Langkah 1 - Mengonfirmasi Versi Logrotate Anda</span><br><br></h4>
 <div class="align-left">Logrotate diinstal secara default di Ubuntu. Namun, jika Anda perlu menginstalnya, jalankan perintah berikut untuk memperbarui daftar paket dan mengambil paket:</div>
 <div class="align-left">
 <table class="align-left" style="width: 100%; border-left: 1px solid var(--color); border-radius: 10px;" border="0.1">
@@ -82,7 +207,6 @@
 </tbody>
 </table>
 </div>
-<div> </div>
 <div class="align-left">Jika Anda menggunakan server non-Ubuntu, pastikan terlebih dahulu Logrotate diinstal dan cek versinya:</div>
 <div class="align-left">
 <table class="align-left" style="width: 100%; border-left: 1px solid var(--color); border-radius: 10px;" border="0.1">
@@ -111,8 +235,17 @@
 </tbody>
 </table>
 </div>
-<div> </div>
-<div class="align-left">Jika Logrotate diinstal tetapi versinya sangat berbeda, Anda mungkin mengalami masalah dengan beberapa opsi konfigurasi yang dieksplorasi dalam tutorial ini. Lihat dokumentasi untuk versi spesifik Logrotate Anda dengan membaca manualnya (man):</div>
+<div class="align-left"> </div>
+<div class="align-left">
+<table class="align-left" style="width: 100%; border-left: 1px solid var(--color); border-right: 1px solid var(--color); border-radius: 10px;" border="0.1">
+<tbody>
+<tr>
+<td style="padding: 7px; text-align: left; color: var(--color);"><strong><em><a href="https://teknomid.com/cara-menghapus-cache-memori-ram-buffer-dan-swap-space-di-linux/">Baca Juga: Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux</a></em></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="align-left"><br>Jika Logrotate diinstal tetapi versinya sangat berbeda, Anda mungkin mengalami masalah dengan beberapa opsi konfigurasi yang dieksplorasi dalam tutorial ini. Lihat dokumentasi untuk versi spesifik Logrotate Anda dengan membaca manualnya (man):</div>
 <div class="align-left">
 <table class="align-left" style="width: 100%; border-left: 1px solid var(--color); border-radius: 10px;" border="0.1">
 <tbody>
@@ -124,7 +257,7 @@
 </div>
 <div> </div>
 <div class="align-left">Anda juga dapat melihat versi online dari dokumentasi Logrotate. Selanjutnya kita akan melihat struktur konfigurasi default Logrotate di Ubuntu.</div>
-<h4 id="mcetoc_1for6u3oo3mh" class="align-left">Langkah 2 - Explore Konfigurasi Logrotate<br><br></h4>
+<h4 id="mcetoc_1for6u3oo3mh" class="align-left"><span style="color: #2dc26b;">Langkah 2 - Explore Konfigurasi Logrotate</span><br><br></h4>
 <div class="align-left">Informasi konfigurasi Logrotate umumnya dapat ditemukan di dua tempat di Ubuntu:</div>
 <div class="align-left"><span style="color: var(--color);">/etc/logrotate.conf</span> :  file ini berisi beberapa pengaturan default dan mengatur rotasi untuk beberapa log yang tidak dimiliki oleh paket sistem mana pun. Itu juga menggunakan includepernyataan untuk menarik konfigurasi dari file apa pun di direktori <span style="color: var(--color);">/etc/logrotate.d</span> .</div>
 <div class="align-left"> </div>
@@ -180,11 +313,11 @@
 <div class="align-left">Ada lebih banyak opsi konfigurasi yang tersedia. Anda dapat membaca tentang semuanya dengan mengetik man logrotatedi baris perintah untuk membuka halaman manual Logrotate.</div>
 <div class="align-left"> </div>
 <div class="align-left">Selanjutnya, kita akan menyiapkan file konfigurasi untuk menangani log untuk layanan fiksi yang disebut your-app.</div>
-<h4 id="mcetoc_1for6u3oo3mi" class="align-left">Langkah 3 - Setting Contoh Konfigurasi<br><br></h4>
+<h4 id="mcetoc_1for6u3oo3mi" class="align-left"><span style="color: #2dc26b;">Langkah 3 - Setting Contoh Konfigurasi</span><br><br></h4>
 <div class="align-left">Untuk mengelola file log menggunakan logrotate untuk aplikasi  pre-packaged dan pre-configured di system service, kami memiliki dua opsi:</div>
-<h5 id="mcetoc_1for6u3oo3mj" class="align-left">1.  Buat file konfigurasi Logrotate baru dan letakkan di <span style="color: var(--color);">/etc/logrotate.d/</span>.</h5>
+<h5 id="mcetoc_1for6u3oo3mj" class="align-left"><span style="color: #2dc26b;">1.  Buat file konfigurasi Logrotate baru dan letakkan di /etc/logrotate.d/.</span></h5>
 <div class="align-left">Ini akan dijalankan setiap hari sebagai pengguna root bersama dengan semua pekerjaan Logrotate standar lainnya.</div>
-<h5 id="mcetoc_1for6u3oo3mk" class="align-left">2.  Buat file konfigurasi baru dan jalankan di luar pengaturan Logrotate default Ubuntu.</h5>
+<h5 id="mcetoc_1for6u3oo3mk" class="align-left"><span style="color: #2dc26b;">2.  Buat file konfigurasi baru dan jalankan di luar pengaturan Logrotate default Ubuntu.</span></h5>
 <p class="align-left"> </p>
 <div class="align-left">Ini hanya benar-benar diperlukan jika Anda perlu menjalankan Logrotate sebagai pengguna non- root , atau jika Anda ingin merotasi log lebih sering daripada setiap hari ( hourly konfigurasi di<span style="color: var(--color);"> /etc/logrotate.d/ </span>tidak akan efektif, karena pengaturan Logrotate sistem hanya berjalan sekali sehari).</div>
 <div class="align-left"> </div>
@@ -253,7 +386,7 @@
 <div class="align-left"> </div>
 <div class="align-left">Pekerjaan Logrotate standar akan berjalan sekali sehari dan menyertakan konfigurasi baru Anda.</div>
 <div class="align-left">Selanjutnya, kita akan mencoba setup yang tidak menggunakan konfigurasi default Ubuntu sama sekali.</div>
-<h4 id="mcetoc_1for6u3oo3ml" class="align-left">Langkah 4 - Membuat Konfigurasi Logrotate Independen<br><br></h4>
+<h4 id="mcetoc_1for6u3oo3ml" class="align-left"><span style="color: #2dc26b;">Langkah 4 - Membuat Konfigurasi Logrotate Independen</span><br><br></h4>
 <div class="align-left">Dalam contoh ini kami memiliki aplikasi yang berjalan sebagai pengguna kami sammy, menghasilkan log yang disimpan di /home/sammy/logs/. Kami ingin memutar log ini setiap jam, jadi kami perlu mengaturnya di luar /etc/logrotate.dstruktur yang disediakan oleh Ubuntu.</div>
 <div class="align-left">Pertama, kita akan membuat file konfigurasi di direktori home kita. Buka di editor teks:</div>
 <div class="align-left">
@@ -404,7 +537,7 @@
 <div class="align-left">Untuk mempelajari lebih lanjut tentang cron, Anda dapat meninjau tutorial kami yang lain . Simpan file dan keluar. Ini akan menginstal crontab dan tugas kita akan berjalan pada jadwal yang ditentukan.</div>
 <div class="align-left"> </div>
 <div class="align-left">Jika kami mengunjungi kembali direktori log kami dalam waktu sekitar satu jam, kami akan menemukan file log yang diputar dan di compress access.log.1.gz(atau .2.gzjika Anda menjalankan Logrotate dengan --force flag).</div>
-<h5 id="mcetoc_1for6u3oo3mm" class="align-left"><span style="text-decoration: underline;">Kesimpulan</span></h5>
+<h3 id="mcetoc_1for6u3oo3mm" class="align-left"><span style="text-decoration: underline; color: #2dc26b;">Kesimpulan</span></h3>
 <div class="align-left">Dalam tutorial ini kami memverifikasi versi Logrotate kami, menjelajahi konfigurasi default Ubuntu Logrotate, dan menyiapkan dua jenis konfigurasi custom yang berbeda. Untuk mempelajari lebih lanjut tentang baris perintah dan opsi konfigurasi yang tersedia untuk Logrotate, Anda dapat membaca manualnya dengan menjalankan man logrotate di terminal Anda atau dengan mengunjungi dokumentasi <a href="#INTERNAL_LINK#/post/null" title="https://linux.die.net/man/8/logrotate">online </a>.</div>
 <p class="align-left"> </p>
             ]]>
@@ -1295,156 +1428,6 @@
 <p class="align-left"><!-- /wp:table --></p>
 <p class="align-left"><!-- wp:paragraph --></p>
 <p class="align-left"><em>Baca Juga : <a href="https://teknomid.com/mengatasi-whatsapp-yang-sudah-kadaluarsa">Mengatasi Whatsapp Yang Kadaluarsa</a></em></p>
-<p><!-- /wp:paragraph --></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Mengatasi Whatsapp yang sudah Kadaluarsa</title>
-        <author>
-            <name>Teknomid</name>
-        </author>
-        <link href="https://teknomid.com/mengatasi-whatsapp-yang-sudah-kadaluarsa/"/>
-        <id>https://teknomid.com/mengatasi-whatsapp-yang-sudah-kadaluarsa/</id>
-            <category term="WINDOWS-APPLIKASI"/>
-            <category term="MacOS-APPLIKASI"/>
-            <category term="MOBILE-APPLIKASI"/>
-            <category term="APPLIKASI"/>
-
-        <updated>2022-01-08T14:21:54+07:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://teknomid.com/media/posts/187/whatsapp-app.webp" alt="Mengatasi Whatsapp yang sudah Kadaluarsa" />
-                     Mengatasi Whatsapp yang sudah Kadaluarsa – Whatsapp merupakan aplikasi messaging yang digunakan oleh hampir semua pengguna smartphone, dan tentunya ada jadwal update aplikasi tersebut. Pembaruan ini dirancang untuk meningkatkan kinerja. Bagi yang jarang update Whatsapp pasti pernah melihat tampilan Whatsapp yang bertuliskan Whatsapp telah expired.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://teknomid.com/media/posts/187/whatsapp-app.webp" alt="Mengatasi Whatsapp yang sudah Kadaluarsa" />
-                <p><!-- wp:paragraph --></p>
-<p class="align-left"><strong>Mengatasi Whatsapp yang sudah Kadaluarsa</strong> – Whatsapp merupakan aplikasi messaging yang digunakan oleh hampir semua pengguna smartphone, dan tentunya ada jadwal update aplikasi tersebut.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Pembaruan ini dirancang untuk meningkatkan kinerja.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Bagi yang jarang update Whatsapp pasti pernah melihat tampilan Whatsapp yang bertuliskan Whatsapp telah expired.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Jika Anda menghadapi situasi seperti itu, Anda tidak perlu panik. Whatsapp memang mengupdate aplikasinya secara berkala.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Baca juga: <a href="https://teknomid.com/applikasi-design-gratis/">Aplikasi Desain Gratis PowerFull</a></p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Dengan update ini, Whatsapp juga mewajibkan penggunanya untuk mengupdate aplikasi Wahtsapp yang sudah terpasang di perangkat pengguna.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Untuk mengatasi Whatsapp yang kadaluarsa, Anda hanya perlu memperbarui atau memperbarui versi Whatsapp di perangkat Anda ke versi yang lebih baru.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Pada artikel kali ini saya akan membahas 3 cara yang bisa digunakan untuk mengupdate Whatsapp expired.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Cara termudah, saya sangat menyarankan untuk menangani Whatsapp yang kedaluwarsa dengan memperbarui dari Google Play Store.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Seperti yang kita ketahui bersama, setiap ada update aplikasi, biasanya akan ada update di Google Play Store, tak terkecuali aplikasi Whatsapp.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://teknomid.com/media/posts/187/wa01.webp" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/187/responsive/wa01-xs.webp 300w ,https://teknomid.com/media/posts/187/responsive/wa01-sm.webp 480w ,https://teknomid.com/media/posts/187/responsive/wa01-md.webp 768w ,https://teknomid.com/media/posts/187/responsive/wa01-lg.webp 1024w ,https://teknomid.com/media/posts/187/responsive/wa01-xl.webp 1360w ,https://teknomid.com/media/posts/187/responsive/wa01-2xl.webp 1600w"  alt="" width="798" height="550"></figure>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:image {"id":3005,"sizeSlug":"full","linkDestination":"none"} --></p>
-<p class="align-left"><!-- /wp:image --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Untuk memperbarui Whatsapp, silakan praktikkan langkah-langkah berikut:</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:list --></p>
-<ul class="align-left">
-<li>Buka aplikasi Google Play Store.</li>
-<li>Ketuk bilah pencarian dan masukkan Whatsapp.</li>
-<li>Selanjutnya, klik tombol perbarui untuk memperbarui Whatsapp.</li>
-<li>Tunggu proses download dan install Whatsapp versi terbaru sampai selesai.</li>
-<li>Buka kembali aplikasi Whatsapp Anda. Lengkap.</li>
-</ul>
-<p class="align-left"><!-- /wp:list --></p>
-<p class="align-left"><!-- wp:heading {"fontSize":"large"} --></p>
-<h2 id="h-menggunakan-aplikasi-pihak-ketiga" class="has-large-font-size align-left">Menggunakan Aplikasi Pihak Ketiga</h2>
-<p class="align-left"><!-- /wp:heading --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Beberapa merek HP telah menyematkan aplikasi pihak ketiga yang dapat digunakan untuk mengunduh aplikasi seperti Google Play Store.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Misal handphone Mi yang saya pakai ada aplikasi GetApps, bagi yang tidak bisa update Whatsapp expired dari Google Play Store bisa menggunakan semacam GetApps.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Aplikasi seperti GetApps mungkin memiliki nama aplikasi yang berbeda atau mungkin tidak ada, tergantung pada merek dan seri ponsel yang Anda gunakan.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:list {"ordered":true} --></p>
-<ol class="align-left">
-<li>Buka aplikasi GetApps.</li>
-<li>Masukkan Whatsapp di kolom pencarian.</li>
-<li>Ketuk aplikasi Whatsapp.</li>
-<li>Selanjutnya, klik Perbarui.</li>
-<li>Tunggu Whatsapp untuk mengunduh dan menginstal di ponsel Anda.</li>
-</ol>
-<p class="align-left"><!-- /wp:list --></p>
-<p class="align-left"><!-- wp:heading --></p>
-<h2 id="h-cara-memperbarui-whatsapp-yang-kadaluarsa-dari-browser" class="align-left">Cara Memperbarui Whatsapp yang Kadaluarsa dari Browser</h2>
-<p class="align-left"><!-- /wp:heading --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Pada prinsipnya cara update <a href="https://en.wikipedia.org/wiki/WhatsApp">Whatsapp</a> dari browser hampir sama dengan kedua cara diatas, bedanya disini kita membuka website dan mendownload Whatsapp versi terbaru secara manual.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Anda bisa menggunakan beberapa situs untuk mendownload Whatsapp, seperti Jalantikus.com, apkpure.com dan lain-lain.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Disini saya coba praktekkan download dari apkpure.com, dan hasilnya saya bisa install aplikasi Whatsapp yang saya download dari pure apk tanpa harus uninstall aplikasi Whatsapp yang saya download dari Google Play store.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Dengan cara ini, aplikasi Whatsapp dari APKPure sama dengan yang diunduh dari Google Play store.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Untuk mengunduh dari app APKPure, Anda tidak perlu mendaftar atau masuk terlebih dahulu.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://teknomid.com/media/posts/187/apkfure.webp" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/187/responsive/apkfure-xs.webp 300w ,https://teknomid.com/media/posts/187/responsive/apkfure-sm.webp 480w ,https://teknomid.com/media/posts/187/responsive/apkfure-md.webp 768w ,https://teknomid.com/media/posts/187/responsive/apkfure-lg.webp 1024w ,https://teknomid.com/media/posts/187/responsive/apkfure-xl.webp 1360w ,https://teknomid.com/media/posts/187/responsive/apkfure-2xl.webp 1600w"  alt="" width="1024" height="425"></figure>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:image {"id":3006,"sizeSlug":"full","linkDestination":"none"} --></p>
-<p class="align-left"><!-- /wp:image --></p>
-<p class="align-left"><!-- wp:list {"ordered":true} --></p>
-<ol class="align-left">
-<li>Kunjungi situs apkpure.com.</li>
-<li>Selanjutnya, masukkan Whatsapp di kolom pencarian.</li>
-<li>Klik Whatsapp.</li>
-<li>Anda akan dibawa ke halaman unduh Whatsapp, lalu klik untuk mengunduh APK.</li>
-<li>Jika sudah selesai download, silahkan buka file APK yang baru saja anda download dan install aplikasi Whatsapp.</li>
-<li>Jangan lupa aktifkan permission install aplikasi pihak ketiga dengan masuk ke menu Setting-Security-Allow installation from third party.</li>
-<li>Tunggu hingga proses instalasi selesai.</li>
-</ol>
-<p class="align-left"><!-- /wp:list --></p>
-<p class="align-left"><!-- wp:heading --></p>
-<h2 class="align-left">Memperbarui Whatsapp Modded yang Kadaluarsa</h2>
-<p class="align-left"><!-- /wp:heading --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Bagi para pengguna Whatsapp versi modifikasi tentunya tidak bisa mengupdate atau mengatasi Whatsapp dari Google Play Store karena versi modifikasinya berbeda dengan versi aslinya.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Untuk melakukan ini, Anda dapat menggunakan browser Anda untuk menemukan versi terbaru dari Whatsapp yang dimodifikasi yang Anda gunakan.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Karena sampai saat ini saya menggunakan Whatsapp versi resmi, saya sangat tidak mengetahui nama website yang menyediakan link untuk mendownload Whatsapp versi modifikasi.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Baca juga: <a href="https://blogyuk.com/kelebihan-telegram-yang-tak-kalah-canggih-dari-whatsapp.html">Kelebihan Telegram yang Tak Kalah Canggih dari WhatsApp</a></p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Namun, dengan bantuan mesin pencari Google, Anda juga dapat menemukan situs yang menyediakan tautan unduhan untuk Whatsapp versi modifikasi terbaru.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Jika Anda tidak dapat menemukan Whatsapp versi modifikasi terbaru hingga tidak dapat menggunakan Whatsapp, satu-satunya cara adalah dengan mencopot pemasangan aplikasi Whatsapp yang dimodifikasi, lalu unduh Whatsapp versi resmi dari Google Play Store.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Seberapa mudah? Anda dapat memperbarui Whatsapp yang kedaluwarsa dengan sangat mudah.</p>
-<p class="align-left"><!-- /wp:paragraph --></p>
-<p class="align-left"><!-- wp:paragraph --></p>
-<p class="align-left">Teman-teman yang masih bingung bisa meninggalkan pertanyaan di kolom komentar. semoga beruntung!<br><br>Sumber: <a href="https://blogyuk.com/mengatasi-whatsapp-kadaluarsa.html" target="_blank" rel="noreferrer noopener">BlogYuk</a></p>
 <p><!-- /wp:paragraph --></p>
             ]]>
         </content>
