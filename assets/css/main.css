@@ -160,11 +160,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--headings-color);
+  color: var(--h3-h5);
   font-family: var(--heading-font);
   font-weight: var(--headings-weight);
-  line-height: 1.3;
-  margin-top: 2.1857142857rem;
+  line-height: 1.0;
+  margin-top: 1.1857142857rem;
 }
 
 h1,
@@ -331,7 +331,7 @@ dl dt {
 
 code {
   background-color: rgba(var(--color-rgb), 0.1);
-  border-radius: 2px;
+  border-radius: 10px;
   color: var(--color);
   font-size: 0.9374999997rem;
   font-family: "Monaco", "Courier New", monospace;
@@ -339,17 +339,21 @@ code {
 }
 
 pre {
-  background-color: var(--lighter);
-  border-radius: 3px;
+  background-color: var(--dark);
+  border-radius: 10px;
   font-size: 0.9374999997rem;
-  padding: 1.4571428571rem;
+  padding-left: 1rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
   white-space: pre-wrap !important;
   word-wrap: break-word;
+  border-left: 1px solid var(--color);
+  border-right: 1px solid var(--color);
   width: 100%;
 }
 pre code {
-  background-color: var(--lighter);
-  color: inherit !important;
+  background-color: var(--dark);
+  color: var(--color) !important;
   font-size: inherit;
   padding: 0;
 }
