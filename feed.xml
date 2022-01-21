@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-01-21T22:31:40+07:00</updated>
+    <updated>2022-01-21T22:42:50+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="LINUX"/>
             <category term="CLOUD"/>
 
-        <updated>2022-01-21T22:31:40+07:00</updated>
+        <updated>2022-01-21T22:42:50+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/199/Screen-Shot-2022-01-20-at-02.58.28-2.png" alt="LVM di Centos 8" />
@@ -89,7 +89,7 @@
 <figure class="post__image"><strong><img loading="lazy"  src="https://teknomid.com/media/posts/199/Screen-Shot-2022-01-20-at-02.06.41.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.06.41-xs.png 300w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.06.41-sm.png 480w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.06.41-md.png 768w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.06.41-lg.png 1024w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.06.41-xl.png 1360w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.06.41-2xl.png 1600w"  alt="vg-data" width="760" height="73"></figure></strong></p>
 <h5 id="mcetoc_1fpuk7fjsm7"><span style="font-family: var(--font-base); font-size: inherit;">Checking </span><span style="font-family: var(--font-base); font-size: inherit;">Volume Group (VG)</span></h5>
 <p><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Cek partisi volume group </span><span style="color: #2dc26b;"><strong>vg-data</strong></span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"> yang telah kita buat tadi dengan mengetikkan perintah:</span></p>
-<pre><strong>vgs</strong>  <code><em>atau</em></code>  <strong>vgdisplay</strong> <code>(untuk melihat lebih detail)</code></pre>
+<pre><strong>vgs</strong>  <code><em>atau</em></code>  <strong>vgdisplay</strong> <br>- <code>(untuk melihat lebih detail)</code></pre>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/199/Screen-Shot-2022-01-20-at-02.10.36.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.10.36-xs.png 300w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.10.36-sm.png 480w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.10.36-md.png 768w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.10.36-lg.png 1024w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.10.36-xl.png 1360w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.10.36-2xl.png 1600w"  alt="vgs" width="760" height="93"></figure><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Pastikan kembali size volume kedua physical volume disk </span><span style="color: #2dc26b;"><strong>sdb</strong>, <strong>sdc</strong> </span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">telah tergabung manjadi satu di Volume Group </span><strong style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit;"><span style="color: #2dc26b;">vg-data</span></strong><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">.</span></p>
 <pre>pvs</pre>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/199/Screen-Shot-2022-01-20-at-02.18.41.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.18.41-xs.png 300w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.18.41-sm.png 480w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.18.41-md.png 768w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.18.41-lg.png 1024w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.18.41-xl.png 1360w ,https://teknomid.com/media/posts/199/responsive/Screen-Shot-2022-01-20-at-02.18.41-2xl.png 1600w"  alt="pvs-more" width="760" height="102"></figure>
