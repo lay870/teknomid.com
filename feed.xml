@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-01-21T22:42:50+07:00</updated>
+    <updated>2022-01-21T23:10:59+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -244,7 +244,7 @@
             <category term="TUTORIAL"/>
             <category term="LINUX"/>
 
-        <updated>2022-01-19T16:46:54+07:00</updated>
+        <updated>2022-01-21T23:10:59+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/196/Figure-6_large.webp" alt="Logrotate " />
@@ -259,7 +259,7 @@
 <tr>
 <td style="padding: 7px; text-align: left; color: var(--color);">
 <div class="post__toc">
-<h3><span style="color: #2dc26b;">Table of Contents</span></h3>
+<h3>Table of Contents</h3>
 <ul>
 <li><a href="#mcetoc_1for6u3oo3mf">Persyaratan</a>
 <ul>
@@ -281,7 +281,7 @@
 </tr>
 </tbody>
 </table>
-<div class="align-left"><br>Logrotate adalah utilitas sistem yang mengelola rotasi otomatis dan kompresi file log. Jika file log tidak rotate, dikompresi, dan dipangkas secara berkala, mereka akhirnya dapat menghabiskan semua ruang disk yang tersedia pada sistem.<br><br></div>
+<div class="align-left">Logrotate adalah utilitas sistem yang mengelola rotasi otomatis dan kompresi file log. Jika file log tidak rotate, dikompresi, dan dipangkas secara berkala, mereka akhirnya dapat menghabiskan semua ruang disk yang tersedia pada sistem.<br><br></div>
 <div class="align-left">Logrotate sudah terinstall secara default di Ubuntu 20.04, dan diatur untuk menangani kebutuhan rotasi log dari semua paket yang diinstal, termasuk rsyslog, prosesor log sistem default.<br><br></div>
 <div class="align-left">Pada artikel ini, kita akan menjelajahi konfigurasi Logrotate default, lalu mengonfigurasi rotasi log untuk aplikasi yang ada di system kita.</div>
 <h3 id="mcetoc_1for6u3oo3mf" class="align-left"><span style="color: #2dc26b;">Persyaratan</span></h3>
