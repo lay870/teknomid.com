@@ -24,7 +24,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/199/Screen-Shot-2022-01-20-at-02.58.28-2.png" alt="LVM di Centos 8" />
-                     Apa itu LVM ? LVM (Logical Volume Manager) adalah sebuah manajemen penyimpan di sistem operasi GNU/Linux yang menyediakan fleksibilitas dalam membuat dan mengubah partisi dalam sebuah disk. LVM menambahkan lapisan antara antarmuka I/O kernel dengan perangkat fisik untuk mendapatkan logical­view dari penyimpan. Dengan adanya&hellip;
+                    Apa itu LVM ? LVM (Logical Volume Manager) adalah sebuah manajemen penyimpan di sistem operasi GNU/Linux yang menyediakan fleksibilitas dalam membuat dan mengubah partisi dalam sebuah disk. LVM menambahkan lapisan antara antarmuka I/O kernel dengan perangkat fisik untuk mendapatkan logical­view dari penyimpan. Dengan adanya lapisan&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -131,7 +131,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/198/IAMPolicy-2.png" alt="iam" />
-                     AWS Identity dan Access Management (IAM) memungkinkan Kita mengelola akses ke Services dan Resources AWS dengan aman. Dengan menggunakan IAM, Kita dapat membuat dan mengelola Users dan Grups di Account AWS Kita, serta menggunakan permissions untuk mengizinkan dan menolak akses mereka ke Resources AWS.
+                    AWS Identity dan Access Management (IAM) memungkinkan Kita mengelola akses ke Services dan Resources AWS dengan aman. Dengan menggunakan IAM, Kita dapat membuat dan mengelola Users dan Grups di Account AWS Kita, serta menggunakan permissions untuk mengizinkan dan menolak akses mereka ke Resources AWS. IAM&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -248,7 +248,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/196/Figure-6_large.webp" alt="Logrotate " />
-                     
+                    Logrotate adalah utilitas sistem yang mengelola rotasi otomatis dan kompresi file log. Jika file log tidak rotate, dikompresi, dan dipangkas secara berkala, mereka akhirnya dapat menghabiskan semua ruang disk yang tersedia pada sistem. Logrotate sudah terinstall secara default di Ubuntu 20.04, dan diatur untuk menangani&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -654,7 +654,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/195/free05.png" alt="Menghapus Cache" />
-                     Pada artikel ini, kita akan melihat Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux. Di setiap sistem sering kita menemukan cache yang memiliki file yang tidak diinginkan dan dapat membahayakan sistem kami, hal yang sama terjadi di cache Linux dan jika&hellip;
+                    Pada artikel ini, kita akan melihat Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux. Di setiap sistem sering kita menemukan cache yang memiliki file yang tidak diinginkan dan dapat membahayakan sistem kami, hal yang sama terjadi di cache Linux dan jika Anda&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -758,7 +758,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/194/prometheus-696x279.webp" alt="Cara Install Prometheus di Linux Ubuntu" />
-                     Pengantar Prometheus adalah sebuah sistem Monitoring opensource yang powerfull dimana tugasnya mengumpulkan metrik dari services dan menyimpannya dalam database time-series. Ini menawarkan model data multi-dimensi, bahasa kueri yang fleksibel, dan kemungkinan visualisasi yang beragam melalui applikasi web seperti Grafana. Secara default, Prometheus hanya mengekspor&hellip;
+                    Pengantar Prometheus adalah sebuah sistem Monitoring opensource yang powerfull dimana tugasnya mengumpulkan metrik dari services dan menyimpannya dalam database time-series. Ini menawarkan model data multi-dimensi, bahasa kueri yang fleksibel, dan kemungkinan visualisasi yang beragam melalui applikasi web seperti Grafana. Secara default, Prometheus hanya mengekspor metrik&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -1006,7 +1006,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/192/01.webp" alt="Increase C Drive Space dengan Disk Management Windows 11" />
-                     Increase C Drive Space dengan Disk Management Windows 11 Apa itu Windows 11 ? Windows 11 adalah nama yang diberikan untuk sistem operasi terbaru Microsoft, yang menggabungkan kekuatan Windows 10, menawarkan pendekatan jaringan-sentris untuk PC dan perangkat mulai dari Tablet hingga Data Center. Alih-alih&hellip;
+                    Increase C Drive Space dengan Disk Management Windows 11 Apa itu Windows 11 ? Windows 11 adalah nama yang diberikan untuk sistem operasi terbaru Microsoft, yang menggabungkan kekuatan Windows 10, menawarkan pendekatan jaringan-sentris untuk PC dan perangkat mulai dari Tablet hingga Data Center. Alih-alih mengikuti&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -1089,7 +1089,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/193/e-Wallet-Sebagai-Pembayaran-Digital.webp" alt="e-Wallet Sebagai Pembayaran Digital" />
-                     e-Wallet Sebagai Pembayaran Digital Masa Depan e-Wallet Sebagai Pembayaran Digital Di tengah kekacauan, digitalisasi selalu menemukan jalan. Selama wabah COVID-19, teknologi berkembang pesat. Dari tidak ada kontak fisik hingga transaksi digital, istilah tahun ini adalah tanpa kontak. Dompet digital telah sepenuhnya mengambil alih di&hellip;
+                    e-Wallet Sebagai Pembayaran Digital Masa Depan e-Wallet Sebagai Pembayaran Digital Di tengah kekacauan, digitalisasi selalu menemukan jalan. Selama wabah COVID-19, teknologi berkembang pesat. Dari tidak ada kontak fisik hingga transaksi digital, istilah tahun ini adalah tanpa kontak. Dompet digital telah sepenuhnya mengambil alih di era&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -1145,7 +1145,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/190/google-cloud-696x470.webp" alt="Google Cloud segera luncurkan pembaruan" />
-                     Google Cloud segera luncurkan pembaruan untuk layanan penyimpanan cloud Drive. Layanan tersebut akan membantu meminimalkan kekacauan dan kebingungan yang disebabkan oleh file yang disimpan di beberapa lokasi sehingga lebih praktis. Pada 2020, perusahaan meluncurkan sistem pintasan yang dirancang untuk menyederhanakan struktur file dan folder,&hellip;
+                    Google Cloud segera luncurkan pembaruan untuk layanan penyimpanan cloud Drive. Layanan tersebut akan membantu meminimalkan kekacauan dan kebingungan yang disebabkan oleh file yang disimpan di beberapa lokasi sehingga lebih praktis. Pada 2020, perusahaan meluncurkan sistem pintasan yang dirancang untuk menyederhanakan struktur file dan folder, dengan&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -1175,7 +1175,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/191/gg1-696x286.webp" alt="Cara Memeriksa Kebocoran Kata Sandi" />
-                     Pelanggaran data telah menjadi lebih umum bahkan dengan teknologi besar dan perusahaan internet. Satu-satunya pilihan bagi pengguna adalah memiliki kata sandi yang kuat dan sering mengubahnya. Ini akan membantu melindungi akun online Anda dan mengamankan data. Sebelumnya Anda harus mendapatkan informasi pelanggaran data dan&hellip;
+                    Pelanggaran data telah menjadi lebih umum bahkan dengan teknologi besar dan perusahaan internet. Satu-satunya pilihan bagi pengguna adalah memiliki kata sandi yang kuat dan sering mengubahnya. Ini akan membantu melindungi akun online Anda dan mengamankan data. Sebelumnya Anda harus mendapatkan informasi pelanggaran data dan kemudian&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -1343,7 +1343,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/189/macos-2xl-696x298.webp" alt="Perbandingan Windows dan MacOS" />
-                     Saat sobat TeknomID berencana membeli Device Laptop ataupun Komputer dengan OS Micrososft, Anda mendapatkan lebih banyak keuntungan dalam hal perangkat keras jika dibandingkan dengan Mac dengan Operating system Machintoshnya yang terbilang stabil serta hemat batere. Selain itu ada banyak varian merek / brand yang&hellip;
+                    Saat sobat TeknomID berencana membeli Device Laptop ataupun Komputer dengan OS Micrososft, Anda mendapatkan lebih banyak keuntungan dalam hal perangkat keras jika dibandingkan dengan Mac dengan Operating system Machintoshnya yang terbilang stabil serta hemat batere. Selain itu ada banyak varian merek / brand yang juga&hellip;
                 ]]>
             </summary>
         <content type="html">
