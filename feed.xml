@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-07-20T21:23:51+07:00</updated>
+    <updated>2022-07-21T23:21:41+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -113,17 +113,24 @@
             <category term="LINUX-APPLIKASI"/>
             <category term="LINUX"/>
 
-        <updated>2022-07-20T20:52:39+07:00</updated>
+        <updated>2022-07-21T23:21:41+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/208/Screenshot_4.png" alt="IPsec/L2TP VPN Server" />
-                    Untuk Setup server VPN, kita akan menggunakan beberapa script shell yang dibuat oleh Lin Song, yang menginstal Libreswan sebagai server IPsec, dan xl2tpd sebagai penyedia L2TP. Penawaran ini juga mencakup skrip untuk menambah atau menghapus pengguna VPN, meningkatkan instalasi VPN, dan banyak lagi. Pertama, masuk&hellip;
+                    pic.twitter.com/6jhq5SSFUC Untuk Setup server VPN, kita akan menggunakan beberapa script shell yang dibuat oleh Lin Song, yang menginstal Libreswan sebagai server IPsec, dan xl2tpd sebagai penyedia L2TP. Penawaran ini juga mencakup skrip untuk menambah atau menghapus pengguna VPN, meningkatkan instalasi VPN, dan banyak lagi. Pertama,&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://teknomid.com/media/posts/208/Screenshot_4.png" alt="IPsec/L2TP VPN Server" />
-                <p>Untuk Setup server VPN, kita akan menggunakan beberapa script shell yang dibuat oleh Lin Song, yang menginstal Libreswan sebagai server IPsec, dan xl2tpd sebagai penyedia L2TP. Penawaran ini juga mencakup skrip untuk menambah atau menghapus pengguna VPN, meningkatkan instalasi VPN, dan banyak lagi.<br><br>Pertama, masuk ke VPS Anda melalui SSH, lalu jalankan perintah yang sesuai untuk Distro Linux Anda untuk mengatur server VPN. Secara default, skrip akan menghasilkan kredensial VPN acak (kunci yang dibagikan sebelumnya, nama pengguna VPN, dan kata sandi) untuk Anda dan menampilkannya di akhir penginstalan.</p>
+                <p> </p>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="qme"><a href="https://t.co/6jhq5SSFUC">pic.twitter.com/6jhq5SSFUC</a></p>
+— Teknomid (@Teknomid_com) <a href="https://twitter.com/Teknomid_com/status/1550152329575690240?ref_src=twsrc%5Etfw">July 21, 2022</a></blockquote>
+<p>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+<p>Untuk Setup server VPN, kita akan menggunakan beberapa script shell yang dibuat oleh Lin Song, yang menginstal Libreswan sebagai server IPsec, dan xl2tpd sebagai penyedia L2TP. Penawaran ini juga mencakup skrip untuk menambah atau menghapus pengguna VPN, meningkatkan instalasi VPN, dan banyak lagi.<br><br>Pertama, masuk ke VPS Anda melalui SSH, lalu jalankan perintah yang sesuai untuk Distro Linux Anda untuk mengatur server VPN. Secara default, skrip akan menghasilkan kredensial VPN acak (kunci yang dibagikan sebelumnya, nama pengguna VPN, dan kata sandi) untuk Anda dan menampilkannya di akhir penginstalan.</p>
 <p>Baca Juga: <a href="https://teknomid.com/ahli-robot-ai-facebook-berhijrah-karena-munculnya-metaverse/" target="_blank" rel="noopener noreferrer">Ahli Robot AI Facebook Berhijrah , Karena Munculnya Metaverse</a></p>
 <blockquote>---------------- On CentOS/RHEL ---------------- <br>wget https://raw.githubusercontent.com/lay870/vpn-ipsec/main/vpnsetup.sh -O vpnsetup.sh &amp;&amp; sudo sh vpnsetup.sh<br><br>---------------- On Debian and Ubuntu ----------------<br>wget https://raw.githubusercontent.com/lay870/vpn-ipsec/main/vpnsetup.sh -O vpnsetup.sh &amp;&amp; sudo sh vpnsetup.sh</blockquote>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/208/2022-07-20_205030.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/208/responsive/2022-07-20_205030-xs.png 300w ,https://teknomid.com/media/posts/208/responsive/2022-07-20_205030-sm.png 480w ,https://teknomid.com/media/posts/208/responsive/2022-07-20_205030-md.png 768w ,https://teknomid.com/media/posts/208/responsive/2022-07-20_205030-lg.png 1024w ,https://teknomid.com/media/posts/208/responsive/2022-07-20_205030-xl.png 1360w ,https://teknomid.com/media/posts/208/responsive/2022-07-20_205030-2xl.png 1600w"  alt="Auto Setup IPsec/L2TP in Ubuntu Server" width="1650" height="833"></figure>
