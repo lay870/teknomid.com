@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-07-28T23:22:56+07:00</updated>
+    <updated>2022-07-31T07:15:52+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="MOBILE-APPLIKASI"/>
             <category term="APPLIKASI"/>
 
-        <updated>2022-07-28T23:22:56+07:00</updated>
+        <updated>2022-07-31T06:23:10+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/227/cara_memblokir_iklan_di_youtube-2xl.jpg" alt="Tutorial Blokir Iklan Pada Android Tanpa Root" />
@@ -41,46 +41,38 @@
 <li><a href="#mcetoc_1g92fvbvcfr">5. DNS66</a></li>
 </ul>
 </div>
-<blockquote>
-<pre><strong><em>Baca Juga:<a href="https://teknomid.com/android-12-and-12l-custom-rom/" target="_blank" rel="noopener noreferrer"> Android 12 and 12L Custom ROM </a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga:<a href="https://teknomid.com/android-12-and-12l-custom-rom/" target="_blank" rel="noopener noreferrer"> Android 12 and 12L Custom ROM </a></em></strong></blockquote>
 <p>Beberapa contoh iklan yang mengganggu, yaitu iklan yang muncul pop-up berulang tanpa bisa kita tutup iklan atau klik tombol kembali.<br><br>Meskipun kita tidak dapat menghapus iklan mengganggu sepenuhnya, namun kali ini teknomid.com akan memberikan tutorial cara memblokir iklan pada Android</p>
-<blockquote>
 <p>Memblokir iklan mempengaruhi ekosistem internet dan kemampuan bertahan beberapa bisnis. Jika Kamu menyukai dan selalu mengakses aplikasi, situs, dan layanan tertentu, pertimbangkan untuk berlangganan layanan mereka atau menambahkannya situs ke daftar <em>Whitelist</em> agar iklan tetap muncul. Bantu mereka untuk terus mempertahankan platformnya.</p>
-</blockquote>
 <p>Cara yang kami berikan pada tutorial ini ada yang bisa kamu praktikan tanpa root dan ada juga yang dapat kamu terapkan dengan root. Dengan Efektifitas yang berbeda tiap cara, maka sebaiknya pilih cara yang menurut kamu cocok untuk dipakai.</p>
 <h5 id="mcetoc_1g92fvbvcfn"><strong>1. Mengganti DNS</strong></h5>
 <p>Mengganti DNS Pribadi adalah salah satu cara termudah untuk blokir iklan pada Android. Cara ini tidak memerlukan aplikasi tambahan yang harus kamu instal pada Android, karena fitur ini sudah ada didalam menu Pengaturan. Tapi sebelum ingin memakai fitur ini pastikan perangkatmu memiliki versi android 9 Pie keatas.</p>
-<figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/227/DNS-Pribadi-Android.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-xs.png 300w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-sm.png 480w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-md.png 768w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-lg.png 1024w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-xl.png 1360w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-2xl.png 1600w"  alt="" width="576" height="600" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/DNS-Pribadi-Android.png"></figure><br><br></pre>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/DNS-Pribadi-Android.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-xs.png 300w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-sm.png 480w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-md.png 768w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-lg.png 1024w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-xl.png 1360w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-2xl.png 1600w"  alt="" width="576" height="600" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/DNS-Pribadi-Android.png"></figure><br><br></pre>
 <p>Untuk masuk ke fitur ini jika kamu menggunakan MIUI masuk ke Pengaturan &gt; Koneksi &amp; Berbagi &gt; DNS Pribadi, tapi jika kamu menggunakan UI Android lain, kamu bisa mencoba masuk ke Pengaturan pada bar pencarian tulis dengan DNS Pribadi. Isi Nama host penyedia DNS Pribadi dengan dns.adguard.com atau us.adhole.org, dan tap Simpan. Setelah itu kamu tidak akan melihat iklan pada Browser.</p>
 <h5 id="mcetoc_1g92fvbvcfo">2. AdGuard</h5>
 <div>
-<figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/227/AdGuard.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/AdGuard-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/AdGuard-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/AdGuard-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/AdGuard-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/AdGuard-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/AdGuard-2xl.jpg 1600w"  alt="" width="508" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/AdGuard.jpg"></figure></pre>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/AdGuard.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/AdGuard-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/AdGuard-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/AdGuard-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/AdGuard-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/AdGuard-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/AdGuard-2xl.jpg 1600w"  alt="" width="508" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/AdGuard.jpg"></figure></pre>
 </div>
 <p>Salah satu piranti lunak pemblokir iklan yang terkenal di desktop, yang saat ini memiliki versi untuk iOS dan Android juga yaitu AdGuard. Aplikasi ini menggunakan VPN untuk melakukan filtrasi iklan. Kamu bisa mengunduh AdGuard di Play Store</p>
 <h5 id="mcetoc_1g92fvbvcfp">3. AdLock</h5>
 <div>
-<figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/227/AdLock-1.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/AdLock-1-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-2xl.jpg 1600w"  alt="" width="403" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/AdLock-1.jpg"></figure></pre>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/AdLock-1.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/AdLock-1-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-2xl.jpg 1600w"  alt="" width="403" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/AdLock-1.jpg"></figure></pre>
 </div>
 <p>Aplikasi ini tidak ada di Play Store, maka kamu harus mengunduh langsung di situs resmi mereka. <a href="https://adlock.com/adlock-for-android/" target="_blank" rel="noopener">AdLock</a> merupakan aplikasi yang bisa dipakai pada perangkat Android, IOS, Windows, dan macOS. Dengan aplikasi ini kamu bisa memblokir iklan pada game dan browser, dengan fitur pilihan dalam memblokir situs tertentu dan melakukan filtrasi HTTPS.</p>
-<blockquote>
-<pre><strong><em>Baca juga:<a href="https://teknomid.com/tutorial-unlock-stb-zte-b860h-dengan-pulpstone/" target="_blank" rel="noopener noreferrer"> Tutorial Unlock STB ZTE B860H Dengan Pulpstone</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca juga:<a href="https://teknomid.com/tutorial-unlock-stb-zte-b860h-dengan-pulpstone/" target="_blank" rel="noopener noreferrer"> Tutorial Unlock STB ZTE B860H Dengan Pulpstone</a></em></strong></blockquote>
 <h5 id="mcetoc_1g92fvbvcfq"><span id="4_Blokada">4. Blokada</span></h5>
 <p>Ini merupakan salah satu pemblokir iklan yang berfungsi sangat baik. Blokada memiliki lebih lengkap daftar host pemblokiran iklan yang bisa Kamu pilih.</p>
 <div>
-<figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/227/Blokada.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/Blokada-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/Blokada-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/Blokada-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/Blokada-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/Blokada-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/Blokada-2xl.jpg 1600w"  alt="" width="401" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/Blokada.jpg"></figure></pre>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/Blokada.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/Blokada-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/Blokada-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/Blokada-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/Blokada-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/Blokada-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/Blokada-2xl.jpg 1600w"  alt="" width="401" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/Blokada.jpg"></figure></pre>
 </div>
 <p>Blokada juga memperkuat privasimu dengan mengacak permintaan DNS, Kamu juga bisa membuat daftar <em>blacklist/Whitelist</em>. Kamu bisa mengunduh aplikasi Blokada versi slim pada Play Store, versi ini memiliki fitur terbatas karena ketatnya kebijakan Google Play Store. Jika Kamu ingin menggunakan aplikasi ini dengan fitur yang lengkap, silahkan langsung unduh di situs <a href="https://blokada.org/" rel="nofollow noopener" target="_blank">Blokada</a>.</p>
 <h5 id="mcetoc_1g92fvbvcfr"><span id="5_DNS66">5. DNS66</span></h5>
 <p>Seperti kebanyakan pemblokir iklan berbasis VPN, maka DNS66 tidak memerlukan perangkat Android yang sudah root. Aplikasi ini menawarkan pemblokiran iklan di seluruh sistem sehingga dapat memfilter iklan dalam aplikasi juga. Kamu juga bisa mengatur server DNS sendiri pada aplikasi ini. Kamu bisa mengunduh aplikasi ini dari <a href="https://f-droid.org/en/packages/org.jak_linux.dns66/" rel="nofollow noopener" target="_blank">F-Droid</a>.</p>
 <div>
-<figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/227/DNS66.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/DNS66-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/DNS66-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/DNS66-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/DNS66-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/DNS66-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/DNS66-2xl.jpg 1600w"  alt="" width="406" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/DNS66.jpg"></figure></pre>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/DNS66.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/DNS66-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/DNS66-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/DNS66-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/DNS66-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/DNS66-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/DNS66-2xl.jpg 1600w"  alt="" width="406" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/DNS66.jpg"></figure></pre>
 </div>
 <p>DNS66 memang memiliki tampilan yang lebih kuno dibandingkan AdGuard dan Blokada. Namun aplikasi ini bekerja cukup baik ketika kami coba.</p>
-<blockquote>
-<pre><strong><em>Baca juga:<a href="https://www.ramitan.com/tutorial/android/3-alternatif-pengganti-google-play-store-untuk-download-aplikasi-android/" data-type="post" data-id="2184"> </a><a href="https://teknomid.com/android-12-and-12l-custom-rom/" title="Android 12 and 12L Custom ROM " target="_blank" rel="noopener noreferrer"></a><a href="https://teknomid.com/mencari-playlist-m3u-iptv-gratis-streaming-pada-android-dan-komputer/" title="Mencari Playlist M3U IPTV Gratis Streaming Pada Android Dan Komputer" target="_blank" rel="noopener noreferrer">Mencari Playlist M3U IPTV Gratis Streaming Pada Android Dan Komputer</a> </em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca juga:<a href="https://www.ramitan.com/tutorial/android/3-alternatif-pengganti-google-play-store-untuk-download-aplikasi-android/" data-type="post" data-id="2184"> </a><a href="https://teknomid.com/android-12-and-12l-custom-rom/" title="Android 12 and 12L Custom ROM " target="_blank" rel="noopener noreferrer"></a><a href="https://teknomid.com/mencari-playlist-m3u-iptv-gratis-streaming-pada-android-dan-komputer/" title="Mencari Playlist M3U IPTV Gratis Streaming Pada Android Dan Komputer" target="_blank" rel="noopener noreferrer">Mencari Playlist M3U IPTV Gratis Streaming Pada Android Dan Komputer</a> </em></strong></blockquote>
 <p>Itulah diatas 5 cara terbaik yang bisa Kamu praktikan untuk blokir iklan pada android yang tidak memerlukan root pada perangkat Kamu dan tentu saja semuanya gratis. Silahkan bandingkan masing-masing fitur dari aplikasi tersebut dan sesuaikan mana aplikasi yang cocok dengan kebutuhan Kamu.</p>
             ]]>
         </content>
@@ -135,7 +127,7 @@
 </blockquote>
 <h5 id="mcetoc_1g92ga3d1kr">Harga</h5>
 <p>Untuk Harga Sendiri kita coba ambil dari website resmi <strong><a href="https://www.gsmarena.com/nothing_phone_(1)-11636.php" target="_blank" rel="noopener noreferrer">GSMArena</a></strong></p>
-<pre>256GB 12GB RAM :<img decoding="async" loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/ebay-com2.png" data-is-external-image="true"  alt="" width="81" height="23">- <a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10044&amp;campid=5338659500&amp;customid=gsmarena&amp;lgeo=1&amp;vectorid=229466&amp;item=175350945331" data-click="pricecounter-js.php3?idOffer=185183&amp;idStore=2" target="_blank" rel="noopener noreferrer">$ 745.00</a><br>               :<img decoding="async" loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-de1.png" data-is-external-image="true"  alt="" width="85" height="24">- <a href="https://www.amazon.de/dp/B09Z6QBCD2?tag=gsmarena0ca-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=184295&amp;idStore=11" target="_blank" rel="noopener noreferrer">€ 549.00</a><br>128GB 8GB RAM  :<img decoding="async" loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-de1.png" data-is-external-image="true"  alt="" width="85" height="24">- <a href="https://www.amazon.de/dp/B09Z6R6C7C?tag=gsmarena0ca-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=184292&amp;idStore=11" target="_blank" rel="noopener noreferrer">€ 469.00</a><br>               :<img decoding="async" loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-nl.png" data-is-external-image="true"  alt="" width="85" height="25">- <a href="https://www.amazon.nl/dp/B09Z6R6C7C?tag=gsmarena0b7-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=185179&amp;idStore=22" target="_blank" rel="noopener noreferrer">€ 469.00</a><br>256GB 8GB RAM  :<img decoding="async" loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-de1.png" data-is-external-image="true"  alt="" width="85" height="24">- <a href="https://www.amazon.de/dp/B09Z6QLHVL?tag=gsmarena0ca-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=184293&amp;idStore=11" target="_blank" rel="noopener noreferrer">€ 499.00</a><br>               :<img decoding="async" loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-nl.png" data-is-external-image="true"  alt="" width="85" height="25">- <a href="https://www.amazon.nl/dp/B09Z6RXHJB?tag=gsmarena0b7-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=185180&amp;idStore=22" target="_blank" rel="noopener noreferrer">€ 499.00</a> </pre>
+<pre>256GB 12GB RAM :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/ebay-com2.png" data-is-external-image="true"  alt="" width="81" height="23">- <a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10044&amp;campid=5338659500&amp;customid=gsmarena&amp;lgeo=1&amp;vectorid=229466&amp;item=175350945331" data-click="pricecounter-js.php3?idOffer=185183&amp;idStore=2" target="_blank" rel="noopener noreferrer">$ 745.00</a><br>               :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-de1.png" data-is-external-image="true"  alt="" width="85" height="24">- <a href="https://www.amazon.de/dp/B09Z6QBCD2?tag=gsmarena0ca-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=184295&amp;idStore=11" target="_blank" rel="noopener noreferrer">€ 549.00</a><br>128GB 8GB RAM  :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-de1.png" data-is-external-image="true"  alt="" width="85" height="24">- <a href="https://www.amazon.de/dp/B09Z6R6C7C?tag=gsmarena0ca-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=184292&amp;idStore=11" target="_blank" rel="noopener noreferrer">€ 469.00</a><br>               :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-nl.png" data-is-external-image="true"  alt="" width="85" height="25">- <a href="https://www.amazon.nl/dp/B09Z6R6C7C?tag=gsmarena0b7-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=185179&amp;idStore=22" target="_blank" rel="noopener noreferrer">€ 469.00</a><br>256GB 8GB RAM  :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-de1.png" data-is-external-image="true"  alt="" width="85" height="24">- <a href="https://www.amazon.de/dp/B09Z6QLHVL?tag=gsmarena0ca-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=184293&amp;idStore=11" target="_blank" rel="noopener noreferrer">€ 499.00</a><br>               :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-nl.png" data-is-external-image="true"  alt="" width="85" height="25">- <a href="https://www.amazon.nl/dp/B09Z6RXHJB?tag=gsmarena0b7-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=185180&amp;idStore=22" target="_blank" rel="noopener noreferrer">€ 499.00</a> </pre>
 <h5 id="mcetoc_1g92ga3d1ks" class="module module-phones module-related">Spesifikasi:</h5>
 <table dir="ltr" style="border-collapse: collapse; border-style: none; width: 100%; height: 3180.3px;" border="1" cellspacing="0" cellpadding="0"><colgroup><col style="width: 16.9516%;" width="119"><col style="width: 12.963%;" width="91"><col style="width: 74.5014%;" width="523"></colgroup>
 <tbody>
@@ -391,7 +383,7 @@
 <pre><strong><em><a href="https://teknomid.com/hp-xiaomi-12-mini-hadirkan-tiga-kamera-belakang/" target="_blank" rel="noopener noreferrer">Baca Juga: HP Xiaomi 12 Mini, Hadirkan Tiga Kamera Belakang</a></em></strong></pre>
 </blockquote>
 <p>Lampu LED Nothing Phone (1) terdapat pada sisi modul kamera belakang, bagian tengah dan di atas port USB Type-C.</p>
-<figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/226/2171094907.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/226/responsive/2171094907-xs.jpg 300w ,https://teknomid.com/media/posts/226/responsive/2171094907-sm.jpg 480w ,https://teknomid.com/media/posts/226/responsive/2171094907-md.jpg 768w ,https://teknomid.com/media/posts/226/responsive/2171094907-lg.jpg 1024w ,https://teknomid.com/media/posts/226/responsive/2171094907-xl.jpg 1360w ,https://teknomid.com/media/posts/226/responsive/2171094907-2xl.jpg 1600w"  alt="" width="1200" height="800"></figure><br><br>Lampu-lampu pada bagian belakang ini akan menyala apabila ada telepon masuk, pemberitahuan aplikasi, saat isi daya, dan lain sebagainya sesuai dengan pengaturan yang dilakukan pengguna.</p>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/226/2171094907.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/226/responsive/2171094907-xs.jpg 300w ,https://teknomid.com/media/posts/226/responsive/2171094907-sm.jpg 480w ,https://teknomid.com/media/posts/226/responsive/2171094907-md.jpg 768w ,https://teknomid.com/media/posts/226/responsive/2171094907-lg.jpg 1024w ,https://teknomid.com/media/posts/226/responsive/2171094907-xl.jpg 1360w ,https://teknomid.com/media/posts/226/responsive/2171094907-2xl.jpg 1600w"  alt="" width="1200" height="800"></figure><br><br>Lampu-lampu pada bagian belakang ini akan menyala apabila ada telepon masuk, pemberitahuan aplikasi, saat isi daya, dan lain sebagainya sesuai dengan pengaturan yang dilakukan pengguna.</p>
 <blockquote>
 <pre><strong><a href="https://teknomid.com/hp-xiaomi-13t-pro-5g-berbekal-tiga-module-kamera-canggih/" target="_blank" rel="noopener noreferrer"><em>Baca Juga: HP Xiaomi 13T Pro 5G, Berbekal Tiga Module Kamera Canggih</em></a></strong></pre>
 </blockquote>
@@ -413,7 +405,7 @@
         <id>https://teknomid.com/sangat-penting-untuk-logout-icloud-iphone/</id>
             <category term="TUTORIAL"/>
 
-        <updated>2022-07-28T20:58:27+07:00</updated>
+        <updated>2022-07-31T07:15:45+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/225/6.-Logout-iCloud-iPhone-Penting-Dilakukan-Simak-Langkah-Mudahnya-696x392.jpg" alt="Sangat Penting Untuk Logout iCloud iPhone" />
@@ -457,9 +449,7 @@
 </div>
 <p id="mcetoc_1g92hclgm1cs"><strong>Cara Mudah Logout iCloud iPhone<br></strong>iCloud merupakan salah satu fitur bawaan iOS pada iPhone ataupun iPad. Selain sebagai penyimpanan awan ataupun drive saja, akan tetapi juga beragam hal lain. Fitur iCloud lain yang mungkin secara tidak sadar anda gunakan adalah mail, kontak, dan lain sebagainya.</p>
 <p>Syarat menggunakan fitur ini adalah pengguna harus mendaftar akun Apple ID serta mengaktifkan iCloud pada perangkat iOS. Namun dengan suatu alasan anda ingin menjual iPhone yang anda miliki.</p>
-<blockquote>
-<pre><strong><em>Baca Juga : <a href="https://teknomid.com/tutorial-mengatasi-icloud-penuh-di-iphone/" target="_blank" rel="noopener noreferrer">Tutorial Mengatasi iCloud Penuh di iPhone</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga : <a href="https://teknomid.com/tutorial-mengatasi-icloud-penuh-di-iphone/" target="_blank" rel="noopener noreferrer">Tutorial Mengatasi iCloud Penuh di iPhone</a></em></strong></blockquote>
 <p>Maka sebelum anda menjualnya, sebaiknya anda logout iCloud iPhone terlebih dahulu agar data-data yang anda miliki tidak disalahgunakan oleh pengguna baru dari perangkat tersebut. Oleh karena itu, penting bagi anda untuk mengetahui bagaimana cara keluar dari iCloud pada perangkat iPhone.</p>
 <h5 id="h-cara-logout-icloud-iphone"><strong>Cara Logout iCloud iPhone di Device</strong></h5>
 <p>Sebenarnya cara logout iCloud iPhone cukup mudah. Adapun langkah-langkahnya antara lain:</p>
@@ -481,9 +471,7 @@
 <p>Kemudian cari pengaturan iTunes &amp; App Store</p>
 <h6 id="mcetoc_1g92hclgm1d4">3. Sign Out</h6>
 <p>Berikutnya, tekan pada bagian Apple ID serta pilih Sign Out.</p>
-<blockquote>
-<pre><strong><em>Baca Juga : <a href="https://teknomid.com/tutorial-unlock-stb-zte-b860h-dengan-pulpstone/" target="_blank" rel="noopener noreferrer">Tutorial Unlock Dan Root STB  ZTE ZXV10 B860H</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga : <a href="https://teknomid.com/tutorial-unlock-stb-zte-b860h-dengan-pulpstone/" target="_blank" rel="noopener noreferrer">Tutorial Unlock Dan Root STB  ZTE ZXV10 B860H</a></em></strong></blockquote>
 <p><strong>Kembali ke Pengaturan Pabrik</strong></p>
 <p>Selanjutnya setelah semua akun berhasil keluar, maka hal penting lain yang harus anda lakukan sebelum menjual perangkat iPhone anda adalah mereset iPhone pada pengaturan pabrik. Caranya adalah:</p>
 <h6 id="mcetoc_1g92hclgm1d5">1. Applikasi Setting</h6>
@@ -498,9 +486,7 @@
 <p>Terdapat dua cara untuk membackup data yakni memindahkan semua foto hingga video ke komputer. Cara kedua, membackup semua data iCloud. Maka pastikan ruangan penyimpanan iCloud anda masih lapang sehingga proses backup dapat anda lakukan dengan mudah.</p>
 <h5 id="h-cara-mengatasi-icoud-yang-tidak-dapat-logout"><strong>Cara Mengatasi iCoud yang Tidak Dapat Logout</strong></h5>
 <p>Jika saat logout iCloud iPhone anda mengalami masalah dimana tombol logout atau keluar pada iCloud tidak berfungsi serta muncul pesan “Tidak dapat keluar karena pembatasan”, maka anda tidak perlu khawatir.</p>
-<blockquote>
-<pre><strong><em>Baca Juga : <a href="https://teknomid.com/tutorial-unlock-stb-zte-b860h-dengan-pulpstone/" target="_blank" rel="noopener noreferrer">Tutorial Unlock STB ZTE B860H Dengan Pulpstone</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga : <a href="https://teknomid.com/tutorial-unlock-stb-zte-b860h-dengan-pulpstone/" target="_blank" rel="noopener noreferrer">Tutorial Unlock STB ZTE B860H Dengan Pulpstone</a></em></strong></blockquote>
 <p>Hal ini dapat anda atasi dengan mudah. Dengan demikian, anda tetap dapat logout iCloud dari perangkat yang anda miliki.</p>
 <h6 id="mcetoc_1g92hhepu1dt">1. Pastikan password iCloud yang anda masukkan sudah benar.</h6>
 <p>Jika anda lupa, anda dapat menggunakan fitur iForget untuk melakukan reset password iCloud.</p>
@@ -696,11 +682,11 @@
         <id>https://teknomid.com/tutorial-unlock-stb-zte-b860h-dengan-pulpstone/</id>
             <category term="TUTORIAL"/>
 
-        <updated>2022-07-28T21:02:19+07:00</updated>
+        <updated>2022-07-31T07:14:10+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/224/maxresdefault.jpg" alt="Tutorial Unlock STB ZTE B860H Dengan Pulpstone" />
-                    Persiapan Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1 Sebelum memulai tutorial, yang pertama tentu saja kita harus punya STB ZTE ZXV10 B860H, bisa membelinya di marketplace STB B860H V.2.1 RAM 2GB NEW FW ORI SEGEL, penampakannya seperti di bawah ini : STB ZTE&hellip;
+                    Persiapan Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1 Sebelum memulai tutorial, yang pertama tentu saja kita harus punya STB ZTE ZXV10 B860H, bisa membelinya di marketplace STB B860H V.2.1 RAM 2GB NEW FW ORI SEGEL, penampakannya seperti di bawah ini : Selanjutnya kita&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -709,16 +695,7 @@
                 <div id="post-body-39739148699818563" class="post-body post-body-artikel">
 <h3 id="toc-0">Persiapan Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1</h3>
 <div>Sebelum memulai tutorial, yang pertama tentu saja kita harus punya STB ZTE ZXV10 B860H, bisa membelinya di marketplace STB B860H V.2.1 RAM 2GB NEW FW ORI SEGEL, penampakannya seperti di bawah ini  :</div>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-yp-QDjMbQBY/Xbog5PVJgeI/AAAAAAAAFro/YOCrPnnFnCkmvd-e7lcKTDi-HaLbNEofQCLcBGAsYHQ/s1600/STB%2BZTE%2BZXV10%2BB860H%2BV.2.1%2BRAM%2B2GB.jpeg"><img decoding="async" loading="lazy" title="STB ZTE ZXV10 B860H v.2.1 RAM 2GB" src="https://3.bp.blogspot.com/-yp-QDjMbQBY/Xbog5PVJgeI/AAAAAAAAFro/YOCrPnnFnCkmvd-e7lcKTDi-HaLbNEofQCLcBGAsYHQ/s400/STB%2BZTE%2BZXV10%2BB860H%2BV.2.1%2BRAM%2B2GB.jpeg" data-is-external-image="true"  alt="STB ZTE ZXV10 B860H v.2.1 RAM 2GB - Panggung electric citrabuana" width="400" height="385" border="0" data-original-height="520" data-original-width="540"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">STB ZTE ZXV10 B860H v.2.1 RAM 2GB</td>
-</tr>
-</tbody>
-</table>
+<div><a href="https://3.bp.blogspot.com/-yp-QDjMbQBY/Xbog5PVJgeI/AAAAAAAAFro/YOCrPnnFnCkmvd-e7lcKTDi-HaLbNEofQCLcBGAsYHQ/s1600/STB%2BZTE%2BZXV10%2BB860H%2BV.2.1%2BRAM%2B2GB.jpeg"><figure class="post__image"><img loading="lazy"  title="STB ZTE ZXV10 B860H v.2.1 RAM 2GB" src="https://teknomid.com/media/posts/224/STB-ZTE-ZXV10-B860H-V.2.1-RAM-2GB.jpeg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/STB-ZTE-ZXV10-B860H-V.2.1-RAM-2GB-xs.jpeg 300w ,https://teknomid.com/media/posts/224/responsive/STB-ZTE-ZXV10-B860H-V.2.1-RAM-2GB-sm.jpeg 480w ,https://teknomid.com/media/posts/224/responsive/STB-ZTE-ZXV10-B860H-V.2.1-RAM-2GB-md.jpeg 768w ,https://teknomid.com/media/posts/224/responsive/STB-ZTE-ZXV10-B860H-V.2.1-RAM-2GB-lg.jpeg 1024w ,https://teknomid.com/media/posts/224/responsive/STB-ZTE-ZXV10-B860H-V.2.1-RAM-2GB-xl.jpeg 1360w ,https://teknomid.com/media/posts/224/responsive/STB-ZTE-ZXV10-B860H-V.2.1-RAM-2GB-2xl.jpeg 1600w"  alt="STB ZTE ZXV10 B860H v.2.1 RAM 2GB - Panggung electric citrabuana" width="400" height="385" border="0" data-original-height="520" data-original-width="540"></figure></a></div>
 Selanjutnya kita siapkan laptop atau komputer dengan sistem operasi windows
 <ul>
 <li>Siapkan juga kabel USB to USB ( male to male) </li>
@@ -731,26 +708,8 @@ Selanjutnya kita siapkan laptop atau komputer dengan sistem operasi windows
 <ul>
 <li>Laptop atau komputer dinyalakan, kemudian jalankan tool flasher setelah sebelumnya kita ekstrak file hasil download , cari dan klik <strong>Pulpstone_ZTE_B860H_Flasher_Tool_v3.1.exe</strong></li>
 </ul>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-8jHxV5Gxum4/XbolOjRETLI/AAAAAAAAFr4/OBfO53s4OmkLgkR31DIlkKGyxoP01EYmACLcBGAsYHQ/s1600/Cara%2BUnlock%2BSTB%2BZTE%2BB860H%2BDengan%2BPulpstone%2BAndroid%2BV%2B3.1-%2BFlasher%2Btool.jpg"><img decoding="async" loading="lazy" title="Pulpstone_ZTE_B860H_Flasher_Tool_v3.1.exe" src="https://3.bp.blogspot.com/-8jHxV5Gxum4/XbolOjRETLI/AAAAAAAAFr4/OBfO53s4OmkLgkR31DIlkKGyxoP01EYmACLcBGAsYHQ/s640/Cara%2BUnlock%2BSTB%2BZTE%2BB860H%2BDengan%2BPulpstone%2BAndroid%2BV%2B3.1-%2BFlasher%2Btool.jpg" data-is-external-image="true"  alt="Pulpstone_ZTE_B860H_Flasher_Tool_v3.1.exe" width="640" height="339" border="0" data-original-height="362" data-original-width="678"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Pulpstone_ZTE_B860H_Flasher_Tool_v3.1.exe</td>
-</tr>
-</tbody>
-</table>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-SxtC1EW-sUc/XbomN2nUFKI/AAAAAAAAFsE/jacn4xQhgPcw33jJJ0Cn2P0NkQU_e-C1ACLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1%2B.jpg"><img decoding="async" loading="lazy" title="Flasher Tool Pulpstone Android v3.1" src="https://3.bp.blogspot.com/-SxtC1EW-sUc/XbomN2nUFKI/AAAAAAAAFsE/jacn4xQhgPcw33jJJ0Cn2P0NkQU_e-C1ACLcBGAsYHQ/s640/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1%2B.jpg" data-is-external-image="true"  alt="Flasher Tool Pulpstone Android v3.1" width="452" height="640" border="0" data-original-height="679" data-original-width="481"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Tekan Keyboard Untuk Melanjutkan - Flasher Tool Pulpstone Android v3.1</td>
-</tr>
-</tbody>
-</table>
+<figure class="post__image"><a href="https://3.bp.blogspot.com/-8jHxV5Gxum4/XbolOjRETLI/AAAAAAAAFr4/OBfO53s4OmkLgkR31DIlkKGyxoP01EYmACLcBGAsYHQ/s1600/Cara%2BUnlock%2BSTB%2BZTE%2BB860H%2BDengan%2BPulpstone%2BAndroid%2BV%2B3.1-%2BFlasher%2Btool.jpg"><img loading="lazy"  title="Pulpstone_ZTE_B860H_Flasher_Tool_v3.1.exe" src="https://teknomid.com/media/posts/224/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-Flasher-tool.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-Flasher-tool-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-Flasher-tool-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-Flasher-tool-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-Flasher-tool-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-Flasher-tool-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-Flasher-tool-2xl.jpg 1600w"  alt="Pulpstone_ZTE_B860H_Flasher_Tool_v3.1.exe" width="696" height="372" border="0" data-original-height="362" data-original-width="678"></figure></a></p>
+<figure class="post__image"><a href="https://3.bp.blogspot.com/-SxtC1EW-sUc/XbomN2nUFKI/AAAAAAAAFsE/jacn4xQhgPcw33jJJ0Cn2P0NkQU_e-C1ACLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1%2B.jpg"><img loading="lazy"  title="Flasher Tool Pulpstone Android v3.1" src="https://teknomid.com/media/posts/224/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-2xl.jpg 1600w"  alt="Flasher Tool Pulpstone Android v3.1" width="513" height="726" border="0" data-original-height="679" data-original-width="481"></figure></a></p>
 <div>
 <ul>
 <li>Flash tool sudah siap, maka kita fokus ke STB yang akan di flash, perhatikan langkahnya , tancapkan dahulu sisi kabel USB ke port USB laptop/komputer kemudian :</li>
@@ -758,76 +717,28 @@ Selanjutnya kita siapkan laptop atau komputer dengan sistem operasi windows
 1. Tekan dan tahan tombol power</div>
 <div>2. Tancapkan catudaya adaptor STB</div>
 <div>3. Segera tancapkan kabel USB ke port USB 2 di STB</div>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-ig3Qdhtcfs0/XboqIdyiU3I/AAAAAAAAFsQ/3P8QGAxuQAg1J745OjH6DjCtLPOsUOlIQCLcBGAsYHQ/s1600/Cara%2BUnlock%2BSTB%2BZTE%2BB860H%2BDengan%2BPulpstone%2BAndroid%2BV%2B3.1-%2Bmoment%2Bpenting.jpg"><img decoding="async" loading="lazy" title="Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1" src="https://3.bp.blogspot.com/-ig3Qdhtcfs0/XboqIdyiU3I/AAAAAAAAFsQ/3P8QGAxuQAg1J745OjH6DjCtLPOsUOlIQCLcBGAsYHQ/s640/Cara%2BUnlock%2BSTB%2BZTE%2BB860H%2BDengan%2BPulpstone%2BAndroid%2BV%2B3.1-%2Bmoment%2Bpenting.jpg" data-is-external-image="true"  alt="Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1" width="640" height="448" border="0" data-original-height="393" data-original-width="561"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Moment Penting  Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1 </td>
-</tr>
-</tbody>
-</table>
+<div> </div>
+<div><a href="https://3.bp.blogspot.com/-ig3Qdhtcfs0/XboqIdyiU3I/AAAAAAAAFsQ/3P8QGAxuQAg1J745OjH6DjCtLPOsUOlIQCLcBGAsYHQ/s1600/Cara%2BUnlock%2BSTB%2BZTE%2BB860H%2BDengan%2BPulpstone%2BAndroid%2BV%2B3.1-%2Bmoment%2Bpenting.jpg"><figure class="post__image"><img loading="lazy"  title="Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1" src="https://teknomid.com/media/posts/224/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-moment-penting.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-moment-penting-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-moment-penting-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-moment-penting-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-moment-penting-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-moment-penting-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/Cara-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-moment-penting-2xl.jpg 1600w"  alt="Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1" width="702" height="492" border="0" data-original-height="393" data-original-width="561"></figure></a></div>
 <div>kalau moment tepat maka STB akan terdeteksi di laptop atau komputer dan terdengar <strong>suara khas </strong>notifikasi perangkat yang terhubung di windows. Kalau ingin lebih yakin bisa menggunakan monitor TV LCD dihubungkan lewat kabel HDMI ke STB, dan tampilan TV LCD akan blank warna hitam.</div>
 <div> </div>
 <div>Setelah moment penting ini dilewati, maka jalankan flash tool dengan melakukan perintah yang ada di flash tool tersebut.</div>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-5G4JCy3WWZc/XboxLlwuglI/AAAAAAAAFsc/852fyOuhq10A9U_GYm5NoC_vZtSeYy8hwCLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Bketik%2Bangka%2B3%2B.jpg"><img decoding="async" loading="lazy" title="Ketik Angka 3 Untuk Flash STB B850H" src="https://3.bp.blogspot.com/-5G4JCy3WWZc/XboxLlwuglI/AAAAAAAAFsc/852fyOuhq10A9U_GYm5NoC_vZtSeYy8hwCLcBGAsYHQ/s640/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Bketik%2Bangka%2B3%2B.jpg" data-is-external-image="true"  alt="Cara Flash STB ZTE B850H" width="448" height="640" border="0" data-original-height="720" data-original-width="506"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Ketik Angka 3 Untuk Flash STB B850H</td>
-</tr>
-</tbody>
-</table>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-87XvI5sbRMM/XbozBHBqfgI/AAAAAAAAFso/jxDbsNRSnjEvNjY8I2OTNYyHCsHYl3j_ACLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Bextracing%2Bfirmware%2Bpulpstone.jpg"><img decoding="async" loading="lazy" title="Flash STB ZTE B860H" src="https://3.bp.blogspot.com/-87XvI5sbRMM/XbozBHBqfgI/AAAAAAAAFso/jxDbsNRSnjEvNjY8I2OTNYyHCsHYl3j_ACLcBGAsYHQ/s400/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Bextracing%2Bfirmware%2Bpulpstone.jpg" data-is-external-image="true"  alt="UNLOCK STB ZTE B860H" width="400" height="262" border="0" data-original-height="417" data-original-width="634"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Proses Extracing Firmware</td>
-</tr>
-</tbody>
-</table>
-<div>Sabar menunggu sampai proses selesai .......................................................................!</div>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-CR5SiHbQ0G8/Xbo0AFQkRTI/AAAAAAAAFsw/QihSDr2qlgctHLdGikcrFAS27ABApR0JQCLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Btunggu%2Bsampai%2B100%2B%2525.jpg"><img decoding="async" loading="lazy" title="Flash STB ZTE B860H Dengan Pulpstone Android v3.1" src="https://3.bp.blogspot.com/-CR5SiHbQ0G8/Xbo0AFQkRTI/AAAAAAAAFsw/QihSDr2qlgctHLdGikcrFAS27ABApR0JQCLcBGAsYHQ/s400/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Btunggu%2Bsampai%2B100%2B%2525.jpg" data-is-external-image="true"  alt="Flash STB ZTE B860H Dengan Pulpstone Android v3.1" width="400" height="251" border="0" data-original-height="448" data-original-width="711"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Tunggu Sampai 100 % </td>
-</tr>
-</tbody>
-</table>
+<div> </div>
+<div><a href="https://3.bp.blogspot.com/-5G4JCy3WWZc/XboxLlwuglI/AAAAAAAAFsc/852fyOuhq10A9U_GYm5NoC_vZtSeYy8hwCLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Bketik%2Bangka%2B3%2B.jpg"><figure class="post__image"><img loading="lazy"  title="Ketik Angka 3 Untuk Flash STB B850H" src="https://teknomid.com/media/posts/224/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-ketik-angka-3.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-ketik-angka-3-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-ketik-angka-3-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-ketik-angka-3-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-ketik-angka-3-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-ketik-angka-3-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-ketik-angka-3-2xl.jpg 1600w"  alt="Cara Flash STB ZTE B850H" width="523" height="744" border="0" data-original-height="720" data-original-width="506"></figure></a></div>
+<div> </div>
+<div><a href="https://3.bp.blogspot.com/-87XvI5sbRMM/XbozBHBqfgI/AAAAAAAAFso/jxDbsNRSnjEvNjY8I2OTNYyHCsHYl3j_ACLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Bextracing%2Bfirmware%2Bpulpstone.jpg"><figure class="post__image"><img loading="lazy"  title="Flash STB ZTE B860H" src="https://teknomid.com/media/posts/224/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-extracing-firmware-pulpstone.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-extracing-firmware-pulpstone-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-extracing-firmware-pulpstone-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-extracing-firmware-pulpstone-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-extracing-firmware-pulpstone-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-extracing-firmware-pulpstone-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-extracing-firmware-pulpstone-2xl.jpg 1600w"  alt="UNLOCK STB ZTE B860H" width="704" height="463" border="0" data-original-height="417" data-original-width="634"></figure></a></div>
+<div> </div>
+<div>Sabar menunggu sampai proses selesai..................!</div>
+<div> </div>
+<div><a href="https://3.bp.blogspot.com/-CR5SiHbQ0G8/Xbo0AFQkRTI/AAAAAAAAFsw/QihSDr2qlgctHLdGikcrFAS27ABApR0JQCLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Btunggu%2Bsampai%2B100%2B%2525.jpg"><figure class="post__image"><img loading="lazy"  title="Flash STB ZTE B860H Dengan Pulpstone Android v3.1" src="https://teknomid.com/media/posts/224/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-tunggu-sampai-100.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-tunggu-sampai-100-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-tunggu-sampai-100-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-tunggu-sampai-100-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-tunggu-sampai-100-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-tunggu-sampai-100-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-tunggu-sampai-100-2xl.jpg 1600w"  alt="Flash STB ZTE B860H Dengan Pulpstone Android v3.1" width="703" height="443" border="0" data-original-height="448" data-original-width="711"></figure></a></div>
 <blockquote>
 <div><em>Baca Juga: <a href="#non-existing-post-with-id-219" target="_blank" rel="noopener noreferrer">Tutorial Blokir Iklan Pada Android Tanpa Root</a></em></div>
 </blockquote>
-<div>Progress Done ..........................................................................................................100%</div>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-qMbIEotsz54/Xbo0gamEfbI/AAAAAAAAFs8/AU_uDIrlbLogpt2PBBI2xzMvGc980LiWwCLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Bfinish.jpg"><img decoding="async" loading="lazy" title="Flash STB ZTE B860H Dengan Pulpstone Android v3.1" src="https://3.bp.blogspot.com/-qMbIEotsz54/Xbo0gamEfbI/AAAAAAAAFs8/AU_uDIrlbLogpt2PBBI2xzMvGc980LiWwCLcBGAsYHQ/s400/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Bfinish.jpg" data-is-external-image="true"  alt="Flash STB ZTE B860H Dengan Pulpstone Android v3.1" width="400" height="383" border="0" data-original-height="477" data-original-width="497"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Selesai Flash STB ZTE B860H Dengan Pulpstone Android v3.1</td>
-</tr>
-</tbody>
-</table>
+<div>Progress Done ............................................100%</div>
+<div> </div>
+<div><a href="https://3.bp.blogspot.com/-qMbIEotsz54/Xbo0gamEfbI/AAAAAAAAFs8/AU_uDIrlbLogpt2PBBI2xzMvGc980LiWwCLcBGAsYHQ/s1600/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-%2Bfinish.jpg"><figure class="post__image"><img loading="lazy"  title="Flash STB ZTE B860H Dengan Pulpstone Android v3.1" src="https://teknomid.com/media/posts/224/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-finish.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-finish-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-finish-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-finish-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-finish-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-finish-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/Pulpstone_ZTE_B860H_Flasher_Tool_v3.1-finish-2xl.jpg 1600w"  alt="Flash STB ZTE B860H Dengan Pulpstone Android v3.1" width="702" height="674" border="0" data-original-height="477" data-original-width="497"></figure></a></div>
 <div>Proses unlock atau flash STB ZTE ini ditandai dengan suara khas notifikasi  windows ketika perangkat tidak terhubung. Jika kita menghubungkan ke TV LCD maka beberapa saat akan ada tampilan baru, sabar saja kita harus memilih laucher. Proses pemilihan laucher tersebut tidak sempat saya dokumentasikan.</div>
 <div> </div>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-33gOTB1-uFA/Xbo2R9NgKpI/AAAAAAAAFtM/1_uJ1E-UD_AFrxx8a7YNy9G-Ij0PEDmdwCLcBGAsYHQ/s1600/Berhasil%2BUnlock%2BSTB%2BZTE%2BB860H%2BDengan%2BPulpstone%2BAndroid%2BV%2B3.1.jpeg"><img decoding="async" loading="lazy" title="Berhasil Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1" src="https://3.bp.blogspot.com/-33gOTB1-uFA/Xbo2R9NgKpI/AAAAAAAAFtM/1_uJ1E-UD_AFrxx8a7YNy9G-Ij0PEDmdwCLcBGAsYHQ/s400/Berhasil%2BUnlock%2BSTB%2BZTE%2BB860H%2BDengan%2BPulpstone%2BAndroid%2BV%2B3.1.jpeg" data-is-external-image="true"  alt="Berhasil Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1" width="400" height="280" border="0" data-original-height="469" data-original-width="670"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Berhasil Unlock STB ZTE B860H Dengan Pulpstone Android v3.1</td>
-</tr>
-</tbody>
-</table>
+<div><a href="https://3.bp.blogspot.com/-33gOTB1-uFA/Xbo2R9NgKpI/AAAAAAAAFtM/1_uJ1E-UD_AFrxx8a7YNy9G-Ij0PEDmdwCLcBGAsYHQ/s1600/Berhasil%2BUnlock%2BSTB%2BZTE%2BB860H%2BDengan%2BPulpstone%2BAndroid%2BV%2B3.1.jpeg"><figure class="post__image"><img loading="lazy"  title="Berhasil Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1" src="https://teknomid.com/media/posts/224/Berhasil-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1.jpeg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/Berhasil-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-xs.jpeg 300w ,https://teknomid.com/media/posts/224/responsive/Berhasil-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-sm.jpeg 480w ,https://teknomid.com/media/posts/224/responsive/Berhasil-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-md.jpeg 768w ,https://teknomid.com/media/posts/224/responsive/Berhasil-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-lg.jpeg 1024w ,https://teknomid.com/media/posts/224/responsive/Berhasil-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-xl.jpeg 1360w ,https://teknomid.com/media/posts/224/responsive/Berhasil-Unlock-STB-ZTE-B860H-Dengan-Pulpstone-Android-V-3.1-2xl.jpeg 1600w"  alt="Berhasil Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1" width="699" height="489" border="0" data-original-height="469" data-original-width="670"></figure></a></div>
 <h3 id="toc-2">Registrasi Untuk Menggunakan Firmware Pulptone Android v3.1</h3>
 <div>Setelah berhasil melakukan unlock atau flash STB ZTE ZXV10 B860H dengan firmware Pulpstone Android v3.1, maka selanjutnya kita harus registrasi, dikenai biaya donasi saja murah kok saya cuma isi pulsa saja ke Pak Dokter untuk perawatan server dan pengembangan firmware tentunya. Bagaimana caranya, semua ada petunjuk dan caranya lengkap tinggal di ikuti saja.</div>
 <div>
@@ -836,16 +747,7 @@ Selanjutnya kita siapkan laptop atau komputer dengan sistem operasi windows
 <li>Pastikan juga koneksi internet, kalau tidak punya koneksi LAN bisa menggunakan wifi tethering dari HP android kita.</li>
 <li>Buka terminal yang sudah terinstal di Pulpstone Android ini untuk melakukan registrasi</li>
 </ul>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-Di4K_DzoDcU/Xbo5cXCy2pI/AAAAAAAAFtc/UodjLk9qmoc1JXaCVBIgsmPbK0sYlSBYQCLcBGAsYHQ/s1600/Ijin%2Bdari%2BSuper%2BUser%2BUntuk%2Bterminal.jpeg"><img decoding="async" loading="lazy" title="Terminal Emulator" src="https://3.bp.blogspot.com/-Di4K_DzoDcU/Xbo5cXCy2pI/AAAAAAAAFtc/UodjLk9qmoc1JXaCVBIgsmPbK0sYlSBYQCLcBGAsYHQ/s400/Ijin%2Bdari%2BSuper%2BUser%2BUntuk%2Bterminal.jpeg" data-is-external-image="true"  alt="Terminal Emulator" width="400" height="261" border="0" data-original-height="506" data-original-width="774"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Muncul Ijin Ke Superuser Untuk Terminal Emulator</td>
-</tr>
-</tbody>
-</table>
+<figure class="post__image"><a href="https://3.bp.blogspot.com/-Di4K_DzoDcU/Xbo5cXCy2pI/AAAAAAAAFtc/UodjLk9qmoc1JXaCVBIgsmPbK0sYlSBYQCLcBGAsYHQ/s1600/Ijin%2Bdari%2BSuper%2BUser%2BUntuk%2Bterminal.jpeg"><img loading="lazy"  title="Terminal Emulator" src="https://teknomid.com/media/posts/224/Ijin-dari-Super-User-Untuk-terminal.jpeg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/Ijin-dari-Super-User-Untuk-terminal-xs.jpeg 300w ,https://teknomid.com/media/posts/224/responsive/Ijin-dari-Super-User-Untuk-terminal-sm.jpeg 480w ,https://teknomid.com/media/posts/224/responsive/Ijin-dari-Super-User-Untuk-terminal-md.jpeg 768w ,https://teknomid.com/media/posts/224/responsive/Ijin-dari-Super-User-Untuk-terminal-lg.jpeg 1024w ,https://teknomid.com/media/posts/224/responsive/Ijin-dari-Super-User-Untuk-terminal-xl.jpeg 1360w ,https://teknomid.com/media/posts/224/responsive/Ijin-dari-Super-User-Untuk-terminal-2xl.jpeg 1600w"  alt="Terminal Emulator" width="702" height="460" border="0" data-original-height="506" data-original-width="774"></figure></a></p>
 <div> </div>
 <div>Klik Grant, setelah masuk ke terminal emulator ketik perintah bertahap seperti ini :<br>su ..........( enter)<br>9191 .......... (enter)<br>tunggu sampai muncul menu
 <div id="baca-juga"></div>
@@ -854,28 +756,12 @@ Selanjutnya kita siapkan laptop atau komputer dengan sistem operasi windows
 <blockquote>
 <div><em>Baca Juga: <a href="https://teknomid.com/game-android-yang-seru-dan-banyak-peminatnya-di-tahun-2022/" target="_blank" rel="noopener noreferrer">Game Android yang Seru dan Banyak Peminatnya Di Tahun 2022</a></em></div>
 </blockquote>
-<div><br>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-EdIC-hDe7ek/XbpALF7G5rI/AAAAAAAAFt0/_KWZrm961IoIrESlUznG8q1k4s6Cz180QCLcBGAsYHQ/s1600/registrasi%2Bpulptone%2Bandroid%2Bv3.1ke%2B9191.jpg"><img decoding="async" loading="lazy" title="registrasi pulptone android v3.1 ke 9191" src="https://3.bp.blogspot.com/-EdIC-hDe7ek/XbpALF7G5rI/AAAAAAAAFt0/_KWZrm961IoIrESlUznG8q1k4s6Cz180QCLcBGAsYHQ/s400/registrasi%2Bpulptone%2Bandroid%2Bv3.1ke%2B9191.jpg" data-is-external-image="true"  alt="registrasi pulptone android v3.1 ke 9191" width="400" height="335" border="0" data-original-height="436" data-original-width="520"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Menu Pilihan Pertama Kita Pilih Untuk Registrasi Dahulu, pilih 88</td>
-</tr>
-</tbody>
-</table>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-BB2qgMqvCZA/XbpBq8mikAI/AAAAAAAAFuA/yZs8gmLnjWsr58FgoaKrbA0KTmBaw5Y_wCLcBGAsYHQ/s1600/username%2B%2Bpulpstone%2Bandroid.jpg"><img decoding="async" loading="lazy" src="https://3.bp.blogspot.com/-BB2qgMqvCZA/XbpBq8mikAI/AAAAAAAAFuA/yZs8gmLnjWsr58FgoaKrbA0KTmBaw5Y_wCLcBGAsYHQ/s400/username%2B%2Bpulpstone%2Bandroid.jpg" data-is-external-image="true"  width="400" height="306" border="0" data-original-height="374" data-original-width="487"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Username Pulpstone Android</td>
-</tr>
-</tbody>
-</table>
-Kita siapkan username sesuai perintah yang muncul, kemudian ikuti saja perintah yang tampil.<br>
+<div> </div>
+<div><a href="https://3.bp.blogspot.com/-EdIC-hDe7ek/XbpALF7G5rI/AAAAAAAAFt0/_KWZrm961IoIrESlUznG8q1k4s6Cz180QCLcBGAsYHQ/s1600/registrasi%2Bpulptone%2Bandroid%2Bv3.1ke%2B9191.jpg"><figure class="post__image"><img loading="lazy"  title="registrasi pulptone android v3.1 ke 9191" src="https://teknomid.com/media/posts/224/registrasi-pulptone-android-v3.1ke-9191.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/registrasi-pulptone-android-v3.1ke-9191-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/registrasi-pulptone-android-v3.1ke-9191-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/registrasi-pulptone-android-v3.1ke-9191-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/registrasi-pulptone-android-v3.1ke-9191-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/registrasi-pulptone-android-v3.1ke-9191-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/registrasi-pulptone-android-v3.1ke-9191-2xl.jpg 1600w"  alt="Registrasi pulptone android v3.1 ke 9191" width="699" height="585" border="0" data-original-height="436" data-original-width="520"></figure></a></div>
+<div> </div>
+<div><a href="https://3.bp.blogspot.com/-BB2qgMqvCZA/XbpBq8mikAI/AAAAAAAAFuA/yZs8gmLnjWsr58FgoaKrbA0KTmBaw5Y_wCLcBGAsYHQ/s1600/username%2B%2Bpulpstone%2Bandroid.jpg"><figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/224/username-pulpstone-android.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/username-pulpstone-android-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/username-pulpstone-android-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/username-pulpstone-android-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/username-pulpstone-android-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/username-pulpstone-android-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/username-pulpstone-android-2xl.jpg 1600w"  width="700" height="537" border="0" data-original-height="374" data-original-width="487"></figure></a></div>
+<div> </div>
+<div>Kita siapkan username sesuai perintah yang muncul, kemudian ikuti saja perintah yang tampil.<br>
 <h3 id="toc-3">Aktivasi Firmware Pulptone Android v3.1</h3>
 </div>
 </div>
@@ -888,18 +774,9 @@ Kita siapkan username sesuai perintah yang muncul, kemudian ikuti saja perintah 
 <ul>
 <li>Buka kembali terminal emulator, ketik : </li>
 </ul>
-su ...(enter)<br>9191 ...(enter)<br>1 ... (enter)<br>
-<table class="tr-caption-container" cellspacing="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td><a href="https://3.bp.blogspot.com/-jaB7pw8oh7E/XbpRapTXrJI/AAAAAAAAFuM/1hd5Rj32teccbYueEoE34g-ZN6MSqNUxwCLcBGAsYHQ/s1600/instal%2Baplikasi%2B9191.jpg"><img decoding="async" loading="lazy" src="https://3.bp.blogspot.com/-jaB7pw8oh7E/XbpRapTXrJI/AAAAAAAAFuM/1hd5Rj32teccbYueEoE34g-ZN6MSqNUxwCLcBGAsYHQ/s400/instal%2Baplikasi%2B9191.jpg" data-is-external-image="true"  width="400" height="367" border="0" data-original-height="362" data-original-width="393"></a></td>
-</tr>
-<tr>
-<td class="tr-caption">Instal Aplikasi Via 9191 Pulpstone Android</td>
-</tr>
-</tbody>
-</table>
-<br>Proses instal beberapa aplikasi akan lumayan lama, jadi sabar, akan ada beberapa aplikasi terbuka biarkan saja, sampai selesai prosesnya. Untuk lain-lain bisa lihat di video di <strong><a href="https://www.youtube.com/watch?v=TT8jKrajRMM" target="_blank" rel="noopener noreferrer">channel Pulpstone Android</a></strong>. Sampai di sini dulu, dan sesuaikan kebutuhan kita saja. Terimakasih.<br><br>================================</div>
+su ...(enter)<br>9191 ...(enter)<br>1 ... (enter)</div>
+<div> </div>
+<div><a href="https://3.bp.blogspot.com/-jaB7pw8oh7E/XbpRapTXrJI/AAAAAAAAFuM/1hd5Rj32teccbYueEoE34g-ZN6MSqNUxwCLcBGAsYHQ/s1600/instal%2Baplikasi%2B9191.jpg"><figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/224/instal-aplikasi-9191.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/224/responsive/instal-aplikasi-9191-xs.jpg 300w ,https://teknomid.com/media/posts/224/responsive/instal-aplikasi-9191-sm.jpg 480w ,https://teknomid.com/media/posts/224/responsive/instal-aplikasi-9191-md.jpg 768w ,https://teknomid.com/media/posts/224/responsive/instal-aplikasi-9191-lg.jpg 1024w ,https://teknomid.com/media/posts/224/responsive/instal-aplikasi-9191-xl.jpg 1360w ,https://teknomid.com/media/posts/224/responsive/instal-aplikasi-9191-2xl.jpg 1600w"  width="702" height="647" border="0" data-original-height="362" data-original-width="393"></figure></a><br><br>Proses instal beberapa aplikasi akan lumayan lama, jadi sabar, akan ada beberapa aplikasi terbuka biarkan saja, sampai selesai prosesnya. Untuk lain-lain bisa lihat di video di <strong><a href="https://www.youtube.com/watch?v=TT8jKrajRMM" target="_blank" rel="noopener noreferrer">channel Pulpstone Android</a></strong>. Sampai di sini dulu, dan sesuaikan kebutuhan kita saja. Terimakasih.<br><br>================================</div>
 <div>
 <h3 id="toc-5">Update Pulpstone Terbaru Januari 2021</h3>
 <h4>Pulpstone Android v 3.8 B860H</h4>
@@ -940,7 +817,7 @@ su ...(enter)<br>9191 ...(enter)<br>1 ... (enter)<br>
             <category term="HANDPHONE"/>
             <category term="GOOGLE"/>
 
-        <updated>2022-07-28T22:43:30+07:00</updated>
+        <updated>2022-07-31T07:15:52+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/223/Android-12-Custom-Rom-option-2.webp" alt="Android 12 and 12L Custom ROM " />
@@ -3047,7 +2924,7 @@ su ...(enter)<br>9191 ...(enter)<br>1 ... (enter)<br>
         <id>https://teknomid.com/mencari-playlist-m3u-iptv-gratis-streaming-pada-android-dan-komputer/</id>
             <category term="IPTV"/>
 
-        <updated>2022-07-28T22:48:54+07:00</updated>
+        <updated>2022-07-31T07:15:22+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/222/download-file-m3u-untuk-stb.jpg" alt=" IPTV " />
@@ -3063,24 +2940,18 @@ su ...(enter)<br>9191 ...(enter)<br>1 ... (enter)<br>
 <article id="post-2325">
 <div class="align-left">
 <p class="align-left"><strong>Mencari Playlist M3U IPTV Gratis Streaming Pada Android Dan Komputer</strong>  Teknologi sudah semakin berkembang dengan adanya jaringan internet, termasuk televisi yang menjadi hiburan dan sumber informasi terbaru. Dahulu menonton siaran televisi menggukan perangkat TV dan antena. Namun sekarang banyak dari kita pengguna internet memakai layanan IPTV yang disediakan oleh provider. Biasanya layanan ini dibundling dengan layanan internet oleh para provider tersebut.</p>
-<blockquote>
-<pre class="align-left"><strong><em>Baca juga: <a href="https://teknomid.com/android-12-and-12l-custom-rom/" title="Android 12 and 12L Custom ROM" target="_blank" rel="noopener noreferrer">Android 12 and 12L Custom ROM</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca juga: <a href="https://teknomid.com/android-12-and-12l-custom-rom/" title="Android 12 and 12L Custom ROM" target="_blank" rel="noopener noreferrer">Android 12 and 12L Custom ROM</a></em></strong></blockquote>
 <p class="align-left">Bagi sebagian orang yang hanya berlangganan layanan internet saja masih bisa menggunakan IPTV dengan menggunakan STB android atau menggunakan komputer dengan menginstall aplikasi VLC Media Player salah satunya. Pada artikel ini saya ingin membagikan pengalaman saya mencari playlist m3u gratis untuk menonton IPTV dengan mudah.</p>
 <p class="align-left">Situs yang saya gunakan untuk mencari playlist m3u gratis yaitu <a href="https://www.ramitan.com/go/pastebin/">https://pastebin.com/. </a>Melakukan pencarian pada situs ini sangat mudah, kamu hanya tinggal mencari pada kolom pencarian nama channel siaran televisi yang ingin kamu tonton. Misalnya saya ingin mencari siaran indosiar;</p>
 <div class="align-left">
-<figure><figure class="moz-reader-block-img"><img decoding="async" loading="lazy"  src="https://www.ramitan.com/wp-content/uploads/2019/06/indosiar-630x380.png" data-is-external-image="true"  alt="indosiar" width="630" height="380" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2019/06/indosiar-630x380.png"></figure>
+<figure><figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/222/indosiar-630x380.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/222/responsive/indosiar-630x380-xs.png 300w ,https://teknomid.com/media/posts/222/responsive/indosiar-630x380-sm.png 480w ,https://teknomid.com/media/posts/222/responsive/indosiar-630x380-md.png 768w ,https://teknomid.com/media/posts/222/responsive/indosiar-630x380-lg.png 1024w ,https://teknomid.com/media/posts/222/responsive/indosiar-630x380-xl.png 1360w ,https://teknomid.com/media/posts/222/responsive/indosiar-630x380-2xl.png 1600w"  alt="indosiar" width="630" height="380" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2019/06/indosiar-630x380.png"></figure>
 <figcaption>Pencarian channel tv indosiar</figcaption>
 </figure>
 </div>
 <p>Maka akan muncul banyak hasil pencarian, silahkan kamu pilih salah satu hasil pada pencarian yang sesuai keinginan kamu.</p>
-<blockquote>
-<pre><strong><em>Baca Juga: <a href="https://teknomid.com/tutorial-mengatasi-icloud-penuh-di-iphone/" target="_blank" rel="noopener noreferrer">Tutorial Mengatasi iCloud Penuh di iPhone</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga: <a href="https://teknomid.com/tutorial-mengatasi-icloud-penuh-di-iphone/" target="_blank" rel="noopener noreferrer">Tutorial Mengatasi iCloud Penuh di iPhone</a></em></strong></blockquote>
 <p>Cukup mudah bukan? Pasti bisa kamu praktekan sendiri. Atau kamu juga bisa memakai playlist yang telah saya buat untuk menonton IPTV dengan tautan dibawah;</p>
-<blockquote>
-<pre> https://pastebin.com/raw/N0HucG0m </pre>
-</blockquote>
+<blockquote>https://pastebin.com/raw/N0HucG0m</blockquote>
 <p class="align-left">Silahkan salin tautan diatas dan masukkan ke IPTV player pada perangkat android atau VLC player kamu untuk menonton saluran TV.</p>
 <p class="align-left">Sekian artikel ini dibuat berdasarkan pengalaman penulis, apabila ada pertanyaan dan saran pada artikel ini silahkan tinggalkan balasan pada kolom komentar. Wassalam</p>
 </div>
@@ -3200,7 +3071,7 @@ add name=AKTIF-ISYA  interval="1d 00:00:00" start-time="19:20:00" on-event="/int
 <div id="howto-step-6102de892328b">
 <h3><span id="Tambahkan_Page_Rule">Tambahkan Page Rule</span></h3>
 <div>
-<figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/220/2022-07-27_013558.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-xs.png 300w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-sm.png 480w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-md.png 768w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-lg.png 1024w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-xl.png 1360w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-2xl.png 1600w"  alt="cloudflare" width="1152" height="688"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/220/2022-07-27_013558.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-xs.png 300w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-sm.png 480w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-md.png 768w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-lg.png 1024w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-xl.png 1360w ,https://teknomid.com/media/posts/220/responsive/2022-07-27_013558-2xl.png 1600w"  alt="cloudflare" width="1152" height="688"></figure>
 <p>Untuk melakukan redirect domain lama ke domain baru, masuk ke menu Page Rule pada Cloudflare dan lakukan pengaturan seperti gambar.</p>
 </div>
 </div>

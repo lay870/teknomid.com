@@ -23,7 +23,7 @@ li {
 }
 
 img {
-  height: auto;
+  height: 45%;
   max-width: 100%;
   vertical-align: top;
 }
@@ -1759,7 +1759,7 @@ textarea {
 }
 
 .u-header {
-  background: var(--dark);
+  background: rgb(255 255 255 / 0%);
   border-radius: 0 0 5px 5px;
   padding: 0;
   position: relative;
@@ -2020,8 +2020,9 @@ textarea {
 }
 .post__featured-image > img {
   display: block;
-  height: 200px;
-  width: 760px;
+  height auto; 
+  width: 100%;
+
 }
 .post__featured-image > figcaption {
   background: var(--dark);
@@ -2082,7 +2083,7 @@ textarea {
   .post__featured-image + .post__header {
     margin: 0;
     padding: 0;
-    width: 760px;
+    width: 100%;
     padding-left: 10px;
     padding-top: 8px;
   }
