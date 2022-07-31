@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-07-31T07:15:52+07:00</updated>
+    <updated>2022-07-31T15:47:40+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="MOBILE-APPLIKASI"/>
             <category term="APPLIKASI"/>
 
-        <updated>2022-07-31T06:23:10+07:00</updated>
+        <updated>2022-07-31T15:35:50+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/227/cara_memblokir_iklan_di_youtube-2xl.jpg" alt="Tutorial Blokir Iklan Pada Android Tanpa Root" />
@@ -47,30 +47,24 @@
 <p>Cara yang kami berikan pada tutorial ini ada yang bisa kamu praktikan tanpa root dan ada juga yang dapat kamu terapkan dengan root. Dengan Efektifitas yang berbeda tiap cara, maka sebaiknya pilih cara yang menurut kamu cocok untuk dipakai.</p>
 <h5 id="mcetoc_1g92fvbvcfn"><strong>1. Mengganti DNS</strong></h5>
 <p>Mengganti DNS Pribadi adalah salah satu cara termudah untuk blokir iklan pada Android. Cara ini tidak memerlukan aplikasi tambahan yang harus kamu instal pada Android, karena fitur ini sudah ada didalam menu Pengaturan. Tapi sebelum ingin memakai fitur ini pastikan perangkatmu memiliki versi android 9 Pie keatas.</p>
-<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/DNS-Pribadi-Android.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-xs.png 300w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-sm.png 480w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-md.png 768w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-lg.png 1024w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-xl.png 1360w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-2xl.png 1600w"  alt="" width="576" height="600" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/DNS-Pribadi-Android.png"></figure><br><br></pre>
+<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/DNS-Pribadi-Android.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-xs.png 300w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-sm.png 480w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-md.png 768w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-lg.png 1024w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-xl.png 1360w ,https://teknomid.com/media/posts/227/responsive/DNS-Pribadi-Android-2xl.png 1600w"  alt="" width="576" height="600" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/DNS-Pribadi-Android.png"></figure><br><br></p>
 <p>Untuk masuk ke fitur ini jika kamu menggunakan MIUI masuk ke Pengaturan &gt; Koneksi &amp; Berbagi &gt; DNS Pribadi, tapi jika kamu menggunakan UI Android lain, kamu bisa mencoba masuk ke Pengaturan pada bar pencarian tulis dengan DNS Pribadi. Isi Nama host penyedia DNS Pribadi dengan dns.adguard.com atau us.adhole.org, dan tap Simpan. Setelah itu kamu tidak akan melihat iklan pada Browser.</p>
 <h5 id="mcetoc_1g92fvbvcfo">2. AdGuard</h5>
-<div>
-<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/AdGuard.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/AdGuard-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/AdGuard-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/AdGuard-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/AdGuard-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/AdGuard-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/AdGuard-2xl.jpg 1600w"  alt="" width="508" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/AdGuard.jpg"></figure></pre>
-</div>
+<p> </p>
+<div><figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/AdGuard.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/AdGuard-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/AdGuard-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/AdGuard-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/AdGuard-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/AdGuard-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/AdGuard-2xl.jpg 1600w"  alt="" width="508" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/AdGuard.jpg"></figure></div>
 <p>Salah satu piranti lunak pemblokir iklan yang terkenal di desktop, yang saat ini memiliki versi untuk iOS dan Android juga yaitu AdGuard. Aplikasi ini menggunakan VPN untuk melakukan filtrasi iklan. Kamu bisa mengunduh AdGuard di Play Store</p>
 <h5 id="mcetoc_1g92fvbvcfp">3. AdLock</h5>
-<div>
-<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/AdLock-1.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/AdLock-1-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-2xl.jpg 1600w"  alt="" width="403" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/AdLock-1.jpg"></figure></pre>
-</div>
+<p> </p>
+<div><figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/AdLock-1.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/AdLock-1-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/AdLock-1-2xl.jpg 1600w"  alt="" width="403" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/AdLock-1.jpg"></figure></div>
 <p>Aplikasi ini tidak ada di Play Store, maka kamu harus mengunduh langsung di situs resmi mereka. <a href="https://adlock.com/adlock-for-android/" target="_blank" rel="noopener">AdLock</a> merupakan aplikasi yang bisa dipakai pada perangkat Android, IOS, Windows, dan macOS. Dengan aplikasi ini kamu bisa memblokir iklan pada game dan browser, dengan fitur pilihan dalam memblokir situs tertentu dan melakukan filtrasi HTTPS.</p>
 <blockquote><strong><em>Baca juga:<a href="https://teknomid.com/tutorial-unlock-stb-zte-b860h-dengan-pulpstone/" target="_blank" rel="noopener noreferrer"> Tutorial Unlock STB ZTE B860H Dengan Pulpstone</a></em></strong></blockquote>
 <h5 id="mcetoc_1g92fvbvcfq"><span id="4_Blokada">4. Blokada</span></h5>
-<p>Ini merupakan salah satu pemblokir iklan yang berfungsi sangat baik. Blokada memiliki lebih lengkap daftar host pemblokiran iklan yang bisa Kamu pilih.</p>
-<div>
-<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/Blokada.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/Blokada-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/Blokada-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/Blokada-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/Blokada-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/Blokada-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/Blokada-2xl.jpg 1600w"  alt="" width="401" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/Blokada.jpg"></figure></pre>
-</div>
+<p>Ini merupakan salah satu pemblokir iklan yang berfungsi sangat baik. Blokada memiliki lebih lengkap daftar host pemblokiran iklan yang bisa Kamu pilih.<br><br></p>
+<div><figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/Blokada.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/Blokada-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/Blokada-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/Blokada-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/Blokada-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/Blokada-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/Blokada-2xl.jpg 1600w"  alt="" width="401" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/Blokada.jpg"></figure></div>
 <p>Blokada juga memperkuat privasimu dengan mengacak permintaan DNS, Kamu juga bisa membuat daftar <em>blacklist/Whitelist</em>. Kamu bisa mengunduh aplikasi Blokada versi slim pada Play Store, versi ini memiliki fitur terbatas karena ketatnya kebijakan Google Play Store. Jika Kamu ingin menggunakan aplikasi ini dengan fitur yang lengkap, silahkan langsung unduh di situs <a href="https://blokada.org/" rel="nofollow noopener" target="_blank">Blokada</a>.</p>
 <h5 id="mcetoc_1g92fvbvcfr"><span id="5_DNS66">5. DNS66</span></h5>
-<p>Seperti kebanyakan pemblokir iklan berbasis VPN, maka DNS66 tidak memerlukan perangkat Android yang sudah root. Aplikasi ini menawarkan pemblokiran iklan di seluruh sistem sehingga dapat memfilter iklan dalam aplikasi juga. Kamu juga bisa mengatur server DNS sendiri pada aplikasi ini. Kamu bisa mengunduh aplikasi ini dari <a href="https://f-droid.org/en/packages/org.jak_linux.dns66/" rel="nofollow noopener" target="_blank">F-Droid</a>.</p>
-<div>
-<figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/DNS66.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/DNS66-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/DNS66-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/DNS66-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/DNS66-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/DNS66-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/DNS66-2xl.jpg 1600w"  alt="" width="406" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/DNS66.jpg"></figure></pre>
-</div>
+<p>Seperti kebanyakan pemblokir iklan berbasis VPN, maka DNS66 tidak memerlukan perangkat Android yang sudah root. Aplikasi ini menawarkan pemblokiran iklan di seluruh sistem sehingga dapat memfilter iklan dalam aplikasi juga. Kamu juga bisa mengatur server DNS sendiri pada aplikasi ini. Kamu bisa mengunduh aplikasi ini dari <a href="https://f-droid.org/en/packages/org.jak_linux.dns66/" rel="nofollow noopener" target="_blank">F-Droid</a>.<br><br></p>
+<div><figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/227/DNS66.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/227/responsive/DNS66-xs.jpg 300w ,https://teknomid.com/media/posts/227/responsive/DNS66-sm.jpg 480w ,https://teknomid.com/media/posts/227/responsive/DNS66-md.jpg 768w ,https://teknomid.com/media/posts/227/responsive/DNS66-lg.jpg 1024w ,https://teknomid.com/media/posts/227/responsive/DNS66-xl.jpg 1360w ,https://teknomid.com/media/posts/227/responsive/DNS66-2xl.jpg 1600w"  alt="" width="406" height="800" data-ezsrc="https://www.ramitan.com/wp-content/uploads/2021/08/DNS66.jpg"></figure></div>
 <p>DNS66 memang memiliki tampilan yang lebih kuno dibandingkan AdGuard dan Blokada. Namun aplikasi ini bekerja cukup baik ketika kami coba.</p>
 <blockquote><strong><em>Baca juga:<a href="https://www.ramitan.com/tutorial/android/3-alternatif-pengganti-google-play-store-untuk-download-aplikasi-android/" data-type="post" data-id="2184"> </a><a href="https://teknomid.com/android-12-and-12l-custom-rom/" title="Android 12 and 12L Custom ROM " target="_blank" rel="noopener noreferrer"></a><a href="https://teknomid.com/mencari-playlist-m3u-iptv-gratis-streaming-pada-android-dan-komputer/" title="Mencari Playlist M3U IPTV Gratis Streaming Pada Android Dan Komputer" target="_blank" rel="noopener noreferrer">Mencari Playlist M3U IPTV Gratis Streaming Pada Android Dan Komputer</a> </em></strong></blockquote>
 <p>Itulah diatas 5 cara terbaik yang bisa Kamu praktikan untuk blokir iklan pada android yang tidak memerlukan root pada perangkat Kamu dan tentu saja semuanya gratis. Silahkan bandingkan masing-masing fitur dari aplikasi tersebut dan sesuaikan mana aplikasi yang cocok dengan kebutuhan Kamu.</p>
@@ -86,7 +80,7 @@
         <id>https://teknomid.com/pendatang-baru-nothing-phone-1/</id>
             <category term="HANDPHONE"/>
 
-        <updated>2022-07-28T20:59:54+07:00</updated>
+        <updated>2022-07-31T15:47:40+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/226/spesifikasi-nothing-phone-1.jpg" alt="Pendatang Baru Nothing Phone" />
@@ -122,14 +116,12 @@
 </ul>
 </div>
 <p>Harga dan spesifikasi Nothing Phone (1), Nothing, merek elektronik jebolan baru ini merilis HP pertamanya.. Selain memiliki nama unik, Nothing mengeluarkan unit ponsel yang tidak biasa. Nothing Phone (1) hadir dengan desain futuris dan transparan pada bagian belakang.</p>
-<blockquote>
-<pre><strong><em><a class="in-cell-link" href="https://teknomid.com/hp-xiaomi-12s-ultra-membawa-sensor-kamera-besar-milik-sony/" target="_blank" rel="noopener">Baca Juga: HP Xiaomi 12S Ultra Membawa Sensor Kamera Besar Milik Sony</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga: <a href="https://teknomid.com/hp-xiaomi-12s-ultra-membawa-sensor-kamera-besar-milik-sony/" target="_blank" rel="noopener noreferrer">HP Xiaomi 12S Ultra Membawa Sensor Kamera Besar Milik Sony</a></em></strong></blockquote>
 <h5 id="mcetoc_1g92ga3d1kr">Harga</h5>
 <p>Untuk Harga Sendiri kita coba ambil dari website resmi <strong><a href="https://www.gsmarena.com/nothing_phone_(1)-11636.php" target="_blank" rel="noopener noreferrer">GSMArena</a></strong></p>
 <pre>256GB 12GB RAM :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/ebay-com2.png" data-is-external-image="true"  alt="" width="81" height="23">- <a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10044&amp;campid=5338659500&amp;customid=gsmarena&amp;lgeo=1&amp;vectorid=229466&amp;item=175350945331" data-click="pricecounter-js.php3?idOffer=185183&amp;idStore=2" target="_blank" rel="noopener noreferrer">$ 745.00</a><br>               :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-de1.png" data-is-external-image="true"  alt="" width="85" height="24">- <a href="https://www.amazon.de/dp/B09Z6QBCD2?tag=gsmarena0ca-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=184295&amp;idStore=11" target="_blank" rel="noopener noreferrer">€ 549.00</a><br>128GB 8GB RAM  :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-de1.png" data-is-external-image="true"  alt="" width="85" height="24">- <a href="https://www.amazon.de/dp/B09Z6R6C7C?tag=gsmarena0ca-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=184292&amp;idStore=11" target="_blank" rel="noopener noreferrer">€ 469.00</a><br>               :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-nl.png" data-is-external-image="true"  alt="" width="85" height="25">- <a href="https://www.amazon.nl/dp/B09Z6R6C7C?tag=gsmarena0b7-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=185179&amp;idStore=22" target="_blank" rel="noopener noreferrer">€ 469.00</a><br>256GB 8GB RAM  :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-de1.png" data-is-external-image="true"  alt="" width="85" height="24">- <a href="https://www.amazon.de/dp/B09Z6QLHVL?tag=gsmarena0ca-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=184293&amp;idStore=11" target="_blank" rel="noopener noreferrer">€ 499.00</a><br>               :<img loading="lazy" src="https://fdn.gsmarena.com/imgroot/static/stores/amazon-nl.png" data-is-external-image="true"  alt="" width="85" height="25">- <a href="https://www.amazon.nl/dp/B09Z6RXHJB?tag=gsmarena0b7-21&amp;linkCode=osi&amp;th=1&amp;psc=1" data-click="pricecounter-js.php3?idOffer=185180&amp;idStore=22" target="_blank" rel="noopener noreferrer">€ 499.00</a> </pre>
 <h5 id="mcetoc_1g92ga3d1ks" class="module module-phones module-related">Spesifikasi:</h5>
-<table dir="ltr" style="border-collapse: collapse; border-style: none; width: 100%; height: 3180.3px;" border="1" cellspacing="0" cellpadding="0"><colgroup><col style="width: 16.9516%;" width="119"><col style="width: 12.963%;" width="91"><col style="width: 74.5014%;" width="523"></colgroup>
+<table dir="ltr" style="border-collapse: collapse; border-style: none; width: 93.3048%; height: 3180.3px;" border="1" cellspacing="0" cellpadding="0"><colgroup><col style="width: 18.9607%;" width="119"><col style="width: 17.7375%;" width="91"><col style="width: 63.3042%;" width="523"></colgroup>
 <tbody>
 <tr style="height: 50.3594px;">
 <td style="height: 359.75px;" colspan="1" rowspan="6" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;NETWORK&quot;}">
@@ -375,22 +367,14 @@
 </tr>
 </tbody>
 </table>
-<blockquote>
-<pre><strong><em><a href="https://teknomid.com/hp-xiaomi-13i-hypercharge-5g-dengan-prosesor-dimensity-1100/" target="_blank" rel="noopener noreferrer">Baca Juga: HP Xiaomi 13i HyperCharge 5G dengan Prosesor Dimensity 1100</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga: <a href="https://teknomid.com/hp-xiaomi-13i-hypercharge-5g-dengan-prosesor-dimensity-1100/" target="_blank" rel="noopener noreferrer">HP Xiaomi 13i HyperCharge 5G dengan Prosesor Dimensity 1100</a></em></strong></blockquote>
 <p>Sebagai pabrikan ponsel baru, Nothing Phone diharapkan bisa ikut meramaikan pasar HP global. Kini mereka mulai menggebrak pasar dengan hadirnya Nothing Phone (1). Tidak hanya itu, Nothing Phone (1) memiliki fitur interface Glyph yang membuat strip lampu LED di bagian belakang bisa menyala.</p>
-<blockquote>
-<pre><strong><em><a href="https://teknomid.com/hp-xiaomi-12-mini-hadirkan-tiga-kamera-belakang/" target="_blank" rel="noopener noreferrer">Baca Juga: HP Xiaomi 12 Mini, Hadirkan Tiga Kamera Belakang</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga: <a href="https://teknomid.com/hp-xiaomi-12-mini-hadirkan-tiga-kamera-belakang/" target="_blank" rel="noopener noreferrer">HP Xiaomi 12 Mini, Hadirkan Tiga Kamera Belakang</a></em></strong></blockquote>
 <p>Lampu LED Nothing Phone (1) terdapat pada sisi modul kamera belakang, bagian tengah dan di atas port USB Type-C.</p>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/226/2171094907.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/226/responsive/2171094907-xs.jpg 300w ,https://teknomid.com/media/posts/226/responsive/2171094907-sm.jpg 480w ,https://teknomid.com/media/posts/226/responsive/2171094907-md.jpg 768w ,https://teknomid.com/media/posts/226/responsive/2171094907-lg.jpg 1024w ,https://teknomid.com/media/posts/226/responsive/2171094907-xl.jpg 1360w ,https://teknomid.com/media/posts/226/responsive/2171094907-2xl.jpg 1600w"  alt="" width="1200" height="800"></figure><br><br>Lampu-lampu pada bagian belakang ini akan menyala apabila ada telepon masuk, pemberitahuan aplikasi, saat isi daya, dan lain sebagainya sesuai dengan pengaturan yang dilakukan pengguna.</p>
-<blockquote>
-<pre><strong><a href="https://teknomid.com/hp-xiaomi-13t-pro-5g-berbekal-tiga-module-kamera-canggih/" target="_blank" rel="noopener noreferrer"><em>Baca Juga: HP Xiaomi 13T Pro 5G, Berbekal Tiga Module Kamera Canggih</em></a></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga: <a href="https://teknomid.com/hp-xiaomi-13t-pro-5g-berbekal-tiga-module-kamera-canggih/" target="_blank" rel="noopener noreferrer">HP Xiaomi 13T Pro 5G, Berbekal Tiga Module Kamera Canggih</a></em></strong></blockquote>
 <p>Dikutip dari The Verge, kombisanasi nyala LED di bagian belakang dapat diatur pengguna melalui pengaturan notifikasi aplikasi.<br><br>Fitur Glyph juga terkait pada nada tertentu, pengguna bisa menggunakannya untuk aplikasi atau fitur apa pun yang memungkinkan pengguna untuk menyesuaikan nada pemberitahuan.<br><br>Baca juga: Sederet Risiko Jika Kamu Beli Smartphone Garansi Tak Resmi, Salah Satunya IMEI Bisa Terblokir</p>
-<blockquote>
-<pre><strong><em><a href="https://teknomid.com/game-android-yang-seru-dan-banyak-peminatnya-di-tahun-2022/" target="_blank" rel="noopener noreferrer">Baca Juga: Game Android yang Seru dan Banyak Peminatnya Di Tahun 2022</a></em></strong></pre>
-</blockquote>
+<blockquote><strong><em>Baca Juga: <a href="https://teknomid.com/game-android-yang-seru-dan-banyak-peminatnya-di-tahun-2022/" target="_blank" rel="noopener noreferrer">Game Android yang Seru dan Banyak Peminatnya Di Tahun 2022</a></em></strong></blockquote>
 <p>Tidak hanya itu, pengguna juga bisa mengatur dan menyesuaikan kecerahan lampu LED.<br><br>Meski transparan, bagian belakang Nothing Phone (1) telah dilengkapi Gorilla Glass 5, GSMArena melaporkan.<br><br>Nothing Phone (1) telah mengantongi sertifikat IP53, artinya ponsel dengan bagian belakang transparan ini memiliki ketahanan terhadap debu dan air.<br><br>Pada laman resminya, Nothing Phone (1) dijual di antaranya di Inggris, Finlandia, Prancis, Jerman, Hong Kong, Hongaria, India, Israel, Italia, Makau, Malaysia, Denmark, Belanda, Norwegia, Filipina, Portugal, Republik Ceko, Rumania, Kroasia, India, Arab Saudi, Spanyol, Singapura, Swedia, Swiss, Taiwan, Thailand, Polandia, UEA.</p>
 <p> </p>
             ]]>
@@ -405,7 +389,7 @@
         <id>https://teknomid.com/sangat-penting-untuk-logout-icloud-iphone/</id>
             <category term="TUTORIAL"/>
 
-        <updated>2022-07-31T07:15:45+07:00</updated>
+        <updated>2022-07-31T15:41:33+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/225/6.-Logout-iCloud-iPhone-Penting-Dilakukan-Simak-Langkah-Mudahnya-696x392.jpg" alt="Sangat Penting Untuk Logout iCloud iPhone" />
