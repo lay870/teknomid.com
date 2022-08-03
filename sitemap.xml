@@ -413,6 +413,54 @@
 </image:image>
 </url>
 <url>
+<loc>https://teknomid.com/mariadb-galera-cluster-di-centos-7/</loc>
+<lastmod>2022-08-03T19:43:59+07:00</lastmod>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/MariaDB-Galera-Cluster-Architecture-1024x375.png</image:loc>
+<image:title><![CDATA[Linux MariaDB]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/Screenshot_10.png</image:loc>
+<image:title><![CDATA[Cluster Node]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/centos-7-update.png</image:loc>
+<image:title><![CDATA[Linux centos-7-update]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/Centos-Install-MariaDB-Server-Galera-2.png</image:loc>
+<image:title><![CDATA[Linux MariaDB Install Galera]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/Galera-Configuration.png</image:loc>
+<image:title><![CDATA[Linux MariaDB Config Galera]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/Secure-MariaDB-Root-Password.png</image:loc>
+<image:title><![CDATA[Linux MariaDB Set Password user root pada database]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/wsrep_cluster_size-status.png</image:loc>
+<image:title><![CDATA[Linux MariaDB Status wsrep_cluster_size]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/lsoft.png</image:loc>
+<image:title><![CDATA[Linux MariaDB Verifikasi Port Replikasi]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/galera-01.png</image:loc>
+<image:title><![CDATA[Linux MariaDB Galera-01]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/galera-02.png</image:loc>
+<image:title><![CDATA[Linux MariaDB Galera-02]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\234/galera-03.png</image:loc>
+<image:title><![CDATA[Linux MariaDB Galera-03]]></image:title>
+</image:image>
+</url>
+<url>
 <loc>https://teknomid.com/memahami-dan-konfigurasi-lvm-di-centos-8/</loc>
 <lastmod>2022-01-21T22:42:50+07:00</lastmod>
 <image:image>

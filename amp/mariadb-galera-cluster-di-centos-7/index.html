@@ -1,0 +1,612 @@
+<!doctype html><html amp lang="en"><head><meta charset="utf-8"><title>MariaDB Galera Cluster di Centos 7 - Portal Teknologi</title><meta name="description" content="MariaDB Galera Cluster merupakan cluster yang bersifat synchronous multi-master dan hanya tersedia di Linux yang memungkinkan untuk menjalankan mesin database"><link rel="canonical" href="https://teknomid.com/mariadb-galera-cluster-di-centos-7/"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" type="text/css"><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://teknomid.com/amp/mariadb-galera-cluster-di-centos-7/"},"headline":"MariaDB Galera Cluster di Centos 7","datePublished":"2022-08-03T19:43","dateModified":"2022-08-03T19:43","image":{"@type":"ImageObject","url":"https://teknomid.com/media/posts/234/MariaDB-Galera-Cluster-Architecture-1024x375.png","height":375,"width":1024},"description":"MariaDB Galera Cluster merupakan cluster yang bersifat synchronous multi-master dan hanya tersedia di Linux yang memungkinkan untuk menjalankan mesin database","author":{"@type":"Person","name":"Teknomid","url":"https://teknomid.com/amp/authors/teknomid/"},"publisher":{"@type":"Organization","name":"Teknomid","logo":{"@type":"ImageObject","url":"https://teknomid.com/media/website/Teknomid.png","height":570,"width":1961}}}</script><style amp-custom>article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+amp-img {
+  max-width: 100%; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+html {
+  font-size: 1rem; }
+
+body {
+  background: #f1f1f1;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6; }
+
+a {
+  color:  #1E1E21;
+  text-decoration: none;
+  -webkit-transition: all 0.12s linear 0s;
+  -o-transition: all 0.12s linear 0s;
+  transition: all 0.12s linear 0s; }
+
+a:hover {
+  color: #262626;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink; }
+
+a:active {
+  color: #262626; }
+
+a:focus {
+  outline: 2px dotted #1E1E21; }
+
+figure,
+blockquote,
+p,
+ul,
+ol,
+dl,
+table,
+hr,
+fieldset {
+  margin-top: 1.6rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2.13333rem; }
+
+h1 {
+  font-size: 1.67583rem;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.4729rem; }
+
+h3 {
+  font-size: 1.29454rem; }
+
+h4 {
+  font-size: 1.13778rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.87891rem; }
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 0.8rem; }
+
+b,
+strong {
+  font-weight: 600; }
+
+blockquote {
+  color: #6c7175;
+  font-family: "Droid Serif", "Times", "Source Serif Pro", serif;
+  font-style: italic;
+  padding: 1.33333rem 0.53333rem 1.33333rem 3.2rem;
+  position: relative; }
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 4.41226rem;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    color: rgba(108, 113, 117, 0.5); }
+  blockquote > :nth-child(1) {
+    margin-top: 0; }
+
+ul,
+ol {
+  margin-left: 2rem; }
+  ul > li,
+  ol > li {
+    list-style: inherit;
+    padding: 0 0 0.26667rem 0.26667rem; }
+
+dl dt {
+  color: #262626;
+  font-weight: 600; }
+
+code,
+pre {
+  background-color: #f1f1f1;
+  font-family: monospace; }
+
+pre {
+  margin: 1.6rem 0 0;
+  padding: 1.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto; }
+  pre > code {
+    color: #262626;
+    padding: 0; }
+
+code {
+  border-radius: 3px;
+  color: #262626;
+  padding: 0.26667rem 0.53333rem; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  overflow-x: auto;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap; }
+  table th {
+    font-weight: 500;
+    padding: 0.53333rem 1.06667rem; }
+  table tr {
+    border-bottom: 1px solid #d4d4d4; }
+    table tr:nth-child(2n) {
+      background: #f1f1f1; }
+  table td {
+    padding: 0.53333rem 1.06667rem; }
+
+figcaption {
+  clear: both;
+  color: rgba(108, 113, 117, 0.6);
+  font-size: 0.82397rem;
+  margin: 0.8rem 0 0;
+  text-align: center; }
+
+sub,
+sup {
+  font-size: 65%; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.btn, [type=button],
+[type=submit],
+button {
+  background: #1E1E21;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.87891rem;
+  font-weight: 500;
+  line-height: 1.9;
+  padding: 0.53333rem 1.33333rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+  width: auto; }
+  .btn:hover, [type=button]:hover,
+  [type=submit]:hover,
+  button:hover {
+    background: #262626;
+    color: #ffffff; }
+  .btn:focus, [type=button]:focus,
+  [type=submit]:focus,
+  button:focus {
+    outline: none; }
+  .btn-outline {
+    border: 1px solid #ddd;
+    background: #ffffff;
+    border-radius: 3px;
+    color: #262626; }
+
+[type=button],
+[type=submit],
+button {
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.navbar {
+  background: #1E1E21;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  line-height: 3;
+  max-height: 4rem; }
+  .navbar > div {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto; }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none; }
+  .navbar-sidebar-toggle {
+    left: 0;
+    position: relative;
+    text-indent: -99999rem; }
+    .navbar-sidebar-toggle:before {
+      content: "";
+      display: block;
+      border-top: 0.375rem double #ffffff;
+      border-bottom: 0.125rem solid #ffffff;
+      height: 0.125rem;
+      position: absolute;
+      text-indent: 0;
+      top: 50%;
+      width: 1.3rem;
+      -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      transform: translate(0px, -50%); }
+
+
+.logo {
+                    background-image: url('https://teknomid.com/media/website/Teknomid.png');
+                    background-size: auto 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+            display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+            margin: 0 auto;
+            height: 2rem;
+            text-indent: -9999px;
+            width: 240px;vertical-align: middle;
+        }
+        .logo.logo-text {
+            line-height: 2;
+            text-align: center;
+            text-indent: 0;
+        }
+
+amp-sidebar {
+  background: #ffffff;
+  width: 240px; }
+  amp-sidebar > ul {
+    margin: 0.8rem 0 0;
+    padding: 0; }
+    amp-sidebar > ul ul {
+      border-left: 1px solid #d4d4d4;
+      margin: 0.53333rem 0 0; }
+    amp-sidebar > ul li {
+      color: #262626;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      list-style: none;
+      line-height: 1.4;
+      padding: 0.42667rem 1.06667rem; }
+      amp-sidebar > ul li li {
+        font-weight: normal;
+        padding: 0.26667rem 0 0.26667rem 1.06667rem; }
+    amp-sidebar > ul a,
+    amp-sidebar > ul a:visited {
+      color: #262626; }
+
+.bg-white {
+  background: #ffffff; }
+
+.wrap-page {
+  max-width: 700px;
+  margin: 0 auto; }
+
+@media all and (max-width: 43.6875em) {
+  .wrap-inner {
+    padding: 0 6%; } }
+
+.page-title {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding: 1.6rem 6%; }
+  .page-title > h1 {
+    margin: 0;
+    font-size: 1.29454rem; }
+  .page-title > p {
+    font-size: 0.87891rem;
+    color: #6c7175;
+    line-height: 1.3;
+    margin: 0.26667rem 0 0; }
+  .page-title-author {
+    border-radius: 50%;
+    float: left;
+    height: 2.5rem;
+    width: 2.5rem; }
+    .page-title-author + h1 {
+      margin-left: 3.5rem; }
+      .page-title-author + h1 + p {
+        margin-left: 3.5rem; }
+
+.card {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding-bottom: 1.06667rem; }
+
+  .card-meta {
+    border-top: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-top: 1.06667rem;
+    text-transform: uppercase; }
+    .card-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .card-text {
+    font-size: 0.9375rem;
+    overflow: hidden;
+    padding: 0 6%; }
+    .card-text h2 {
+      font-size: 1.13778rem; }
+
+.post {
+  margin-bottom: 2.13333rem; }
+  .post-featured-image {
+    margin-top: 0;
+    position: relative; }
+    .post-featured-image > figcaption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0.8rem;
+      padding: 0 0.26667rem;
+      right: 6%; }
+  .post-header {
+    margin-bottom: 2.13333rem; }
+  .post-meta {
+    border-bottom: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-bottom: 1.06667rem;
+    text-transform: uppercase; }
+    .post-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .post-tag {
+    margin: 0; }
+    .post-tag > li {
+      display: inline-block;
+      padding: 0; }
+      .post-tag > li a {
+        background: #f1f1f1;
+        border-radius: 2px;
+        color: #6c7175;
+        font-size: 0.77248rem;
+        display: inline-block;
+        margin: 0 0.26667rem 0.26667rem 0;
+        padding: 0.26667rem 0.53333rem; }
+        .post-tag > li a:hover {
+          background: #1E1E21;
+          color: #ffffff;
+          text-decoration: none; }
+  .post-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    width: 100%; }
+    .post-share amp-social-share {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      background-size: 24px; }
+  .post-scroll {
+    color: #ffffff;
+    background: #1E1E21;
+    bottom: 10px;
+    border-radius: 50%;
+    border: none;
+    -webkit-box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    font-size: 1.13778rem;
+    height: 46px;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    padding: 0;
+    right: 4%;
+    visibility: hidden;
+    width: 46px;
+    z-index: 9999; }
+    .post-scroll-marker {
+      height: 0px;
+      position: absolute;
+      top: 100px;
+      width: 0px; }
+        .post-pagination {
+    background: #f1f1f1;
+    -webkit-box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    border-top: 1px solid #d4d4d4;
+    padding: 1.06667rem 0; }
+    .post-pagination > div {
+      line-height: 1.2;
+      padding: 0.53333rem 1.06667rem;
+      text-align: center; }
+      .post-pagination > div span {
+        display: block;
+        color: #6c7175;
+        font-size: 0.7242rem;
+        font-weight: 500;
+        margin-bottom: 0.26667rem;
+        text-transform: uppercase; }
+    .post-pagination-prev a:before {
+      content: "\2190";
+      margin-right: 0.26667rem; }
+    .post-pagination-next a:after {
+      content: "\2192";
+      margin-left: 0.26667rem; }
+
+aside {
+  margin: 1.6rem 0 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.align-justify {
+  text-align: justify; }
+
+.msg {
+  border-left: 2px solid transparent;
+  padding: 1.06667rem 1.06667rem; }
+  .msg--highlight {
+    background-color: #fff8e6;
+    border-color: #e2ac4f; }
+  .msg--info {
+    background: rgba(45, 97, 201, 0.03);
+    border-color: #1E1E21; }
+  .msg--success {
+    background: #f7fbf6;
+    border-color: #5ab44b; }
+  .msg--warning {
+    background: #fff3f3;
+    border-color: #c06367;
+    color: #a94442; }
+
+.dropcap:first-letter {
+  float: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2.16943rem;
+  line-height: 0.7;
+  margin-right: 0.53333rem;
+  padding: 0.53333rem 0.53333rem 0.53333rem 0; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0.8rem 0; }
+  .pagination > a {
+    padding-left: 0;
+    padding-right: 0;
+    width: 49%; }
+  .pagination-right {
+    margin-left: auto; }
+
+.bottom {
+  background: #1E1E21;
+  color: #ffffff;
+  padding: 1.06667rem 4%;
+  text-align: center; }
+
+    /*
+ * Put your custom CSS code here (it will be used only in the AMP mode)
+ */</style><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async></script><script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script></head><body class="bg-white"><nav class="navbar wrap-inner" id="top"><div><a on="tap:navbar-sidebar.toggle" class="navbar-sidebar-toggle" title="Menu">Menu</a> <a class="logo" href="https://teknomid.com/amp/">Portal Teknologi</a></div></nav><main class="wrap-page"><article class="post"><figure class="post-featured-image"><amp-img src="https://teknomid.com/media/posts/234/MariaDB-Galera-Cluster-Architecture-1024x375.png" alt="Linux MariaDB" srcset="https://teknomid.com/media/posts/234/responsive/MariaDB-Galera-Cluster-Architecture-1024x375-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/MariaDB-Galera-Cluster-Architecture-1024x375-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/MariaDB-Galera-Cluster-Architecture-1024x375-md.png 768w" sizes="(max-width: 768px) 100vw, 768px" height="375" layout="responsive" width="1024"></amp-img><figcaption>Linux MariaDB Linux MariaDB</figcaption></figure><div class="wrap-inner"><header class="post-header"><h1>MariaDB Galera Cluster di Centos 7</h1><p class="post-meta">By <a href="https://teknomid.com/amp/authors/teknomid/" rel="nofollow" title="Teknomid">Teknomid</a> <time datetime="2022-08-03T19:43">3 August 2022</time></p></header><p>MariaDB Galera Cluster merupakan cluster yang bersifat synchronous multi-master dan hanya tersedia di Linux yang memungkinkan untuk menjalankan mesin database berbasis MariaDB yang bersifat:</p><div class="post__toc"><h3>Table of Contents</h3><ul><li><a href="#mcetoc_1g9hrmq9p4j">MariaDB Galera Cluster di Centos 7</a><ul><li><a href="#mcetoc_1g9hrmq9p4k">1. Lakukan update terhadap ketiga node Linux CentOS 7</a></li><li><a href="#mcetoc_1g9hrmq9p4l">2. Tambahkan MariaDB 10.3.14 repository di ketiga node Linux CentOS 7</a></li><li><a href="#mcetoc_1g9hrmq9p4m">3. Menginstall MariaDB Server dan Galera di semua node Linux CentOS 7</a></li><li><a href="#mcetoc_1g9hrmq9p4n">4. Setup MariaDB Galera Cluster di semua node</a></li><li><a href="#mcetoc_1g9hrmq9p4o">5. Start Galera Cluster di mesin galera-01.training.net</a></li><li><a href="#mcetoc_1g9hrmq9p4p">6. Start service MariaDB di semua node (galera-01, galera-02 dan galera-03)</a></li><li><a href="#mcetoc_1g9hrmq9p4q">7. Setting root password database MariaDB pada setiap node</a></li><li><a href="#mcetoc_1g9hrmq9p4r">8. Login sebagai root ke mesin MariaDB pada setiap node untuk melihat status wsrep_cluster_size</a></li><li><a href="#mcetoc_1g9hrmq9p4s">9. Verifikasi port untuk replikasi sudah aktif</a></li><li><a href="#mcetoc_1g9hrmq9p4t">10. Melakukan pengetesan replikasi</a></li></ul></li></ul></div><ul><li>mempunyai performance tinggi dengan latency yang rendah</li><li>mendukung high availability</li><li>mempunyai skalabilitas yang baik untuk memenuhi kebutuhan yang terus berkembang</li></ul><p>MariaDB Galera cluster pada saat ini hanya mendukung tipe penyimpanan XtraDB dan InnoDB saja, meskipun bisa juga untuk tipe MyISAM, tetapi masih dalam tahap eksperiment dan sebaiknya tidak digunakan untuk keperluan produki.</p><h1 id="mcetoc_1g9hrmq9p4j">MariaDB Galera Cluster di Centos 7</h1><p>Pada artikel ini akan dijelaskan bagaimana membangun MariaDB Galera Cluster 10.3 yang terdiri dari 3 nodes Linux CentOS 7. Ketiga nodes CentOS 7 tersebut diberikan IP address dan hostname sebagai berikut:</p><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/Screenshot_10.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/Screenshot_10-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-md.png 768w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-2xl.png 1600w" alt="Cluster Node" width="506" height="164" layout="responsive"></amp-img><figcaption><em>Cluster Node</em></figcaption></figure><p>Catatan: pada artikel ini dianggap 3 nodes Linux CentOS 7 sudah terinstall sehingga tidak dijelaskan kembali proses instalasinya. IP Address dan hostname yang diberikan hanya sebagai contoh, dan dapat diganti menyesuaikan kebutuhan.</p><div class="wp-container-1 wp-block-group"><h2 id="mcetoc_1g9hrmq9p4k"><strong>1. Lakukan update terhadap ketiga node Linux CentOS 7</strong></h2><p class="wp-block-group__inner-container">Terlebih dahulu kita lakukan update paket yang ada di sistem Linux CentOS 7 dengan perintah:</p><pre class="wp-block-preformatted">yum update</pre><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/centos-7-update.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/centos-7-update-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/centos-7-update-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/centos-7-update-md.png 768w ,https://teknomid.com/media/posts/234/responsive/centos-7-update-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/centos-7-update-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/centos-7-update-2xl.png 1600w" alt="Linux centos-7-update" width="889" height="604" layout="responsive"></amp-img><figcaption><em>Linux centos-7-update</em></figcaption></figure><div class="wp-container-2 wp-block-group"><div class="wp-block-group__inner-container"><h2 id="mcetoc_1g9hrmq9p4l"><strong>2. Tambahkan MariaDB 10.3.14 repository di ketiga node Linux CentOS 7</strong></h2><p>Tambahkan repository MariaDB 10.3.14 ke dalam Linux CentOS 7 dengan membuat file baru /etc/yum/repos.d/MariaDB.repo</p><pre class="wp-block-preformatted">#nano /etc/yum.repos.d/MariaDB.repo</pre><p>Kemudian copy paste baris di bawah, dan simpan.</p><pre class="wp-block-preformatted">[mariadb]
+name = MariaDB-10.3.14
+baseurl=http://yum.mariadb.org/10.3.14/centos7-amd64
+# alternative: baseurl=http://archive.mariadb.org/mariadb-10.3.14/yum/centos7-amd64
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1</pre><p>Kemudian jalankan perintah di bawah ini:</p><pre class="wp-block-preformatted">yum clean all</pre><p>Lakukan impoort MariaDB GPG Public Key untuk MariaDB repository</p><pre class="wp-block-preformatted">rpm --import https://yum.mariadb.org/RPM-GPG-KEY-MariaDB</pre></div></div><div class="wp-container-3 wp-block-group"><div class="wp-block-group__inner-container"><h2 id="mcetoc_1g9hrmq9p4m"><strong>3. Menginstall MariaDB Server dan Galera di semua node Linux CentOS 7</strong></h2><p>Perhatikan bahwa di sini kita menggunakan MariaDB versi 10.3.14. Jalankan perintah di bawah ini untuk mulai menginstall MariaDB dan Galera Cluster:</p><pre class="wp-block-preformatted">yum install -y mariadb-server galera</pre><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/Centos-Install-MariaDB-Server-Galera-2.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/Centos-Install-MariaDB-Server-Galera-2-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/Centos-Install-MariaDB-Server-Galera-2-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/Centos-Install-MariaDB-Server-Galera-2-md.png 768w ,https://teknomid.com/media/posts/234/responsive/Centos-Install-MariaDB-Server-Galera-2-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/Centos-Install-MariaDB-Server-Galera-2-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/Centos-Install-MariaDB-Server-Galera-2-2xl.png 1600w" alt="Linux MariaDB Install Galera" width="959" height="544" layout="responsive"></amp-img><figcaption><em>Linux MariaDB Install Galera</em></figcaption></figure><h2 id="mcetoc_1g9hrmq9p4n"><strong>4. Setup MariaDB Galera Cluster di semua node</strong></h2><p>Edit file konfigurasi MariaDB yang ada di node pertama (hostname <em>galera-01</em>).</p><pre class="wp-block-preformatted">#nano /etc/my.cnf.d/server.cnf</pre><p>Tambahkan baris berikut pada bagian [galera] dan simpan perubahan.</p><pre class="wp-block-preformatted">[galera]
+ #Mandatory settings
+ wsrep_on=ON
+ wsrep_provider=/usr/lib64/galera/libgalera_smm.so
+ wsrep_cluster_address=gcomm://192.168.243.11,192.168.243.12,192.168.243.13
+ binlog_format=row
+ default_storage_engine=InnoDB
+ innodb_autoinc_lock_mode=2</pre><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/Galera-Configuration.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/Galera-Configuration-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/Galera-Configuration-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/Galera-Configuration-md.png 768w ,https://teknomid.com/media/posts/234/responsive/Galera-Configuration-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/Galera-Configuration-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/Galera-Configuration-2xl.png 1600w" alt="Linux MariaDB Config Galera" width="959" height="544" layout="responsive"></amp-img><figcaption><em>Linux MariaDB Config Galera</em></figcaption></figure><div class="wp-container-4 wp-block-group"><div class="wp-block-group__inner-container"><p>Lakukan langkah (4) di semua node yang lain (<em>galera-02</em> dan <em>galera-03</em>)</p></div></div><div class="wp-container-5 wp-block-group"><div class="wp-block-group__inner-container"><h2 id="mcetoc_1g9hrmq9p4o"><strong>5. Start Galera Cluster di mesin <em>galera-01.training.net</em></strong></h2><p>Jalankan Galera Cluster di mesin <em>galera-01.training.net</em> dengan perintah:</p><pre class="wp-block-preformatted">#galera_new_cluster</pre></div></div><div class="wp-container-6 wp-block-group"><div class="wp-block-group__inner-container"><h2 id="mcetoc_1g9hrmq9p4p"><strong>6. Start service MariaDB di semua node (<em>galera-01</em>, <em>galera-02</em> dan <em>galera-03</em>)</strong></h2><pre class="wp-block-preformatted">#systemctl start mysql</pre><p>Jika service berhasil dijalankan, maka Galera Cluster seharusnya sudah sukses dikonfigurasi.</p></div></div><div class="wp-container-7 wp-block-group"><div class="wp-block-group__inner-container"><h2 id="mcetoc_1g9hrmq9p4q"><strong>7. Setting <em>root </em>password database MariaDB pada setiap node</strong></h2><p>Lakukan perintah ini pada semua node, untuk memberikan password user <em>root </em>pada database MariaDB:</p><pre class="wp-block-preformatted">#mysql_secure_installation</pre></div></div><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/Secure-MariaDB-Root-Password.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/Secure-MariaDB-Root-Password-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/Secure-MariaDB-Root-Password-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/Secure-MariaDB-Root-Password-md.png 768w ,https://teknomid.com/media/posts/234/responsive/Secure-MariaDB-Root-Password-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/Secure-MariaDB-Root-Password-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/Secure-MariaDB-Root-Password-2xl.png 1600w" alt="Linux MariaDB Set Password user root pada database" width="959" height="814" layout="responsive"></amp-img><figcaption><em>Linux MariaDB Set Password user root pada database</em></figcaption></figure><h2 id="mcetoc_1g9hrmq9p4r"><strong>8. Login sebagai <em>root</em> ke mesin MariaDB pada setiap node untuk melihat status <em>wsrep_cluster_size</em></strong></h2><pre class="wp-block-preformatted">#mysql -u root -p</pre><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/wsrep_cluster_size-status.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/wsrep_cluster_size-status-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/wsrep_cluster_size-status-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/wsrep_cluster_size-status-md.png 768w ,https://teknomid.com/media/posts/234/responsive/wsrep_cluster_size-status-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/wsrep_cluster_size-status-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/wsrep_cluster_size-status-2xl.png 1600w" alt="Linux MariaDB Status wsrep_cluster_size" width="903" height="574" layout="responsive"></amp-img><figcaption><em>Linux MariaDB Status wsrep_cluster_size</em></figcaption></figure><div class="wp-container-8 wp-block-group"><div class="wp-block-group__inner-container"> </div></div><div class="wp-container-8 wp-block-group"><div class="wp-block-group__inner-container"><p>Dari gambar di atas, status dari <em>wsrep_cluster_size</em> menunjukkan bahwa semua node sudah terhubung ke dalam Galera Cluster.</p></div></div><div class="wp-container-9 wp-block-group"><div class="wp-block-group__inner-container"><h2 id="mcetoc_1g9hrmq9p4s"><strong>9. Verifikasi port untuk replikasi sudah aktif</strong></h2><p>Lakukan verifikasi port untuk replikasi dan pastikan sudah aktif (established):</p><pre class="wp-block-preformatted">#lsof -i:4567</pre><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/lsoft.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/lsoft-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/lsoft-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/lsoft-md.png 768w ,https://teknomid.com/media/posts/234/responsive/lsoft-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/lsoft-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/lsoft-2xl.png 1600w" alt="Linux MariaDB Verifikasi Port Replikasi" width="687" height="346" layout="responsive"></amp-img><figcaption><em>Linux MariaDB Verifikasi Port Replikasi</em></figcaption></figure></div></div><div class="wp-container-10 wp-block-group"><div class="wp-block-group__inner-container"><h2 id="mcetoc_1g9hrmq9p4t"><strong>10. Melakukan pengetesan replikasi</strong></h2><p>Selanjutnya untuk melihat apakah replikasi dapat berjalan di semua node, kita akan mencoba untuk membuat sebuah database pada salah satu node (dalam hal ini dilakukan di node <em>galera-03</em>).</p><p>Database ini seharusnya juga secara otomatis akan dibuat di node yang lain (<em>galera-01</em> dan <em>galera-02</em>).</p><pre class="wp-block-preformatted">#mysql -u root -p</pre><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/galera-01.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/galera-01-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/galera-01-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/galera-01-md.png 768w ,https://teknomid.com/media/posts/234/responsive/galera-01-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/galera-01-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/galera-01-2xl.png 1600w" alt="Linux MariaDB Galera-01" width="687" height="423" layout="responsive"></amp-img><figcaption><em>Linux MariaDB Galera-01</em></figcaption></figure><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/galera-02.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/galera-02-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/galera-02-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/galera-02-md.png 768w ,https://teknomid.com/media/posts/234/responsive/galera-02-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/galera-02-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/galera-02-2xl.png 1600w" alt="Linux MariaDB Galera-02" width="687" height="297" layout="responsive"></amp-img><figcaption><em>Linux MariaDB Galera-02</em></figcaption></figure><figure class="post__image"><amp-img src="https://teknomid.com/media/posts/234/galera-03.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/galera-03-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/galera-03-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/galera-03-md.png 768w ,https://teknomid.com/media/posts/234/responsive/galera-03-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/galera-03-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/galera-03-2xl.png 1600w" alt="Linux MariaDB Galera-03" width="687" height="346" layout="responsive"></amp-img><figcaption><em>Linux MariaDB Galera-03</em></figcaption></figure></div></div></div></div></div><aside><ul class="post-tag"><li><a href="https://teknomid.com/amp/tags/linux/">LINUX</a></li></ul><div class="post-share"><amp-social-share type="system" width="40" height="40" data-param-text="MariaDB Galera Cluster di Centos 7"></amp-social-share><amp-social-share type="facebook" width="40" height="40" data-param-app_id="800151050785537" data-param-text="MariaDB Galera Cluster di Centos 7" data-param-href="https://teknomid.com/amp/mariadb-galera-cluster-di-centos-7/"></amp-social-share><amp-social-share type="twitter" width="40" height="40" data-param-text="MariaDB Galera Cluster di Centos 7" data-param-url="https://teknomid.com/amp/mariadb-galera-cluster-di-centos-7/"></amp-social-share><amp-social-share type="pinterest" width="40" height="40" data-param-url="https://teknomid.com/amp/mariadb-galera-cluster-di-centos-7/"></amp-social-share><amp-social-share type="whatsapp" width="40" height="40" data-param-text="MariaDB Galera Cluster di Centos 7" data-param-url="https://teknomid.com/amp/mariadb-galera-cluster-di-centos-7/"></amp-social-share></div></aside></div></article><nav class="post-pagination wrap-inner"><div class="post-pagination-prev"><span>Previous Post</span> <a href="https://teknomid.com/amp/applikasi-android-f-droid/">Applikasi Android F-Droid </a></div></nav></main><amp-animation id="showAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "1",
+                            "visibility": "visible",
+                            "transform": "scale(1)"
+                        }]
+                    }]
+                }</script></amp-animation><amp-animation id="hideAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "0",
+                            "visibility": "hidden",
+                            "transform": "scale(0.1)"
+                        }]
+                    }]
+                }</script></amp-animation><div class="post-scroll-marker"><amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer></div><button class="post-scroll" on="tap:top.scrollTo(duration=200)">&#8593;</button><footer class="bottom">Powered by Teknomid - 2022</footer><amp-sidebar id="navbar-sidebar" layout="nodisplay"><ul><li><a href="https://teknomid.com/amp/" title="https://teknomid.click">Home</a></li><li><a href="https://teknomid.com/amp/tags/tutorial/" title="https://teknomid.online/tags/tutorial/">Tutorial</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://teknomid.com/amp/" target="_self">SysADMIN</a></li></ul></li><li><a href="https://teknomid.com/amp/tags/cloud/" title="https://teknomid.online/tags/cloud/">Cloud</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://teknomid.com/amp/tags/google/" title="https://teknomid.online/tags/google/" target="_self">Google</a></li><li><a href="https://teknomid.com/amp/tags/aws/" title="https://teknomid.online/tags/aws/" target="_self">Aws</a></li></ul></li><li><a href="https://teknomid.com/amp/tags/operating-system/" title="https://teknomid.online/tags/operating-system/">Systems</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://teknomid.com/amp/tags/linux/" title="https://teknomid.online/tags/linux/" target="_self" rel="https://teknomid.online/tags/linux/">Linux</a></li><li><a href="https://teknomid.com/amp/tags/macos/" title="https://teknomid.online/tags/macOS/" target="_self" rel="https://teknomid.online/tags/macOS/">MacOS</a></li><li class="https://teknomid.online/tags/windows/"><a href="https://teknomid.com/amp/tags/windows/" title="Windows" target="_self" rel="https://teknomid.online/tags/windows/">Windows</a></li></ul></li><li><a href="https://teknomid.com/amp/tags/applikasi/" title="https://teknomid.online/tags/applikasi/">Applikasi</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://teknomid.com/amp/tags/mobile-applikasi/" title="https://teknomid.online/tags/mobile-applikasi/" target="_self" rel="https://teknomid.online/tags/appmobile/">App-Mobile</a></li><li><a href="https://teknomid.com/amp/tags/windows-applikasi/" title="https://teknomid.online/tags/windows-applikasi/" target="_self" rel="https://teknomid.online/tags/appwindows/">App-Windows</a></li><li><a href="https://teknomid.com/amp/tags/linux-applikasi/" title="https://teknomid.online/tags/linux-applikasi/" target="_self" rel="https://teknomid.online/tags/applinux/">App-Linux</a></li><li><a href="https://teknomid.com/amp/tags/linux-applikasi/" title="https://teknomid.online/tags/macos-applikasi/" target="_self" rel="https://teknomid.online/tags/appmacos/">App-MacOS</a></li></ul></li><li><a href="https://teknomid.com/amp/tags/tech-gadgets/" title="https://teknomid.online/tags/tech-gadgets/">Tech &amp; Gadgets</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://teknomid.com/amp/tags/handphone/" title="https://teknomid.online/tags/handphone/" target="_self">Handphone</a></li><li><a href="https://teknomid.com/amp/tags/elektronik/" title="https://teknomid.online/tags/elektronik/" target="_self" rel="Elektronika">Elektronika</a></li><li><a href="https://teknomid.com/amp/" title="https://teknomid.click" target="_self" rel="Crypto">Crypto</a></li><li><a href="https://teknomid.com/amp/tags/laptop/" title="https://teknomid.com/tags/laptop/" target="_self" rel="Laptop">Laptop</a></li></ul></li></ul></amp-sidebar><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">{
+            "vars": {
+                "account": "UA-210304387-1"
+            },
+            "triggers": {
+                "trackPageview": {
+                    "on": "visible",
+                    "request": "pageview"
+                }
+            }
+        }</script></amp-analytics></body></html>
