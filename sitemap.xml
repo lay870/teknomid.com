@@ -393,6 +393,22 @@
 <lastmod>2022-08-02T22:58:22+07:00</lastmod>
 </url>
 <url>
+<loc>https://teknomid.com/konfigurasi-strongswan-vpn-ipsec-ikev2-di-ubuntu-2004/</loc>
+<lastmod>2022-08-04T03:14:53+07:00</lastmod>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\235/strongswan_large_400x400.png</image:loc>
+<image:title><![CDATA[Linux Strongswan VPN IPSEC]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\235/ssl-sudah-jadi-1024x180.png</image:loc>
+<image:title><![CDATA[Certificate hasil Generate]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://teknomid.com/media\posts\235/vpn-strongswan-sukses-berjalan-1024x214.png</image:loc>
+<image:title><![CDATA[Service Strongswan]]></image:title>
+</image:image>
+</url>
+<url>
 <loc>https://teknomid.com/kontak-2/</loc>
 <lastmod>2022-08-02T22:57:12+07:00</lastmod>
 </url>
