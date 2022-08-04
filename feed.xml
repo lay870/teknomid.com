@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-08-04T15:49:59+07:00</updated>
+    <updated>2022-08-04T16:01:43+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://teknomid.com/konfigurasi-strongswan-vpn-ipsec-ikev2-di-ubuntu-2004/</id>
             <category term="LINUX"/>
 
-        <updated>2022-08-04T03:14:53+07:00</updated>
+        <updated>2022-08-04T16:00:27+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/235/strongswan_large_400x400.png" alt="Linux Strongswan VPN IPSEC" />
@@ -309,7 +309,7 @@ default via 192.168.1.2 dev eth0 proto static</pre>
         <id>https://teknomid.com/mariadb-galera-cluster-di-centos-7/</id>
             <category term="LINUX"/>
 
-        <updated>2022-08-04T00:42:55+07:00</updated>
+        <updated>2022-08-04T16:00:47+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/234/MariaDB-Galera-Cluster-Architecture-1024x375.png" alt="Linux MariaDB" />
@@ -347,6 +347,7 @@ default via 192.168.1.2 dev eth0 proto static</pre>
 <p>MariaDB Galera cluster pada saat ini hanya mendukung tipe penyimpanan XtraDB dan InnoDB saja, meskipun bisa juga untuk tipe MyISAM, tetapi masih dalam tahap eksperiment dan sebaiknya tidak digunakan untuk keperluan produki.</p>
 <h1 id="mcetoc_1g9hrmq9p4j">MariaDB Galera Cluster di Centos 7</h1>
 <p>Pada artikel ini akan dijelaskan bagaimana membangun MariaDB Galera Cluster 10.3 yang terdiri dari 3 nodes Linux CentOS 7. Ketiga nodes CentOS 7 tersebut diberikan IP address dan hostname sebagai berikut:</p>
+<p>Baca Juga: <strong><em><a href="https://teknomid.com/mariadb-galera-cluster-di-centos-7/" title="MariaDB Galera Cluster di Centos 7">MariaDB Galera Cluster di Centos 7</a></em></strong></p>
 <figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/234/Screenshot_10.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/Screenshot_10-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-md.png 768w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/Screenshot_10-2xl.png 1600w"  alt="Cluster Node" width="506" height="164"><figcaption><strong><em>Cluster Node</em></strong></figcaption></figure>
 <p>Catatan: pada artikel ini dianggap 3 nodes Linux CentOS 7 sudah terinstall sehingga tidak dijelaskan kembali proses instalasinya. IP Address dan hostname yang diberikan hanya sebagai contoh, dan dapat diganti menyesuaikan kebutuhan.</p>
 <div class="wp-container-1 wp-block-group">
@@ -358,6 +359,7 @@ default via 192.168.1.2 dev eth0 proto static</pre>
 <div class="wp-block-group__inner-container">
 <h2 id="mcetoc_1g9hrmq9p4l"><strong>2. Tambahkan MariaDB 10.3.14 repository di ketiga node Linux CentOS 7</strong></h2>
 <p>Tambahkan repository MariaDB 10.3.14 ke dalam Linux CentOS 7 dengan membuat file baru /etc/yum/repos.d/MariaDB.repo</p>
+<p>Baca Juga: <strong><em><a href="https://teknomid.com/setting-up-ipsecl2tp-vpn-server-in-linux/" title="Setting Up IPsec/L2TP VPN Server in Linux">Setting Up IPsec/L2TP VPN Server in Linux</a></em></strong></p>
 <pre class="wp-block-preformatted">#nano /etc/yum.repos.d/MariaDB.repo</pre>
 <p>Kemudian copy paste baris di bawah, dan simpan.</p>
 <pre class="wp-block-preformatted">[mariadb]
@@ -369,6 +371,7 @@ gpgcheck=1</pre>
 <p>Kemudian jalankan perintah di bawah ini:</p>
 <pre class="wp-block-preformatted">yum clean all</pre>
 <p>Lakukan impoort MariaDB GPG Public Key untuk MariaDB repository</p>
+<p>Baca Juga: <strong><em><a href="https://teknomid.com/memahami-dan-konfigurasi-lvm-di-centos-8/" title="Memahami dan Konfigurasi LVM di Centos 8">Memahami dan Konfigurasi LVM di Centos 8</a></em></strong></p>
 <pre class="wp-block-preformatted">rpm --import https://yum.mariadb.org/RPM-GPG-KEY-MariaDB</pre>
 </div>
 </div>
@@ -408,6 +411,7 @@ gpgcheck=1</pre>
 <h2 id="mcetoc_1g9hrmq9p4p"><strong>6. Start service MariaDB di semua node (<em>galera-01</em>, <em>galera-02</em> dan <em>galera-03</em>)</strong></h2>
 <pre class="wp-block-preformatted">#systemctl start mysql</pre>
 <p>Jika service berhasil dijalankan, maka Galera Cluster seharusnya sudah sukses dikonfigurasi.</p>
+<p>Baca Juga: <strong><em><a href="https://teknomid.com/cara-mengelola-file-log-dengan-logrotate-di-ubuntu-2004/" title="Cara Mengelola File Log dengan Logrotate di Ubuntu 20.04">Cara Mengelola File Log dengan Logrotate di Ubuntu 20.04</a></em></strong></p>
 </div>
 </div>
 <div class="wp-container-7 wp-block-group">
@@ -442,6 +446,7 @@ gpgcheck=1</pre>
 <h2 id="mcetoc_1g9hrmq9p4t"><strong>10. Melakukan pengetesan replikasi</strong></h2>
 <p>Selanjutnya untuk melihat apakah replikasi dapat berjalan di semua node, kita akan mencoba untuk membuat sebuah database pada salah satu node (dalam hal ini dilakukan di node <em>galera-03</em>).</p>
 <p>Database ini seharusnya juga secara otomatis akan dibuat di node yang lain (<em>galera-01</em> dan <em>galera-02</em>).</p>
+<p>Baca Juga: <strong><em><a href="https://teknomid.com/cara-menghapus-cache-memori-ram-buffer-dan-swap-space-di-linux/" title="Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux">Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux</a></em></strong></p>
 <pre class="wp-block-preformatted">#mysql -u root -p</pre>
 <figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/234/galera-01.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/galera-01-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/galera-01-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/galera-01-md.png 768w ,https://teknomid.com/media/posts/234/responsive/galera-01-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/galera-01-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/galera-01-2xl.png 1600w"  alt="Linux MariaDB Galera-01" width="687" height="423"><figcaption><strong><em>Linux MariaDB Galera-01</em></strong></figcaption></figure>
 <figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/234/galera-02.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/234/responsive/galera-02-xs.png 300w ,https://teknomid.com/media/posts/234/responsive/galera-02-sm.png 480w ,https://teknomid.com/media/posts/234/responsive/galera-02-md.png 768w ,https://teknomid.com/media/posts/234/responsive/galera-02-lg.png 1024w ,https://teknomid.com/media/posts/234/responsive/galera-02-xl.png 1360w ,https://teknomid.com/media/posts/234/responsive/galera-02-2xl.png 1600w"  alt="Linux MariaDB Galera-02" width="687" height="297"><figcaption><strong><em>Linux MariaDB Galera-02</em></strong></figcaption></figure>
@@ -464,7 +469,7 @@ gpgcheck=1</pre>
             <category term="MOBILE-APPLIKASI"/>
             <category term="APPLIKASI"/>
 
-        <updated>2022-08-03T00:34:46+07:00</updated>
+        <updated>2022-08-04T16:01:43+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/233/fdroid-logo-text_S0MUfk_FsnAYL7n2MQye-34IoSNm6QM6xYjDnMqkufo.svg" alt="F-Droid" />
