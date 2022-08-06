@@ -386,12 +386,12 @@ figcaption {
   color: var(--gray-1);
   font-family: var(--body-font);
   font-weight: var(--font-weight-normal);
-  font-size: 0.7724761953rem;
-  margin: -1.5285714285999998rem 0 0;
-  text-align: left;
+  font-size: 0.8724761953rem;
+  margin: -0.5285714285999998rem 0 0;
+  text-align: center;
   background: var(--dark);
-  border-radius: 0 0 5px 5px;
-  padding-top: 8px;
+  border-radius: 0 0 10px 10px;
+  padding-top: 10px;
 }
 
 sub,

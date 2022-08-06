@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-08-07T01:28:44+07:00</updated>
+    <updated>2022-08-07T02:18:40+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -18,16 +18,16 @@
         <id>https://teknomid.com/konfigurasi-strongswan-vpn-ipsec-ikev2-di-ubuntu-2004/</id>
             <category term="LINUX"/>
 
-        <updated>2022-08-07T01:28:44+07:00</updated>
+        <updated>2022-08-07T02:18:40+07:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://teknomid.com/media/posts/235/strongswan_large_400x400.png" alt="Linux Strongswan VPN IPSEC" />
+                        <img src="https://teknomid.com/media/posts/235/2022-08-07_021821.png" alt="Linux Strongswan VPN IPSEC" />
                     Strongswan VPN IPSEC - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua sistem operasi mendukung IPsec tanpa perlu tambahan software lain. Salah satu software yang bisa digunakan untuk membuat server VPN IPsec adalah Strongswan, software tersebut juga yang akan kita gunakan di tutorial kali ini. Beberapa hal yang perlu di perhatikan/kebutuhan adalah – IPsec bisa di install tanpa SSL – Ubuntu 20.04 dengan Public IP – Client bisa mengunakan Windows, MacOS, Linux, Android ataupun iOS. – Akses root Untuk mendapatkan SSL gratis terlebih dahulu setting DNS record ke IP server Type: A | Name: ipsec.teknomid.com | Value: 192.168.108.87 TTL: 1 | Active: false | ID: asduyhiuwejhiuwladjlads Install dependency Baca Juga: Setting Up IPsec/L2TP VPN Server in Linux sudo apt install curl socat -y Install acme.sh Lets Encrypt Client Daripada menggunakan self-sign SSL curl https://get.acme.sh | sh Update Perubahan di ~/.bashrc source ~/.bashrc Baca Juga: Memahami dan Konfigurasi LVM di Centos 8 Untuk penggunaan&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://teknomid.com/media/posts/235/strongswan_large_400x400.png" alt="Linux Strongswan VPN IPSEC" />
+                    <img src="https://teknomid.com/media/posts/235/2022-08-07_021821.png" alt="Linux Strongswan VPN IPSEC" />
                 <p class="align-left"><strong>Strongswan VPN IPSEC</strong> - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua sistem operasi mendukung IPsec tanpa perlu tambahan software lain. Salah satu software yang bisa digunakan untuk membuat server VPN IPsec adalah Strongswan, software tersebut juga yang akan kita gunakan di tutorial kali ini.</p>
 <div class="post__toc">
 <h3>Table of Contents</h3>
