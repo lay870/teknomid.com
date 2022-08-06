@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-08-07T02:18:40+07:00</updated>
+    <updated>2022-08-07T03:46:31+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -306,16 +306,16 @@ default via 192.168.1.2 dev eth0 proto static</pre>
         <id>https://teknomid.com/mariadb-galera-cluster-di-centos-7/</id>
             <category term="LINUX"/>
 
-        <updated>2022-08-04T16:00:47+07:00</updated>
+        <updated>2022-08-07T03:46:31+07:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://teknomid.com/media/posts/234/MariaDB-Galera-Cluster-Architecture-1024x375.png" alt="Linux MariaDB" />
+                        <img src="https://teknomid.com/media/posts/234/MariaDB-Galera-Cluster-Architecture-1024x375.png" alt="MariaDB Galera Cluster" />
                     MariaDB Galera Cluster merupakan cluster yang bersifat synchronous multi-master dan hanya tersedia di Linux yang memungkinkan untuk menjalankan mesin database berbasis MariaDB yang bersifat: MariaDB Galera cluster pada saat ini hanya mendukung tipe penyimpanan XtraDB dan InnoDB saja, meskipun bisa juga untuk tipe MyISAM, tetapi masih dalam tahap eksperiment dan sebaiknya tidak digunakan untuk keperluan produki. Pada artikel ini akan dijelaskan bagaimana membangun MariaDB Galera Cluster 10.3 yang terdiri dari 3 nodes Linux CentOS 7. Ketiga nodes CentOS 7 tersebut diberikan IP address dan hostname sebagai berikut: Baca Juga: MariaDB Galera Cluster di Centos 7 Catatan: pada artikel ini dianggap 3 nodes Linux CentOS 7 sudah terinstall sehingga tidak dijelaskan kembali proses instalasinya. IP Address dan hostname yang diberikan hanya sebagai contoh, dan dapat diganti menyesuaikan kebutuhan. Terlebih dahulu kita lakukan update paket yang ada di sistem Linux CentOS 7 dengan perintah: yum update Linux centos-7-update 2. Tambahkan MariaDB 10.3.14 repository di ketiga node Linux CentOS 7 Tambahkan repository MariaDB&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://teknomid.com/media/posts/234/MariaDB-Galera-Cluster-Architecture-1024x375.png" alt="Linux MariaDB" />
+                    <img src="https://teknomid.com/media/posts/234/MariaDB-Galera-Cluster-Architecture-1024x375.png" alt="MariaDB Galera Cluster" />
                 <p>MariaDB Galera Cluster merupakan cluster yang bersifat synchronous multi-master dan hanya tersedia di Linux yang memungkinkan untuk menjalankan mesin database berbasis MariaDB yang bersifat:</p>
 <div class="post__toc">
 <h3>Table of Contents</h3>

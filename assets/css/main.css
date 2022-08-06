@@ -2026,13 +2026,12 @@ textarea {
 }
 .post__featured-image > figcaption {
   background: var(--dark);
-  border-radius: 25px;
-  color: var(--color);
-  font-size: 0.5967194723rem;
-  padding: 0 0.3642857143rem; 
-  position: center;
+  border-radius: 12px;
+  padding-top: 10px;
   right: 24.9714285714rem;
-  font-weight: var(--headings-weight);
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-bold);
+  font-size: .8724761953rem;
 }
 @media all and (max-width: 37.4375em) {
   .post__featured-image > figcaption {
