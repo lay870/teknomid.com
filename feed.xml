@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-08-06T19:03:56+07:00</updated>
+    <updated>2022-08-07T01:28:44+07:00</updated>
     <author>
         <name>Teknomid</name>
     </author>
@@ -18,22 +18,21 @@
         <id>https://teknomid.com/konfigurasi-strongswan-vpn-ipsec-ikev2-di-ubuntu-2004/</id>
             <category term="LINUX"/>
 
-        <updated>2022-08-04T16:00:27+07:00</updated>
+        <updated>2022-08-07T01:28:44+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/235/strongswan_large_400x400.png" alt="Linux Strongswan VPN IPSEC" />
-                    Strongswan VPN IPSEC - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua sistem operasi mendukung IPsec tanpa perlu tambahan software lain. Salah satu software yang bisa digunakan untuk membuat server VPN IPsec adalah Strongswan, software tersebut juga yang&hellip;
+                    Strongswan VPN IPSEC - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua sistem operasi mendukung IPsec tanpa perlu tambahan software lain. Salah satu software yang bisa digunakan untuk membuat server VPN IPsec adalah Strongswan, software tersebut juga yang akan kita gunakan di tutorial kali ini. Beberapa hal yang perlu di perhatikan/kebutuhan adalah – IPsec bisa di install tanpa SSL – Ubuntu 20.04 dengan Public IP – Client bisa mengunakan Windows, MacOS, Linux, Android ataupun iOS. – Akses root Untuk mendapatkan SSL gratis terlebih dahulu setting DNS record ke IP server Type: A | Name: ipsec.teknomid.com | Value: 192.168.108.87 TTL: 1 | Active: false | ID: asduyhiuwejhiuwladjlads Install dependency Baca Juga: Setting Up IPsec/L2TP VPN Server in Linux sudo apt install curl socat -y Install acme.sh Lets Encrypt Client Daripada menggunakan self-sign SSL curl https://get.acme.sh | sh Update Perubahan di ~/.bashrc source ~/.bashrc Baca Juga: Memahami dan Konfigurasi LVM di Centos 8 Untuk penggunaan&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://teknomid.com/media/posts/235/strongswan_large_400x400.png" alt="Linux Strongswan VPN IPSEC" />
-                <p><strong>Strongswan VPN IPSEC</strong> - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua sistem operasi mendukung IPsec tanpa perlu tambahan software lain. Salah satu software yang bisa digunakan untuk membuat server VPN IPsec adalah Strongswan, software tersebut juga yang akan kita gunakan di tutorial kali ini.</p>
+                <p class="align-left"><strong>Strongswan VPN IPSEC</strong> - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua sistem operasi mendukung IPsec tanpa perlu tambahan software lain. Salah satu software yang bisa digunakan untuk membuat server VPN IPsec adalah Strongswan, software tersebut juga yang akan kita gunakan di tutorial kali ini.</p>
 <div class="post__toc">
 <h3>Table of Contents</h3>
 <ul>
-<li><a href="#mcetoc_1g9il1ktabs">Strongswan VPN IPSEC </a>
-<ul>
+<li><a href="#mcetoc_1g9il1ktabs">Strongswan VPN IPSEC</a></li>
 <li><a href="#mcetoc_1g9il1ktabt">Setting DNS</a></li>
 <li><a href="#mcetoc_1g9il1ktabu">Generate SSL</a></li>
 <li><a href="#mcetoc_1g9il1ktabv">Konfigurasi IPsec</a></li>
@@ -41,12 +40,10 @@
 <li><a href="#mcetoc_1g9il1ktac1">Restart service strongswan</a></li>
 <li><a href="#mcetoc_1g9il1ktac2">Setting Iptables</a></li>
 </ul>
-</li>
-</ul>
 </div>
-<h1 id="mcetoc_1g9il1ktabs">Strongswan VPN IPSEC</h1>
+<h5 id="mcetoc_1g9il1ktabs">Strongswan VPN IPSEC</h5>
 <p>Beberapa hal yang perlu di perhatikan/kebutuhan adalah<br>– IPsec bisa di install tanpa SSL<br>– Ubuntu 20.04 dengan Public IP<br>– Client bisa mengunakan Windows, MacOS, Linux, Android ataupun iOS.<br>– Akses root</p>
-<h2 id="mcetoc_1g9il1ktabt">Setting DNS</h2>
+<h5 id="mcetoc_1g9il1ktabt">Setting DNS</h5>
 <p>Untuk mendapatkan SSL gratis terlebih dahulu setting DNS record ke IP server</p>
 <pre>Type: A  | Name: ipsec.teknomid.com | Value: 192.168.108.87<br>TTL: 1 | Active: false | ID: asduyhiuwejhiuwladjlads</pre>
 <p>Install dependency</p>
@@ -99,7 +96,7 @@
 <div class="bash">
 <pre class="de1"><span class="kw3">source</span> ~<span class="sy0">/</span>.bashrc</pre>
 <p><em><strong>Baca Juga: <a href="https://teknomid.com/memahami-dan-konfigurasi-lvm-di-centos-8/" title="Memahami dan Konfigurasi LVM di Centos 8">Memahami dan Konfigurasi LVM di Centos 8</a></strong></em></p>
-<h2 id="mcetoc_1g9il1ktabu">Generate SSL</h2>
+<h5 id="mcetoc_1g9il1ktabu">Generate SSL</h5>
 <p>Untuk penggunaan SSLnya kita akan generate dengan acme.</p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
@@ -134,7 +131,7 @@
 </div>
 </div>
 </div>
-<h2 id="mcetoc_1g9il1ktabv">Konfigurasi IPsec</h2>
+<h5 id="mcetoc_1g9il1ktabv">Konfigurasi IPsec</h5>
 <p>Ingat untuk merubah ipsec.EXAMPLE.com dengan domain yang ada buat sebelumnya.</p>
 <p>Salin file sertifikat dan private key ke folder <code>/etc/ipsec.d</code></p>
 <div class="wp-geshi-highlight-wrap5">
@@ -193,7 +190,7 @@ conn ipsec-teknomid
 </div>
 </div>
 </div>
-<h2 id="mcetoc_1g9il1ktac0">Setting IPsec Secret</h2>
+<h5 id="mcetoc_1g9il1ktac0">Setting IPsec Secret</h5>
 <p>Buka file /etc/ipsec.secrets, tambahkan</p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
@@ -211,7 +208,7 @@ teknomid : EAP <span class="st0">"PASSWORD"</span></pre>
 </div>
 </div>
 </div>
-<h2 id="mcetoc_1g9il1ktac1">Restart service strongswan</h2>
+<h5 id="mcetoc_1g9il1ktac1">Restart service strongswan</h5>
 <p>Setelah melakukan perubahan tersebut, restart service strongswan</p>
 <figure class="post__image"><img decoding="async" loading="lazy"  src="https://teknomid.com/media/posts/235/vpn-strongswan-sukses-berjalan-1024x214.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-xs.png 300w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-sm.png 480w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-md.png 768w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-lg.png 1024w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-xl.png 1360w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-2xl.png 1600w"  alt="Service Strongswan" width="1024" height="214"><figcaption><strong><em>Service Strongswan</em></strong></figcaption></figure>
 <p>Aktifkan IP Forwarding</p>
@@ -246,7 +243,7 @@ teknomid : EAP <span class="st0">"PASSWORD"</span></pre>
 </div>
 </div>
 </div>
-<h2 id="mcetoc_1g9il1ktac2">Setting Iptables</h2>
+<h5 id="mcetoc_1g9il1ktac2">Setting Iptables</h5>
 <p>Agar client yang menggunakan VPN bisa mengakses internet, setting IPTABLES sebagai berikut</p>
 <p><em><strong>Baca Juga: <a href="https://teknomid.com/cara-menghapus-cache-memori-ram-buffer-dan-swap-space-di-linux/" title="Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux">Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux</a></strong></em></p>
 <div class="wp-geshi-highlight-wrap5">
@@ -313,7 +310,7 @@ default via 192.168.1.2 dev eth0 proto static</pre>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/234/MariaDB-Galera-Cluster-Architecture-1024x375.png" alt="Linux MariaDB" />
-                    MariaDB Galera Cluster merupakan cluster yang bersifat synchronous multi-master dan hanya tersedia di Linux yang memungkinkan untuk menjalankan mesin database berbasis MariaDB yang bersifat: MariaDB Galera cluster pada saat ini hanya mendukung tipe penyimpanan XtraDB dan InnoDB saja, meskipun bisa juga untuk tipe MyISAM, tetapi&hellip;
+                    MariaDB Galera Cluster merupakan cluster yang bersifat synchronous multi-master dan hanya tersedia di Linux yang memungkinkan untuk menjalankan mesin database berbasis MariaDB yang bersifat: MariaDB Galera cluster pada saat ini hanya mendukung tipe penyimpanan XtraDB dan InnoDB saja, meskipun bisa juga untuk tipe MyISAM, tetapi masih dalam tahap eksperiment dan sebaiknya tidak digunakan untuk keperluan produki. Pada artikel ini akan dijelaskan bagaimana membangun MariaDB Galera Cluster 10.3 yang terdiri dari 3 nodes Linux CentOS 7. Ketiga nodes CentOS 7 tersebut diberikan IP address dan hostname sebagai berikut: Baca Juga: MariaDB Galera Cluster di Centos 7 Catatan: pada artikel ini dianggap 3 nodes Linux CentOS 7 sudah terinstall sehingga tidak dijelaskan kembali proses instalasinya. IP Address dan hostname yang diberikan hanya sebagai contoh, dan dapat diganti menyesuaikan kebutuhan. Terlebih dahulu kita lakukan update paket yang ada di sistem Linux CentOS 7 dengan perintah: yum update Linux centos-7-update 2. Tambahkan MariaDB 10.3.14 repository di ketiga node Linux CentOS 7 Tambahkan repository MariaDB&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -473,7 +470,7 @@ gpgcheck=1</pre>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/233/fdroid.png" alt="F-Droid" />
-                    F-Droid adalah gudang aplikasi Android perangkat lunak gratis terverifikasi serta keseluruhan "kit app store", menyediakan semua alat yang diperlukan untuk menyiapkan dan menjalankan toko aplikasi. Ini adalah proyek perangkat lunak bebas yang dijalankan oleh komunitas yang dikembangkan oleh berbagai kontributor. Ini juga mencakup alat build&hellip;
+                    F-Droid adalah gudang aplikasi Android perangkat lunak gratis terverifikasi serta keseluruhan "kit app store", menyediakan semua alat yang diperlukan untuk menyiapkan dan menjalankan toko aplikasi. Ini adalah proyek perangkat lunak bebas yang dijalankan oleh komunitas yang dikembangkan oleh berbagai kontributor. Ini juga mencakup alat build dan rilis lengkap untuk mengelola proses mengubah kode sumber aplikasi menjadi build yang dipublikasikan. Alat server F-Droid menyediakan berbagai skrip dan alat yang digunakan untuk memelihara repositori utama aplikasi F-Droid. Anda dapat menggunakan alat yang sama ini untuk membuat repositori tambahan atau alternatif Anda sendiri untuk penerbitan, atau untuk membantu dalam membuat, menguji, dan mengirimkan metadata ke repositori utama. Baca Juga: Tutorial Blokir Iklan Pada Android Tanpa Root FAQ - General Umum yang Sering Diajukan tentang F-Droid FAQ - Client yang Sering Diajukan Klien tentang cara menggunakan aplikasi F-Droid di Android. Anti-Features Apa itu, apa artinya, dan aplikasi apa yang memilikinya. Tutorials langkah demi langkah tentang fitur di F-Droid Code of Conduct bagaimana berperilaku saat&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -518,7 +515,7 @@ gpgcheck=1</pre>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/227/cara_memblokir_iklan_di_youtube-2xl.jpg" alt="Tutorial Blokir Iklan Pada Android Tanpa Root" />
-                    Tutorial Blokir Iklan Pada Android – Iklan adalah salah satu alasan kita dapat mengakses situs, aplikasi, dan layanan secara gratis. Platform yang tidak kita bayar untuk memakainya, menggunakan iklan sebagai pundi-pundi penghasilan. Tidak ada yang menyukai iklan termasuk Kami, penulis di teknomid.com. Jika dilakukan dengan&hellip;
+                    Tutorial Blokir Iklan Pada Android – Iklan adalah salah satu alasan kita dapat mengakses situs, aplikasi, dan layanan secara gratis. Platform yang tidak kita bayar untuk memakainya, menggunakan iklan sebagai pundi-pundi penghasilan. Tidak ada yang menyukai iklan termasuk Kami, penulis di teknomid.com. Jika dilakukan dengan baik, iklan sebenarnya bisa sangat menarik, menghibur, dan bermanfaat. Namun beberapa situs dan aplikasi, menyajikan iklan yang sangat mengganggu dengan praktik yang curang untuk meningkatkan pendapatan mereka. Beberapa contoh iklan yang mengganggu, yaitu iklan yang muncul pop-up berulang tanpa bisa kita tutup iklan atau klik tombol kembali. Meskipun kita tidak dapat menghapus iklan mengganggu sepenuhnya, namun kali ini teknomid.com akan memberikan tutorial cara memblokir iklan pada Android Memblokir iklan mempengaruhi ekosistem internet dan kemampuan bertahan beberapa bisnis. Jika Kamu menyukai dan selalu mengakses aplikasi, situs, dan layanan tertentu, pertimbangkan untuk berlangganan layanan mereka atau menambahkannya situs ke daftar Whitelist agar iklan tetap muncul. Bantu mereka untuk terus mempertahankan platformnya. Cara yang kami berikan pada tutorial&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -595,7 +592,7 @@ gpgcheck=1</pre>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/226/spesifikasi-nothing-phone-1.jpg" alt="Pendatang Baru Nothing Phone" />
-                    Pendatang Baru Nothing Phone (1) - Carl Pei, mantan co-founder OnePlus merupakan orang di balik pendirian startup Nothing. Ia dianggap berhasil membangun merek OnePlus di pasar Eropa sehingga kiprah Carl Pei dalam menangani Nothing Phone memancing perhatian banyak orang. Harga dan spesifikasi Nothing Phone (1),&hellip;
+                    Pendatang Baru Nothing Phone (1) - Carl Pei, mantan co-founder OnePlus merupakan orang di balik pendirian startup Nothing. Ia dianggap berhasil membangun merek OnePlus di pasar Eropa sehingga kiprah Carl Pei dalam menangani Nothing Phone memancing perhatian banyak orang. Harga dan spesifikasi Nothing Phone (1), Nothing, merek elektronik jebolan baru ini merilis HP pertamanya.. Selain memiliki nama unik, Nothing mengeluarkan unit ponsel yang tidak biasa. Nothing Phone (1) hadir dengan desain futuris dan transparan pada bagian belakang. Untuk Harga Sendiri kita coba ambil dari website resmi GSMArena 256GB 12GB RAM :- $ 745.00 :- € 549.00 128GB 8GB RAM :- € 469.00 :- € 469.00 256GB 8GB RAM :- € 499.00 :- € 499.00 Spesifikasi: NETWORK Technology GSM / HSPA / LTE / 5G 2G bands GSM 850 / 900 / 1800 / 1900 - SIM 1 &amp; SIM 2 3G bands HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100 4G bands 1, 2, 3, 4, 5, 7, 8, 12, 17, 18,&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -904,7 +901,7 @@ gpgcheck=1</pre>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/225/6.-Logout-iCloud-iPhone-Penting-Dilakukan-Simak-Langkah-Mudahnya-696x392.jpg" alt="Sangat Penting Untuk Logout iCloud iPhone" />
-                    Sangat Penting Untuk Logout iCloud iPhone - Logout iCloud iPhone pada salah satu perangkat atau semua perangkat dapat anda lakukan dengan cara yang cukup mudah. Terutama jika anda akan menjual iPhone atau berganti iPhone dengan tipe yang terbaru. Atau bahkan akan beralih pada perangkat Android,&hellip;
+                    Sangat Penting Untuk Logout iCloud iPhone - Logout iCloud iPhone pada salah satu perangkat atau semua perangkat dapat anda lakukan dengan cara yang cukup mudah. Terutama jika anda akan menjual iPhone atau berganti iPhone dengan tipe yang terbaru. Atau bahkan akan beralih pada perangkat Android, maka terdapat beberapa hal yang harus anda perhatikan sebelum benar-benar menjual iPhone tersebut. Salah satunya adalah dengan keluar dari iCloud iPhone yang anda miliki serta reset ulang iPhone ke Setelan Pabrik. Keduanya sangat penting anda lakukan. Hal ini bertujuan supaya data-data ataupun foto yang penting tidak disalahgunakan oleh para pemilik baru. Selain itu, dengan keluar dari iCloud dapat mudahkan pemilik baru untuk dapat login pada akun yang mereka miliki. Cara Mudah Logout iCloud iPhone iCloud merupakan salah satu fitur bawaan iOS pada iPhone ataupun iPad. Selain sebagai penyimpanan awan ataupun drive saja, akan tetapi juga beragam hal lain. Fitur iCloud lain yang mungkin secara tidak sadar anda gunakan adalah mail, kontak, dan lain sebagainya. Syarat&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -1009,7 +1006,7 @@ gpgcheck=1</pre>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/216/Cara-Mengatasi-iCloud-Penuh-di-Iphone.jpg" alt="Tutorial Mengatasi iCloud Penuh di iPhone" />
-                    Tutorial Mengatasi iCloud Penuh di iPhone - Cara mengatasi iCloud penuh di iPhone penting dipahami oleh para pengguna. Dengan kondisi iCloud iPhone yang penuh dapat menghambat proses penyimpanan file atau aktivitas penyimpanan lainnya. Mengatasi iCloud yang penuh dalam perangkat iPhone bertujuan agar fitur penyimpanan dalam&hellip;
+                    Tutorial Mengatasi iCloud Penuh di iPhone - Cara mengatasi iCloud penuh di iPhone penting dipahami oleh para pengguna. Dengan kondisi iCloud iPhone yang penuh dapat menghambat proses penyimpanan file atau aktivitas penyimpanan lainnya. Mengatasi iCloud yang penuh dalam perangkat iPhone bertujuan agar fitur penyimpanan dalam ponsel dapat pengguna manfaatkan dengan normal kembali. Pada dasarnya, langkah untuk membebaskan penyimpanan yang penuh pada iCloud iPhone tidak jauh berbeda dengan media penyimpanan lainnya. Seperti penyimpanan internal atau kartu memori eksternal. Secara lebih lengkap, berikut ini dapat Anda simak ulasan mengenai langkah mudah untuk mengatasi iCloud iPhone dalam kondisi penuh. iCloud memiliki fungsi sebagai tempat penyimpanan foto, video, dokumen, musik, app, dan lainnya secara aman. Sama halnya dengan Android, iCloud juga mempunyai batasan dalam kapasitas penyimpanannya. Jika pada pengguna Android mempunyai Google Drive yang menjadikannya sebagai sistem penyimpanan. Sedangkan untuk iClouds sendiri merupakan sistem penyimpanan dari iPhone atau segala macam bentuk produk keluaran dari Apple. Sama seperti ruang penyimpanan pada umumnya, pada iCloud pun bisa&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -1073,7 +1070,7 @@ gpgcheck=1</pre>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/218/maxresdefault.jpg" alt="utorial Unlock Dan Root STB  ZTE ZXV10 B860H" />
-                    Tutorial Unlock Dan Root STB Indihome ZTE B860H – Peringatan! Tulisan ini hanya untuk bahan pembelajaran untuk memanfaatkan STB bekas Indihome saja, resiko akibat dari penerapan tutorial ini adalah tanggung jawab kamu sendiri. Bagi pelanggan indihome dengan paket internet dan TV pasti sudah tidak asing dengan&hellip;
+                    Tutorial Unlock Dan Root STB Indihome ZTE B860H – Peringatan! Tulisan ini hanya untuk bahan pembelajaran untuk memanfaatkan STB bekas Indihome saja, resiko akibat dari penerapan tutorial ini adalah tanggung jawab kamu sendiri. Bagi pelanggan indihome dengan paket internet dan TV pasti sudah tidak asing dengan tambahan perangkat Set Top Box (STB) Android yang bisa kamu hubungkan langsung ketelevisi atau monitor untuk menyaksikan siaran televisi secara langsung, on demand, maupun delay. STB ini menggunakan sistem operasi android, namun kita tidak bisa dengan leluasa menginstall aplikasi android yang kita inginkan karna perangkat ini dikunci oleh pihak telkom. Baca juga: Android 12 and 12L Custom ROM Sebelumnya saya mengucapkan terima kasih kepada mas Fuad Salim yang telah membagikan Pulpstone Amlogic Update USB Tool dan Custom Rom Pulpstone pada group facebook STB ZTE ZXV10 – B860H [ID] Terkadang ketika kita sudah berhenti berlangganan indihome, perangkat STB ini tidak diambil lagi oleh pihak telkom. Yang mengakibatkan perangkat ini tidak berguna karena tidak dapat digunakan untuk&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -1180,7 +1177,7 @@ gpgcheck=1</pre>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/224/maxresdefault.jpg" alt="Tutorial Unlock STB ZTE B860H Dengan Pulpstone" />
-                    Persiapan Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1 Sebelum memulai tutorial, yang pertama tentu saja kita harus punya STB ZTE ZXV10 B860H, bisa membelinya di marketplace STB B860H V.2.1 RAM 2GB NEW FW ORI SEGEL, penampakannya seperti di bawah ini : Selanjutnya kita&hellip;
+                    Persiapan Unlock STB ZTE B860H Dengan Pulpstone Android V 3.1 Sebelum memulai tutorial, yang pertama tentu saja kita harus punya STB ZTE ZXV10 B860H, bisa membelinya di marketplace STB B860H V.2.1 RAM 2GB NEW FW ORI SEGEL, penampakannya seperti di bawah ini : Selanjutnya kita siapkan laptop atau komputer dengan sistem operasi windows Siapkan juga kabel USB to USB ( male to male) Jangan lupa adaptor catudaya dari STB juga disiapkan Download tool untuk unlock STB, ada flasher ZTE B860H Pulpstone Android v3.1 lengkap ada petunjuk text dan link ke youtube cara unlock ZTE B860H ini. Link Download Firmware Pulpstone Android v3.1 B860H Moment Menancapkan USB Jadi Kunci Keberhasilan Unlock STB ZTE B860H Bahan sudah terkumpul semua, tinggal kita mulai unlock atau flash STB ZTE B860H, tapi kembali saya ingatkan bahwa kunci keberhasilan dengan unlock atau flash STB ZTE B860H dengan Pulpstone Android V 3.1 adalah moment menancapkan USB nya, mungkin jeda penancapannya kurang dari satu detik setelah penancapan adaptor catudaya.
                 ]]>
             </summary>
         <content type="html">
@@ -1319,7 +1316,7 @@ su ...(enter)<br>9191 ...(enter)<br>1 ... (enter)</div>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/223/Android-12-Custom-Rom-option-2.webp" alt="Android 12 and 12L Custom ROM " />
-                    Sejak Google mengumumkan kedatangan rilis stabil Android 12 dan menjatuhkan source code ke AOSP, pesta mengutak-atik sedang berlangsung di XDA Forum. Tetapi kecuali Anda memiliki perangkat Google Pixel generasi saat ini, ada kemungkinan besar Anda harus menunggu beberapa bulan agar OEM Anda mengirimkan latest dessert&hellip;
+                    Sejak Google mengumumkan kedatangan rilis stabil Android 12 dan menjatuhkan source code ke AOSP, pesta mengutak-atik sedang berlangsung di XDA Forum. Tetapi kecuali Anda memiliki perangkat Google Pixel generasi saat ini, ada kemungkinan besar Anda harus menunggu beberapa bulan agar OEM Anda mengirimkan latest dessert ke ponsel Anda. Baca Juga: Hosting termurah tahunan cuma 188k DOUBLEHOST Harga Tetap tidak ada perubahan harga 100%. Tapi tentu saja, ini adalah XDA, rumah bagi koleksi ROM kustom komunitas terbesar dan banyak pengembangan aftermarket lainnya. Meskipun OEM dibatasi oleh beberapa faktor yang membatasi kemampuan mereka untuk memberikan pembaruan tepat waktu, anggota komunitas kami dapat melakukan pekerjaan yang luar biasa dalam memberikan kesempatan kepada penggemar lain untuk mencoba rilis Android 12L terbaru di perangkat mereka, sekarang juga! Memang, karya awal dari pengembang yang bekerja dengan official resources yang tidak memadai (dan seringkali tidak ada) tidak mungkin memberi kami ROM bebas bug. Tetapi mereka menyoroti bagaimana kelompok individu yang berpikiran sama dapat mencapai sesuatu yang hebat&hellip;
                 ]]>
             </summary>
         <content type="html">

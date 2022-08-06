@@ -2030,7 +2030,7 @@ textarea {
   color: var(--color);
   font-size: 0.5967194723rem;
   padding: 0 0.3642857143rem; 
-  position: absolute;
+  position: center;
   right: 24.9714285714rem;
   font-weight: var(--headings-weight);
 }
