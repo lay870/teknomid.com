@@ -2956,3 +2956,64 @@ textarea {
 .breadcrumbs li:nth-child(1) {
   padding-left: 0;
 }
+
+
+.post-list__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 70%;
+}
+
+.sidebar-right {
+  width: 25%;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+}
+
+.sidebar-right__text {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  margin-bottom: calc(1rem + 0.5vw);
+}
+
+.sidebar-right nav {
+  display: flex;
+}
+
+.sidebar-right nav button {
+  margin: 4% 2% 2% 0;
+}
+
+.sidebar-right nav button a {
+  color: var(--white);
+}
+
+.sidebar-right__photo {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-right .post__tag {
+  margin-bottom: 0.5rem;
+}
+
+.box {
+  border-bottom: none !important;
+  /* margin-top: 2.4285714286rem;
+  padding-top: 1.9428571429rem; */
+  padding-bottom: 0 !important;
+}
+.sidebar-right .box:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.box ul {
+  margin: 0;
+}
