@@ -1393,9 +1393,6 @@ textarea {
 
 .sidebar {
   font-size: 0.8789062495rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10%;
 }
 @media all and (min-width: 56.25em) {
   .sidebar {
