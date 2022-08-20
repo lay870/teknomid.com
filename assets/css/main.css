@@ -2941,3 +2941,18 @@ textarea {
 .pswp--light .pswp__caption__center {
   color: var(--text-color);
 }
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  padding-right: 0.5rem;
+}
+
+.breadcrumbs li:nth-child(1) {
+  padding-left: 0;
+}
