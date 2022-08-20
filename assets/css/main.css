@@ -1857,9 +1857,7 @@ textarea {
   }
 }
 .infobar__search {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10%;
+  position: relative;
 }
 
 .search__input {
@@ -1985,7 +1983,7 @@ textarea {
   background: var(--dark);
   border-radius: 12px;
   color: var(--white);
-  font-size: 0.7967194723rem;
+  font-size: 0.967194723rem;
   padding: 0 0.3642857143rem;
   position: absolute;
   right: 0.9714285714rem;
