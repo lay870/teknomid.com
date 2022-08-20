@@ -1982,10 +1982,10 @@ textarea {
   width: 100%;
 }
 .post__featured-image > figcaption {
-  background: var(--gray-1);
-  border-radius: 3px;
+  background: var(--dark);
+  border-radius: 12px;
   color: var(--white);
-  font-size: 0.5967194723rem;
+  font-size: 0.7967194723rem;
   padding: 0 0.3642857143rem;
   position: absolute;
   right: 0.9714285714rem;
