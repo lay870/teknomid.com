@@ -2732,7 +2732,7 @@ textarea {
   fill: var(--dark);
 }
 .footer__follow > a svg {
-  fill: var(--gray-1);
+  fill: var(--black);
   height: 1rem;
   -webkit-transition: all 0.24s ease-out;
   transition: all 0.24s ease-out;
