@@ -289,9 +289,9 @@ blockquote {
 blockquote cite {
   display: block;
   font-family: var(--body-font);
-  font-size: 0.8789062495rem;
-  font-style: normal;
-  padding-top: 0.4857142857rem;
+  font-size: 0.6789062495rem;
+  font-style:italic;
+  padding-top: 0.2857142857rem;
 }
 blockquote > :nth-child(1) {
   margin-top: 0;
@@ -344,6 +344,7 @@ pre {
     width: 100%;
     background: linear-gradient(90deg, #404040, #5c5c5c, #707070);
     background-attachment: fixed;
+    font-style: italic;
 }
 pre code {
   background: linear-gradient(90deg, #404040, #5c5c5c, #707070);
