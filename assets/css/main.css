@@ -143,13 +143,14 @@ dl,
 table,
 pre {
   margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 blockquote,
 figure,
 hr {
-  margin-top: 2.1857142857rem;
-  margin-bottom: 2.1857142857rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 h1,
@@ -273,7 +274,8 @@ h3 + *,
 h4 + *,
 h5 + *,
 h6 + * {
-  margin-top: 0.7285714286rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 b,
@@ -333,6 +335,8 @@ code {
   font-family: "Monaco", "Courier New", monospace;
   padding: 0.2428571429rem 0.4857142857rem;
   font-weight: 400;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 pre {
@@ -345,6 +349,8 @@ pre {
     background: linear-gradient(90deg, #404040, #5c5c5c, #707070);
     background-attachment: fixed;
     font-style: italic;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
 }
 pre code {
   background: linear-gradient(90deg, #404040, #5c5c5c, #707070);
@@ -352,6 +358,8 @@ pre code {
   color: inherit !important;
   font-size: inherit;
   padding: 0;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 table {
@@ -742,7 +750,7 @@ textarea {
         align-content: start;
     display: -ms-grid;
     display: grid;
-    grid-column-gap: 1.4571428571rem;
+    grid-column-gap: 1.2571428571rem;
   }
 }
 @media all and (min-width: 75em) {
@@ -751,7 +759,7 @@ textarea {
         align-content: start;
     display: -ms-grid;
     display: grid;
-    grid-column-gap: 1.4571428571rem;
+    grid-column-gap: 1.2571428571rem;
   }
 }
 .l-grid--1col {
