@@ -3,7 +3,7 @@
     <title>Portal Teknologi</title>
     <link href="https://teknomid.com/feed.xml" rel="self" />
     <link href="https://teknomid.com" />
-    <updated>2022-08-24T18:14:57+07:00</updated>
+    <updated>2022-08-24T18:55:01+07:00</updated>
     <author>
         <name>Admin</name>
     </author>
@@ -132,17 +132,17 @@
             <category term="LINUX"/>
             <category term="Applikasi"/>
 
-        <updated>2022-08-21T02:28:11+07:00</updated>
+        <updated>2022-08-24T18:55:01+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://teknomid.com/media/posts/235/2022-08-10_080344.png" alt="Linux Strongswan VPN IPSEC" />
-                    Strongswan VPN IPSEC - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua sistem operasi mendukung IPsec tanpa perlu tambahan software lain. Salah satu software yang bisa digunakan untuk membuat server VPN IPsec adalah Strongswan, software tersebut juga yang&hellip;
+                    Strongswan VPN IPSEC - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua operating system sudah mendukung IPsec tanpa perlu mengintal atau menambahkan software lain. Salah satunya applikasi/software yang bisa kita gunakan untuk membangun server VPN IPsec adalah Strongswan,&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://teknomid.com/media/posts/235/2022-08-10_080344.png" alt="Linux Strongswan VPN IPSEC" />
-                <p><strong>Strongswan VPN IPSEC</strong> - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua sistem operasi mendukung IPsec tanpa perlu tambahan software lain. Salah satu software yang bisa digunakan untuk membuat server VPN IPsec adalah Strongswan, software tersebut juga yang akan kita gunakan di tutorial kali ini.</p>
+                <p><strong>Strongswan VPN IPSEC</strong> - Banyak perusahaan ataupun orang memilih menggunakan IPsec karena support IPsec sudah ada dimana-mana, hampir semua operating system sudah mendukung IPsec tanpa perlu mengintal atau menambahkan software lain. Salah satunya applikasi/software yang bisa kita gunakan untuk membangun server VPN IPsec adalah Strongswan, Applikasi tersebut juga yang akan kita gunakan di dalam tutorial kali ini.</p>
 <div class="post__toc">
 <h3>Table of Contents</h3>
 <ul>
@@ -159,9 +159,9 @@
 </ul>
 </div>
 <h4 id="mcetoc_1g9il1ktabs">Strongswan VPN IPSEC</h4>
-<p>Beberapa hal yang perlu di perhatikan/kebutuhan adalah<br>– IPsec bisa di install tanpa SSL<br>– Ubuntu 20.04 dengan Public IP<br>– Client bisa mengunakan Windows, MacOS, Linux, Android ataupun iOS.<br>– Akses root</p>
+<p>Ada Beberapa hal yang perlu di perhatikan untuk kebutuhan di atas, diantaranya: <br>– IPsec (Bisa kita install tanpa SSL)<br>– Ubuntu 20.04 dengan Public IP<br>– Untuk Client kita bisa menggunakan Linux, Windows, MacOS, iOS ataupun Android.<br>– Akses root</p>
 <h5 id="mcetoc_1g9il1ktabt">Setting DNS</h5>
-<p>Untuk mendapatkan SSL gratis terlebih dahulu setting DNS record ke IP server</p>
+<p>Agar kita mendapatkan SSL gratis terlebih dahulu kita setting DNS record di IP server:</p>
 <pre>Type: A  | Name: ipsec.teknomid.com | Value: 192.168.108.87<br>TTL: 1 | Active: false | ID: asduyhiuwejhiuwladjlads</pre>
 <p>Install dependency</p>
 <p><em><strong>Baca Juga: <a href="https://teknomid.com/setting-up-ipsecl2tp-vpn-server-in-linux/" title="Setting Up IPsec/L2TP VPN Server in Linux">Setting Up IPsec/L2TP VPN Server in Linux</a></strong></em></p>
@@ -214,7 +214,7 @@
 <pre class="de1"><span class="kw3">source</span> ~<span class="sy0">/</span>.bashrc</pre>
 <p><em><strong>Baca Juga: <a href="https://teknomid.com/memahami-dan-konfigurasi-lvm-di-centos-8/" title="Memahami dan Konfigurasi LVM di Centos 8">Memahami dan Konfigurasi LVM di Centos 8</a></strong></em></p>
 <h5 id="mcetoc_1g9il1ktabu">Generate SSL</h5>
-<p>Untuk penggunaan SSLnya kita akan generate dengan acme.</p>
+<p>Untuk penggunaan SSL kita gunakan/jalankan generate dengan acme seperti di bawah ini.</p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
 <div class="wp-geshi-highlight-wrap3">
@@ -249,8 +249,8 @@
 </div>
 </div>
 <h5 id="mcetoc_1g9il1ktabv">Konfigurasi IPsec</h5>
-<p>Ingat untuk merubah ipsec.EXAMPLE.com dengan domain yang ada buat sebelumnya.</p>
-<p>Salin file sertifikat dan private key ke folder <code>/etc/ipsec.d</code></p>
+<p>Untuk merubah ipsec.DOMAIN.com dengan domain yang sudah kita buat sebelumnya.</p>
+<p>Salin file certificate dan private key ke dalam folder <code>/etc/ipsec.d</code></p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
 <div class="wp-geshi-highlight-wrap3">
@@ -267,7 +267,7 @@
 </div>
 </div>
 </div>
-<p>Konfigurasi IPsec strongswan berada di file <code>/etc/ipsec.conf</code>, hapus file tersebut ganti dengan</p>
+<p>Dan untuk configurasi IPsec strongswan berada di dalam file <code>/etc/ipsec.conf</code>, hapus file tersebut dan ganti dengan yg di bawah ini.</p>
 <p><em><strong>Baca Juga: <a href="https://teknomid.com/cara-mengelola-file-log-dengan-logrotate-di-ubuntu-2004/" title="Cara Mengelola File Log dengan Logrotate di Ubuntu 20.04">Cara Mengelola File Log dengan Logrotate di Ubuntu 20.04</a></strong></em></p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
@@ -308,7 +308,7 @@ conn ipsec-teknomid
 </div>
 </div>
 <h5 id="mcetoc_1g9il1ktac0">Setting IPsec Secret</h5>
-<p>Buka file /etc/ipsec.secrets, tambahkan</p>
+<p>Kemudian buka file /etc/ipsec.secrets, dan tambahkan</p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
 <div class="wp-geshi-highlight-wrap3">
@@ -326,9 +326,9 @@ teknomid : EAP <span class="st0">"PASSWORD"</span></pre>
 </div>
 </div>
 <h5 id="mcetoc_1g9il1ktac1">Restart service strongswan</h5>
-<p>Setelah melakukan perubahan tersebut, restart service strongswan</p>
+<p>Setelah kita selesai melakukan perubahan di atas, restart service strongswan</p>
 <figure class="post__image"><img loading="lazy"  src="https://teknomid.com/media/posts/235/vpn-strongswan-sukses-berjalan-1024x214.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-xs.png 300w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-sm.png 480w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-md.png 768w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-lg.png 1024w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-xl.png 1360w ,https://teknomid.com/media/posts/235/responsive/vpn-strongswan-sukses-berjalan-1024x214-2xl.png 1600w"  alt="Service Strongswan" width="1024" height="214"><figcaption><strong><em>Service Strongswan</em></strong></figcaption></figure>
-<p>Aktifkan IP Forwarding</p>
+<p>Aktifkan IP Forwarding di /etc/sysctl.ctl</p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
 <div class="wp-geshi-highlight-wrap3">
@@ -344,7 +344,7 @@ teknomid : EAP <span class="st0">"PASSWORD"</span></pre>
 </div>
 </div>
 </div>
-<p>Aplikasikan perubahan tersebut</p>
+<p>Set/Apply perubahan tersebut</p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
 <div class="wp-geshi-highlight-wrap3">
@@ -361,7 +361,7 @@ teknomid : EAP <span class="st0">"PASSWORD"</span></pre>
 </div>
 </div>
 <h5 id="mcetoc_1g9il1ktac2">Setting Iptables</h5>
-<p>Agar client yang menggunakan VPN bisa mengakses internet, setting IPTABLES sebagai berikut</p>
+<p>Supaya client yang sudah menggunakan VPN server kita bisa mengakses internet, setting IPTABLES terlebih dahulu seperti di bawah ini:</p>
 <p><em><strong>Baca Juga: <a href="https://teknomid.com/cara-menghapus-cache-memori-ram-buffer-dan-swap-space-di-linux/" title="Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux">Cara Menghapus Cache Memori RAM, Buffer, dan Swap Space di Linux</a></strong></em></p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
@@ -370,8 +370,8 @@ teknomid : EAP <span class="st0">"PASSWORD"</span></pre>
 <div class="wp-geshi-highlight-wrap">
 <div class="wp-geshi-highlight">
 <div class="bash">
-<pre class="de1">iptables <span class="re5">-t</span> nat <span class="re5">-A</span> POSTROUTING <span class="re5">-o</span> eth0 <span class="re5">-j</span> ACCEPT
-iptables <span class="re5">-t</span> nat <span class="re5">-A</span> POSTROUTING <span class="re5">-o</span> eth0 <span class="re5">-j</span> MASQUERADE</pre>
+<pre class="de1">iptables <span class="re5">-t</span> nat <span class="re5">-A</span> POSTROUTING <span class="re5">-o</span> eth1 <span class="re5">-j</span> ACCEPT
+iptables <span class="re5">-t</span> nat <span class="re5">-A</span> POSTROUTING <span class="re5">-o</span> eth1 <span class="re5">-j</span> MASQUERADE</pre>
 </div>
 </div>
 </div>
@@ -379,7 +379,7 @@ iptables <span class="re5">-t</span> nat <span class="re5">-A</span> POSTROUTING
 </div>
 </div>
 </div>
-<p>sesuaikan <strong>eth0</strong> dengan default interface yang digunakan. Untuk melihatnya gunakan <code>ip route | grep default</code></p>
+<p>sesuaikan <strong>eth1</strong> dengan default interface yang digunakan. Untuk melihatnya gunakan <code>ip route | grep default</code></p>
 <div class="wp-geshi-highlight-wrap5">
 <div class="wp-geshi-highlight-wrap4">
 <div class="wp-geshi-highlight-wrap3">
@@ -388,7 +388,7 @@ iptables <span class="re5">-t</span> nat <span class="re5">-A</span> POSTROUTING
 <div class="wp-geshi-highlight">
 <div class="bash">
 <pre class="de1"><span class="co0"># ip route | grep default</span>
-default via 192.168.1.2 dev eth0 proto static</pre>
+default via 192.168.1.2 dev eth1 proto static</pre>
 <p> </p>
 </div>
 </div>
